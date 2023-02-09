@@ -227,6 +227,20 @@
   <gazebo reference="$(arg robot_name)/ros_logical_camera">   
       <sensor name="logical_camera" type="logical_camera">
           <plugin filename="libROSLogicalCameraPlugin.so" name="logical_camera">
+<!--               <position_noise>
+                <noise>
+                  <type>gaussian</type>
+                  <mean>0.0</mean>
+                  <stddev>0.001</stddev>
+                </noise>
+              </position_noise>
+              <orientation_noise>
+                <noise>
+                  <type>gaussian</type>
+                  <mean>0.0</mean>
+                  <stddev>0.01</stddev>
+                </noise>
+              </orientation_noise> -->
               <alwaysOn>true</alwaysOn>
               <updateRate>0.0</updateRate>
               <cameraName>ros_logical_camera</cameraName>
