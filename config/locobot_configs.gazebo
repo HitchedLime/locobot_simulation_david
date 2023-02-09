@@ -225,17 +225,17 @@
   </gazebo>
 
   <gazebo reference="$(arg robot_name)/ros_logical_camera">   
-      <sensor name="ros_logical_camera" type="ros_logical_camera">
-          <plugin filename="libROSLogicalCameraPlugin.so" name="ros_logical_camera">
+      <sensor name="logical_camera" type="logical_camera">
+          <plugin filename="libROSLogicalCameraPlugin.so" name="logical_camera">
               <alwaysOn>true</alwaysOn>
               <updateRate>0.0</updateRate>
               <cameraName>ros_logical_camera</cameraName>
           </plugin>
         <logical_camera>
-          <near>0.1</near>
-          <far>2.5</far>
-          <horizontal_fov>1.05</horizontal_fov>
-          <aspect_ratio>1.8</aspect_ratio>
+          <near>0.3</near>
+          <far>3</far>
+          <horizontal_fov>1.5</horizontal_fov>
+          <aspect_ratio>1.766</aspect_ratio>
         </logical_camera>
 
         <visualize>true</visualize>
