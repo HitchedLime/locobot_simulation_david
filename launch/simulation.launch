@@ -1,6 +1,6 @@
 <launch>
 
-  <arg name="robot_model"                       default="locobot_wx250s"/>
+  <arg name="robot_model"                       default="mobile_wx250s"/>
   <arg name="robot_name"                        default="locobot"/>
   <arg name="arm_model"                         default="mobile_wx250s"/>
   <arg name="show_lidar"                        default="false"/>
@@ -9,7 +9,7 @@
   <arg name="external_urdf_loc"                 default=""/>
   <arg name="use_rviz"                          default="true"/>
   <arg name="rviz_frame"                        default="$(arg robot_name)/base_footprint"/>
-  <arg name="world_name"                        default="$(find ros_simulation)/worlds/xslocobot_gazebo.world"/>
+  <arg name="world_name"                        default="$(find locobot_simulation)/worlds/xslocobot_gazebo.world"/>
   <arg name="gui"                               default="true"/>
   <arg name="debug"                             default="false"/>
   <arg name="paused"                            default="true"/>
@@ -19,9 +19,9 @@
   <arg name="use_trajectory_controllers"        default="false"/>
   <arg name="dof"                               default="6"/>
 
-  <env name="GAZEBO_RESOURCE_PATH"              value="$(find ros_simulation)"/>
+  <env name="GAZEBO_RESOURCE_PATH"              value="$(find locobot_simulation)"/>
 
-  <rosparam file="$(find ros_simulation)/config/locobot_gazebo_controllers.yaml" command="load" ns="$(arg robot_name)"/>
+  <rosparam file="$(find locobot_simulation)/config/locobot_gazebo_controllers.yaml" command="load" ns="$(arg robot_name)"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name"                        value="$(arg world_name)"/>
@@ -34,7 +34,7 @@
 
   <group if="$(eval robot_model != 'locobot_base')">
     <group if="$(arg use_trajectory_controllers)">
-      <rosparam file="$(find ros_simulation)/config/trajectory_controllers/$(arg arm_model)_trajectory_controllers.yaml" command="load" ns="$(arg robot_name)"/>
+      <rosparam file="$(find locobot_simulation)/config/trajectory_controllers/$(arg arm_model)_trajectory_controllers.yaml" command="load" ns="$(arg robot_name)"/>
       <node
         name="controller_spawner"
         pkg="controller_manager"
@@ -45,7 +45,7 @@
         args="spawn arm_controller gripper_controller pan_controller tilt_controller joint_state_controller"/>
     </group>
     <group if="$(arg use_position_controllers)">
-      <rosparam file="$(find ros_simulation)/config/position_controllers/$(arg arm_model)_position_controllers.yaml" command="load" ns="$(arg robot_name)"/>
+      <rosparam file="$(find locobot_simulation)/config/position_controllers/$(arg arm_model)_position_controllers.yaml" command="load" ns="$(arg robot_name)"/>
       <node if="$(eval dof == 6)"
         name="controller_spawner"
         pkg="controller_manager"
@@ -69,7 +69,7 @@
     ns="$(arg robot_name)"
     args="spawn pan_controller tilt_controller joint_state_controller"/>
 
-  <include file="$(find ros_simulation)/launch/xslocobot_description.launch">
+  <include file="$(find locobot_simulation)/launch/xslocobot_description.launch">
     <arg name="robot_model"                       value="$(arg robot_model)"/>
     <arg name="robot_name"                        value="$(arg robot_name)"/>
     <arg name="show_lidar"                        value="$(arg show_lidar)"/>
@@ -92,7 +92,7 @@
 
   <!-- <node
     name="test_motors"
-    pkg="ros_simulation"
+    pkg="locobot_simulation"
     type="test.py"
     respawn="false"
     output="screen"

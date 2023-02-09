@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ros_simulation</name>
+  <name>locobot_simulation</name>
   <version>0.0.0</version>
-  <description>The ros_simulation package</description>
+  <description>The locobot_simulation package</description>
   <maintainer email="m.adamik@vu.nl">Mark Adamik</maintainer>
   <license>BSD</license>
   <author email="m.adamik@vu.nl">Mark Adamik</author>

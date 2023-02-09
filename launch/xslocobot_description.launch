@@ -1,6 +1,6 @@
 <launch>
 
-  <arg name="robot_model"                       default="model_wx250s"/>
+  <arg name="robot_model"                       default="mobile_wx250s"/>
   <arg name="robot_name"                        default="locobot"/>
   <arg name="arm_model"                         default="$(eval 'mobile_' + arg('robot_model').split('_')[1])"/>
   <arg name="show_lidar"                        default="false"/>

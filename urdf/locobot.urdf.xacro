@@ -15,7 +15,7 @@
   <xacro:property name="pi_offset" value="0.00001"/>
 
   <xacro:if value="$(arg load_gazebo_configs)">
-    <xacro:include filename="$(find interbotix_xslocobot_gazebo)/config/locobot_configs.gazebo"/>
+    <xacro:include filename="$(find locobot_simulation)/config/locobot_configs.gazebo"/>
   </xacro:if>
 
   <xacro:if value="${urdf_loc != ''}">
@@ -23,7 +23,7 @@
   </xacro:if>
 
   <material name="interbotix_black">
-    <texture filename="package://interbotix_xslocobot_descriptions/meshes/interbotix_black.png"/>
+    <texture filename="package://locobot_simulation/meshes/interbotix_black.png"/>
   </material>
 
     <!-- ********************************** Kobuki ********************************** -->
@@ -40,7 +40,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.001 0 0.05199"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_main_body.dae"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_main_body.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -77,7 +77,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_wheel.dae"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_wheel.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -114,7 +114,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_wheel.dae"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_wheel.dae"/>
       </geometry>
     </visual>
     <collision>
@@ -238,14 +238,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_base_plate.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_base_plate.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_base_plate.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_base_plate.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -257,7 +257,7 @@
 
   <xacro:if value="${arm_type != 'mobile_base'}">
 
-    <xacro:include filename="$(find interbotix_xslocobot_descriptions)/urdf/$(arg arm_model).urdf.xacro"/>
+    <xacro:include filename="$(find locobot_simulation)/urdf/$(arg arm_model).urdf.xacro"/>
 
     <xacro:if value="${arm_type == 'mobile_wx200'}">
 
@@ -272,14 +272,14 @@
        <visual>
          <origin rpy="0 0 0" xyz="0 0 0"/>
          <geometry>
-           <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_arm_cradle.stl" scale="0.001 0.001 0.001"/>
+           <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_arm_cradle.stl" scale="0.001 0.001 0.001"/>
          </geometry>
          <material name="interbotix_black"/>
        </visual>
        <collision>
          <origin rpy="0 0 0" xyz="0 0 0"/>
          <geometry>
-           <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_arm_cradle.stl" scale="0.001 0.001 0.001"/>
+           <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_arm_cradle.stl" scale="0.001 0.001 0.001"/>
          </geometry>
        </collision>
        <inertial>
@@ -305,7 +305,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_battery.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_battery.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -314,7 +314,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_battery.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_battery.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -336,14 +336,14 @@
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_camera_tower_large.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_camera_tower_large.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <material name="interbotix_black"/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_camera_tower_large_simple.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_camera_tower_large_simple.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <inertial>
@@ -359,14 +359,14 @@
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_camera_tower_small.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_camera_tower_small.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <material name="interbotix_black"/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_camera_tower_small_simple.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_camera_tower_small_simple.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <inertial>
@@ -406,14 +406,14 @@
     <visual>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_pan.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_pan.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_pan.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_pan.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -445,14 +445,14 @@
     <visual>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_tilt.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_tilt.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_tilt.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_tilt.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -472,7 +472,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.55 0.55 0.55 1"/>
@@ -481,7 +481,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -501,7 +501,7 @@
       <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.55 0.55 0.55 1"/>
@@ -510,7 +510,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_camera.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -540,14 +540,14 @@
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_lidar_tower.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_lidar_tower.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <material name="interbotix_black"/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_lidar_tower_simple.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_lidar_tower_simple.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <inertial>
@@ -567,7 +567,7 @@
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://interbotix_xslocobot_descriptions/meshes/locobot_meshes/locobot_lidar.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="package://locobot_simulation/meshes/locobot_meshes/locobot_lidar.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <material name="interbotix_black"/>
       </visual>

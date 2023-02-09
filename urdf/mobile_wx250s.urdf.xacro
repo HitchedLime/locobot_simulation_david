@@ -12,14 +12,14 @@
     <visual>
       <origin rpy="${pi/2} 0 ${pi/2}" xyz="-0.095773 0 -0.10565023"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_1_base.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_1_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="${pi/2} 0 ${pi/2}" xyz="-0.095773 0 -0.10565023"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_1_base.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_1_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -52,14 +52,14 @@
     <visual>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 -0.003"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_2_shoulder.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_2_shoulder.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 -0.003"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_2_shoulder.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_2_shoulder.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -92,14 +92,14 @@
     <visual>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_3_upper_arm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_3_upper_arm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_3_upper_arm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_3_upper_arm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -132,14 +132,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_4_upper_forearm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_4_upper_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_4_upper_forearm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_4_upper_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -172,14 +172,14 @@
     <visual>
       <origin rpy="${pi} 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_5_lower_forearm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_5_lower_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="${pi} 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_5_lower_forearm.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_5_lower_forearm.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -212,14 +212,14 @@
     <visual>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_6_wrist.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_6_wrist.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_6_wrist.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_6_wrist.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -252,14 +252,14 @@
     <visual>
       <origin rpy="0 0 ${pi/2}" xyz="-0.02 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_7_gripper.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_7_gripper.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="-0.02 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_7_gripper.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_7_gripper.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -306,14 +306,14 @@
     <visual>
       <origin rpy="0 0 ${pi/2}" xyz="-0.0685 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_8_gripper_prop.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_8_gripper_prop.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 ${pi/2}" xyz="-0.0685 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_8_gripper_prop.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_8_gripper_prop.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -334,14 +334,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_11_ar_tag.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_11_ar_tag.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="interbotix_black"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_11_ar_tag.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_11_ar_tag.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -366,14 +366,14 @@
       <visual>
         <origin rpy="0 0 ${pi/2}" xyz="-0.063 0 0"/>
         <geometry>
-          <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_9_gripper_bar.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_9_gripper_bar.stl" scale="0.001 0.001 0.001"/>
         </geometry>
         <material name="interbotix_black"/>
       </visual>
       <collision>
         <origin rpy="0 0 ${pi/2}" xyz="-0.063 0 0"/>
         <geometry>
-          <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_9_gripper_bar.stl" scale="0.001 0.001 0.001"/>
+          <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_9_gripper_bar.stl" scale="0.001 0.001 0.001"/>
         </geometry>
       </collision>
       <inertial>
@@ -424,14 +424,14 @@
         <visual>
           <origin rpy="${pi} ${pi} 0" xyz="0 0.005 0"/>
           <geometry>
-            <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
+            <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
           </geometry>
           <material name="interbotix_black"/>
         </visual>
         <collision>
           <origin rpy="${pi} ${pi} 0" xyz="0 0.005 0"/>
           <geometry>
-            <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
+            <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
           </geometry>
         </collision>
         <inertial>
@@ -467,14 +467,14 @@
         <visual>
           <origin rpy="0 ${pi} 0" xyz="0 -0.005 0"/>
           <geometry>
-            <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
+            <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
           </geometry>
           <material name="interbotix_black"/>
         </visual>
         <collision>
           <origin rpy="0 ${pi} 0" xyz="0 -0.005 0"/>
           <geometry>
-            <mesh filename="package://interbotix_xslocobot_descriptions/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
+            <mesh filename="package://locobot_simulation/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl" scale="0.001 0.001 0.001"/>
           </geometry>
         </collision>
         <inertial>
