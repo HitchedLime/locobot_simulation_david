@@ -29,7 +29,7 @@ void LogicalCameraPlugin::Load(sensors::SensorPtr _sensor, sdf::ElementPtr _sdf)
   ROS_INFO("_aspect_ratio:=%g",this->parentSensor->AspectRatio());
 
   nh = new ros::NodeHandle("~");
-  image_pub = nh->advertise<locobot_simulation::LogicalImage>("logical_camera_image", 1, true);
+  image_pub = nh->advertise<locobot_simulation::LogicalImage>("locobot/camera/logical_camera_image", 1, true);
 }
 
 void LogicalCameraPlugin::OnUpdate(){
