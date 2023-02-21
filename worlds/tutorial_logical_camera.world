@@ -16,7 +16,7 @@
             <horizontal_fov>1.05</horizontal_fov>
             <aspect_ratio>1.8</aspect_ratio>
           </logical_camera>
-
+          <plugin name="logcam_control" filename="liblogcam_plugin.so"/>
           <visualize>true</visualize>
           <always_on>true</always_on>
           <update_rate>10</update_rate>
