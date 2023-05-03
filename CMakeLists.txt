@@ -73,3 +73,8 @@ include_directories(
 )
 
 add_subdirectory(${PROJECT_SOURCE_DIR}/plugins)
+
+catkin_install_python(PROGRAMS
+    scripts/movements/look_around.py
+    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
