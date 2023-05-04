@@ -3,9 +3,13 @@
 import rospy
 import rdflib
 import cv2
-from sensor_msgs.msg import Image
-from msg import LogicalImage
+from sensor_msgs.msg import Image, JointState
+from geometry_msgs.msg import Pose
+from locobot_simulation.msg import LogicalImage
 from cv_bridge import CvBridge, CvBridgeError
+import csv
+import datetime
+import os
 
 class KnowledgeGraphBuilder:
     def __init__(self):
@@ -13,63 +17,114 @@ class KnowledgeGraphBuilder:
         rospy.init_node('knowledge_graph_builder_node', anonymous=True)
 
         # Set up subscribers
-        rospy.Subscriber('logical_camera', LogicalImage, self.logical_camera_callback)
-        rospy.Subscriber('camera/image_raw', Image, self.camera_callback)
+        rospy.Subscriber('/gazebo/locobot/camera/logical_camera_image', LogicalImage, self.logical_camera_callback)
+        rospy.Subscriber('/locobot/joint_states', JointState, self.joint_state_callback)
+        rospy.Subscriber('/locobot/camera/color/image_raw', Image, self.camera_callback)
 
+        self.dir = os.getcwd()
         # Set up cv_bridge for image conversion
         self.bridge = CvBridge()
-
         # Set up RDF graph and namespaces
         self.graph = rdflib.Graph()
         self.owl = rdflib.Namespace("http://www.w3.org/2002/07/owl#")
         self.rdf = rdflib.Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
         self.rdfs = rdflib.Namespace("http://www.w3.org/2000/01/rdf-schema#")
         self.owl2rl = rdflib.Namespace("http://www.w3.org/2002/03owlt/rl#")
+        self.sosa = rdflib.Namespace("http://www.w3.org/ns/sosa/#") 
+        self.dul = rdflib.Namespace("http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#")
+        self.soma = rdflib.Namespace("http://www.ease-crc.org/ont/SOMA.owl#")
+        self.time = rdflib.Namespace("https://www.w3.org/TR/2022/CRD-owl-time-20221115#")
+
+        # Set up some constants
+        self.panValue = 0
+        self.pan = rdflib.URIRef('http://example.com/locobot/pan#')
+        self.seenAt = rdflib.URIRef('http://example.com/locobot/seenAt#')
+        self.hasJointValue = rdflib.URIRef('http://example.com/locobot/hasJointValue#')
+        self.hasSize = rdflib.URIRef('http://example.com/locobot/hasSize#')
+        self.counter = 0
+        self.timer = 0
+        self.done = False
+        self.image = None
+
+        self.recordedGraphs = []
+
+        # Set the publishing rate
+        self.rate = rospy.Rate(100) # 1 Hz
+
+    def build_stream(self):
+        while not rospy.is_shutdown():
+            #rospy.loginfo(self.graph)
+            # Sleep to maintain the publishing rate
+            self.rate.sleep()
 
     def logical_camera_callback(self, data):
         # Extract information from LogicalCameraImage
-        for obj in data.models:
-            # Create RDF triples for object detection
-            subj = rdflib.URIRef('http://example.com/object#' + obj.type)
-            pred = self.rdf.type
-            obj = self.owl.Thing
-            self.graph.add((subj, pred, obj))
+        self.graph = rdflib.Graph()
+        # Get current time and date
+        ts = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S-%f")
+        rospy.loginfo(self.dir)
+        # Create filename with current time and date
+        timestamp = rdflib.Literal(ts)
+        img_name = 'streams/images/image' + str(timestamp) + '.jpg'
+        imgNode = rdflib.Literal(img_name)
+        self.graph.add((timestamp, self.rdf.type, self.sosa.ResultTime))
+        pan_joint_value = rdflib.Literal(self.panValue)
+        self.graph.add((imgNode, self.time.hasTime, timestamp))
+        self.graph.add((pan_joint_value, self.rdf.type, self.sosa.Observation))
+        self.graph.add((self.pan, self.hasJointValue, pan_joint_value))
+        self.graph.add((pan_joint_value, self.time.hasTime, timestamp))
+        self.graph.add((self.pan, self.rdf.type, self.sosa.Actuator))
 
-            # Add timestamp to RDF graph
-            timestamp = rdflib.Literal(rospy.get_time())
-            pred = rdflib.URIRef('http://example.com/timestamp')
-            self.graph.add((subj, pred, timestamp))
+        for obj in data.models:
+            # Crreate a class for the object type
+            obj_class = rdflib.URIRef('http://example.com/object#' + obj.type)
+            subj = rdflib.URIRef('http://example.com/object#' + obj.type + str(self.counter))
+            
+            pos = rdflib.Literal(obj.pose.position)
+            size = rdflib.Literal(obj.size)
+            orient = rdflib.Literal(obj.pose.orientation)
+
+            self.graph.add((subj, self.rdf.type, obj_class))
+            self.graph.add((subj, self.time.hasTime, timestamp))
+            self.graph.add((subj, self.dul.hasLocation, pos))
+            self.graph.add((subj, self.soma.hasOrientationVector, orient))
+            self.graph.add((subj, self.hasSize, size))
+            self.counter += 1
+
+        self.timer += 1
+        self.recordedGraphs.append((self.graph, ts))
+        if self.image is not None and not self.done:
+            cv2.imwrite(img_name, self.image)
+            rospy.loginfo('Image saved')
+        if self.timer == 100:
+            self.save_stream()
+            rospy.loginfo("Done") 
+            self.done = True
+
+
+    def save_stream(self):
+        csv_file = "streams/stream_reasoning_bsc.csv"
+        with open(csv_file, mode="w", newline="") as file:
+            writer = csv.writer(file)
+                
+            for kg, ts in self.recordedGraphs:
+                for s, p, o in kg:
+                    writer.writerow([ts, s.n3(), p.n3(), o.n3()])
+
+    def joint_state_callback(self, data):
+        if 'pan' in data.name:
+            self.panValue = data.position[data.name.index('pan')]
+        
 
     def camera_callback(self, data):
         # Convert image to OpenCV format
         try:
-            cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
+            # Convert the ROS image message to OpenCV format
+            self.image = self.bridge.imgmsg_to_cv2(data, "bgr8")
         except CvBridgeError as e:
-            rospy.logerr("Error converting Image message: {0}".format(e))
+            rospy.logerr("Error converting ROS image message to OpenCV format: {}".format(e))
             return
-
-        # Save image to file
-        timestamp_str = '{:.6f}'.format(rospy.get_time())
-        filename = 'screenshot_{0}.png'.format(timestamp_str)
-        cv2.imwrite(filename, cv_image)
-
-        # Add screenshot to RDF graph
-        subj = rdflib.URIRef('http://example.com/image#' + timestamp_str)
-        pred = self.rdf.type
-        obj = rdflib.URIRef('http://xmlns.com/foaf/0.1/Image')
-        self.graph.add((subj, pred, obj))
-
-        # Add timestamp to screenshot RDF graph
-        timestamp = rdflib.Literal(rospy.get_time())
-        pred = rdflib.URIRef('http://example.com/timestamp')
-        self.graph.add((subj, pred, timestamp))
-
-        # Link object detection to screenshot in RDF graph
-        for subj in self.graph.subjects(self.rdf.type, self.owl.Thing):
-            pred = rdflib.URIRef('http://example.com/has_screenshot')
-            obj = rdflib.URIRef('http://example.com/image#' + timestamp_str)
-            self.graph.add((subj, pred, obj))
-
+        
 if __name__ == '__main__':
-   
-    pass
+    kgbuilder = KnowledgeGraphBuilder()
+    kgbuilder.build_stream()

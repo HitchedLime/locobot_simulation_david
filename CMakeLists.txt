@@ -76,5 +76,6 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/plugins)
 
 catkin_install_python(PROGRAMS
     scripts/movements/look_around.py
+    scripts/stream_reasoning/stream_creator.py
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
