@@ -29,6 +29,10 @@ add_message_files(
   FILES
   Model.msg
   LogicalImage.msg
+  DetectedObject.msg
+  DetectedObjects.msg
+  BoundingBox.msg
+  BoundingBoxes.msg
 )
 
 ## Generate added messages and services with any dependencies listed here
@@ -75,6 +79,7 @@ include_directories(
 add_subdirectory(${PROJECT_SOURCE_DIR}/plugins)
 
 catkin_install_python(PROGRAMS
+    scripts/perception/detect.py
     scripts/movements/look_around.py
     scripts/movements/teleoperation.py
     scripts/stream_reasoning/stream_creator.py
