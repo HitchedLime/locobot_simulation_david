@@ -37,6 +37,7 @@ def callback(data1,data2):
             print(f"  Coordinate z: ({box.pose.position.z})")
             distance = euclidean_distance([box.pose.position.x,box.pose.position.y,box.pose.position.z])
             print(f" Distance : ({distance})")
+            
    
 
 

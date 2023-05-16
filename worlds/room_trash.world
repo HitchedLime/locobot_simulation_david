@@ -312,169 +312,6 @@
       </link>
       <pose>2.9968 -2.18548 0 0 -0 0</pose>
     </model>
-    <model name='bowl'>
-      <link name='link'>
-        <inertial>
-          <pose>0 0 0.0175 0 -0 0</pose>
-          <mass>0.1</mass>
-          <inertia>
-            <ixx>0.000250308</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.000250308</iyy>
-            <iyz>0</iyz>
-            <izz>0.0004802</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <pose>0 0 0.0175 0 -0 0</pose>
-          <geometry>
-            <cylinder>
-              <radius>0.098</radius>
-              <length>0.035</length>
-            </cylinder>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://bowl/meshes/bowl.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>1.3968 -1.17149 0 0 -0 0</pose>
-    </model>
-    <model name='coke_can'>
-      <link name='link'>
-        <inertial>
-          <pose>0 0 0.06 0 -0 0</pose>
-          <mass>0.39</mass>
-          <inertia>
-            <ixx>0.00055575</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.00055575</iyy>
-            <iyz>0</iyz>
-            <izz>0.0001755</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <pose>0.003937 0.004724 -0.18 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://coke_can/meshes/coke_can.dae</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode>
-                <kp>1e+07</kp>
-                <kd>1</kd>
-                <min_depth>0.001</min_depth>
-                <max_vel>0.1</max_vel>
-              </ode>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <pose>0.003937 0.004724 -0.18 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://coke_can/meshes/coke_can.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>0.672556 0.84752 0 0 -0 0</pose>
-    </model>
-    <model name='coke_can_0'>
-      <link name='link'>
-        <inertial>
-          <pose>0 0 0.06 0 -0 0</pose>
-          <mass>0.39</mass>
-          <inertia>
-            <ixx>0.00055575</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.00055575</iyy>
-            <iyz>0</iyz>
-            <izz>0.0001755</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <pose>0.003937 0.004724 -0.18 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://coke_can/meshes/coke_can.dae</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>1</mu>
-                <mu2>1</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode>
-                <kp>1e+07</kp>
-                <kd>1</kd>
-                <min_depth>0.001</min_depth>
-                <max_vel>0.1</max_vel>
-              </ode>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <pose>0.003937 0.004724 -0.18 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://coke_can/meshes/coke_can.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>0.860808 0.289796 0 0 -0 0</pose>
-    </model>
     <model name='milk'>
       <link name='box_body'>
         <pose>0 0 0 0 -0 0</pose>
@@ -654,48 +491,28 @@
       <pose>0.639024 -0.167973 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>46 549000000</sim_time>
-      <real_time>46 652868154</real_time>
-      <wall_time>1683889856 125623499</wall_time>
-      <iterations>46549</iterations>
+      <sim_time>1017 737000000</sim_time>
+      <real_time>19 410906626</real_time>
+      <wall_time>1684254826 287969852</wall_time>
+      <iterations>8064</iterations>
       <model name='Chair'>
-        <pose>1.36315 1.91757 0.000909 -2e-06 3e-06 -5e-05</pose>
+        <pose>2.06976 -2.97584 0.000909 0 -1e-06 -5e-05</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose>1.36315 1.91757 0.000909 3e-06 2e-06 1.57075</pose>
+          <pose>2.06976 -2.97584 0.000909 -1e-06 -0 1.57075</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2e-06 -5e-06 1.63018 0.084434 0.518195 -3.14159</acceleration>
-          <wrench>2e-06 -5e-06 1.63018 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='Phone'>
-        <pose>1.14508 -0.005903 0.247784 -0.876582 0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>1.14508 -0.005903 0.247784 -0.876582 0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>-0 -0 -0.627779 0.931225 -1.34577 -0</acceleration>
+          <wrench>-0 -0 -0.627779 0 -0 0</wrench>
         </link>
       </model>
       <model name='Suitcase1'>
-        <pose>0.704196 -0.88809 0 0 -0 0</pose>
+        <pose>3.13361 -1.7216 0.136359 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose>0.704196 -0.88809 0 0 -0 0</pose>
+          <pose>3.13361 -1.7216 0.136359 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='bowl'>
-        <pose>0.970912 -0.323593 0.000906 -5.3e-05 -4.7e-05 -0.25703</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0.970912 -0.323593 0.000906 -5.3e-05 -4.7e-05 -0.25703</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -0.98 0 -0 0</wrench>
         </link>
       </model>
       <model name='cafe'>
@@ -708,26 +525,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='coke_can'>
-        <pose>0.800051 0.84989 0.032657 -1.56908 0.320675 3.08271</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0.800051 0.84989 0.032657 -1.56908 0.320675 3.08271</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.000132 -4e-06 -2e-06 0.00065 0.012937 -3e-05</acceleration>
-          <wrench>5.2e-05 -2e-06 -1e-06 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='coke_can_0'>
-        <pose>0.880091 0.335789 0.03279 -1.57178 -0.362369 0.098349</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0.880091 0.335789 0.03279 -1.57178 -0.362369 0.098349</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.004953 0.000701 0.000737 -0.050552 0.435154 0.003656</acceleration>
-          <wrench>0.001932 0.000273 0.000287 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -736,6 +533,154 @@
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='locobot'>
+        <pose>-0.065238 -0.027496 0.000595 0.000953 0.007815 -0.033644</pose>
+        <scale>1 1 1</scale>
+        <link name='locobot/ar_tag_link'>
+          <pose>0.430217 -0.044646 0.489584 0.002544 0.049104 -0.033526</pose>
+          <velocity>-0.00066 0.002099 -0.002407 0.013794 0.002473 0.015252</velocity>
+          <acceleration>-0.491345 -0.620519 -0.006113 2.31064 -0.009398 -1.69874</acceleration>
+          <wrench>-0.008111 -0.010243 -0.000101 0 -0 0</wrench>
+        </link>
+        <link name='locobot/arm_base_link'>
+          <pose>0.03282 -0.030899 0.10778 0.000944 0.00781 -0.033644</pose>
+          <velocity>-0.000705 0.000473 -0.000196 0.019993 -0.002466 -0.004168</velocity>
+          <acceleration>0.321961 0.538597 -0.375773 -1.10154 -0.218161 2.4709</acceleration>
+          <wrench>0.12224 0.204491 -0.142671 0 -0 0</wrench>
+        </link>
+        <link name='locobot/base_footprint'>
+          <pose>-0.065238 -0.027496 0.000595 0.000953 0.007815 -0.033644</pose>
+          <velocity>0.000364 0.002283 -0.001034 0.014934 -0.009943 -0.003737</velocity>
+          <acceleration>-0.552068 -0.511089 0.026993 -2.76175 -1.11805 -2.45769</acceleration>
+          <wrench>-1.33672 -1.2375 0.065359 0 -0 0</wrench>
+        </link>
+        <link name='locobot/battery_link'>
+          <pose>-0.071371 -0.027396 0.111595 0.000954 0.00779 -0.033644</pose>
+          <velocity>-0.00072 0.00065 -0.001176 0.014551 -0.010068 -0.004695</velocity>
+          <acceleration>0.086253 -0.282693 0.157306 -2.65854 -0.394941 2.33477</acceleration>
+          <wrench>0.102986 -0.337536 0.187824 0 -0 0</wrench>
+        </link>
+        <link name='locobot/camera_link'>
+          <pose>0.015472 -0.085706 0.54578 -0.006419 0.307068 -1.04573</pose>
+          <velocity>0.084916 0.07844 -0.001631 0.02639 -0.012483 1.58696</velocity>
+          <acceleration>-8.50702 -5.06828 -0.154239 2.9814 -0.880846 -0.228362</acceleration>
+          <wrench>-0.612506 -0.364916 -0.011105 0 -0 0</wrench>
+        </link>
+        <link name='locobot/camera_tower_link'>
+          <pose>-0.088457 -0.026853 0.09921 0.000953 0.007811 -0.033644</pose>
+          <velocity>-0.000605 0.000898 -0.001241 0.014899 -0.00998 -0.003009</velocity>
+          <acceleration>0.754185 -0.103749 0.396022 -2.73538 -1.38103 -1.02927</acceleration>
+          <wrench>1.78457 -0.245493 0.937075 0 -0 0</wrench>
+        </link>
+        <link name='locobot/ee_arm_link'>
+          <pose>0.445153 -0.045041 0.447249 0.002544 0.049104 -0.033526</pose>
+          <velocity>-0.000756 0.003018 -0.002467 0.013894 0.00247 0.015185</velocity>
+          <acceleration>-0.629187 -0.518823 -0.064352 1.87446 -0.065001 -1.6645</acceleration>
+          <wrench>-0.000629 -0.000519 -6.4e-05 0 -0 0</wrench>
+        </link>
+        <link name='locobot/ee_gripper_link'>
+          <pose>0.495639 -0.046734 0.444768 0.002537 0.049144 -0.033527</pose>
+          <velocity>-0.000798 0.004085 -0.00236 0.012654 -0.002 0.026776</velocity>
+          <acceleration>-0.686171 0.157813 -0.136258 1.08363 0.883049 -0.051172</acceleration>
+          <wrench>-0.000686 0.000158 -0.000136 0 -0 0</wrench>
+        </link>
+        <link name='locobot/fingers_link'>
+          <pose>0.468113 -0.045811 0.446123 0.002537 0.049144 -0.033527</pose>
+          <velocity>-0.000825 0.003342 -0.002405 0.012634 -0.002016 0.026747</velocity>
+          <acceleration>-0.705809 -0.360513 -0.106733 1.09505 0.875724 -0.092546</acceleration>
+          <wrench>-0.000706 -0.000361 -0.000107 0 -0 0</wrench>
+        </link>
+        <link name='locobot/gripper_bar_link'>
+          <pose>0.445152 -0.045041 0.447254 0.002535 0.049159 -0.033532</pose>
+          <velocity>-0.000759 0.00209 -0.002237 0.012025 -0.004346 0.021347</velocity>
+          <acceleration>-0.533384 -1.0447 0.027349 1.41166 1.01792 -2.12304</acceleration>
+          <wrench>-0.018241 -0.035728 0.000935 0 -0 0</wrench>
+        </link>
+        <link name='locobot/gripper_link'>
+          <pose>0.402228 -0.043602 0.449366 0.002536 0.0491 -0.033538</pose>
+          <velocity>-0.000715 0.000441 -0.001773 0.012301 0.002016 0.013544</velocity>
+          <acceleration>-0.36673 -1.48736 0.260893 -0.660205 0.875342 -1.82869</acceleration>
+          <wrench>-0.026729 -0.108406 0.019015 0 -0 0</wrench>
+        </link>
+        <link name='locobot/gripper_prop_link'>
+          <pose>0.450643 -0.045225 0.446983 0.006246 0.049104 -0.033526</pose>
+          <velocity>-0.000766 0.002639 -0.002403 0.013779 0.002579 0.014978</velocity>
+          <acceleration>-0.598504 -0.90784 -0.055095 1.82976 -0.044952 -1.14965</acceleration>
+          <wrench>-0.002598 -0.00394 -0.000239 0 -0 0</wrench>
+        </link>
+        <link name='locobot/left_finger_link'>
+          <pose>0.469248 -0.012073 0.446209 0.002507 0.049152 -0.033527</pose>
+          <velocity>-0.001727 0.003238 -0.001954 0.011831 -0.001724 0.027225</velocity>
+          <acceleration>-1.31015 -0.184675 0.133789 -1.07444 1.18246 0.674687</acceleration>
+          <wrench>-0.021285 -0.003 0.002174 0 -0 0</wrench>
+        </link>
+        <link name='locobot/lower_forearm_link'>
+          <pose>0.262435 -0.038921 0.455302 -0.001816 0.036604 -0.033464</pose>
+          <velocity>-0.000802 -0.002635 -0.000999 0.018591 0.003617 0.019552</velocity>
+          <acceleration>-0.357762 -0.574769 0.576438 1.36017 -0.620024 2.94203</acceleration>
+          <wrench>-0.079062 -0.127019 0.127388 0 -0 0</wrench>
+        </link>
+        <link name='locobot/pan_link'>
+          <pose>-0.037804 -0.028981 0.543078 -0.006115 0.004962 -1.04382</pose>
+          <velocity>-0.005059 -0.005882 -0.000757 0.027228 -0.011654 1.58591</velocity>
+          <acceleration>0.273901 0.022328 0.007928 -1.37479 1.10781 -0.929676</acceleration>
+          <wrench>0.027115 0.00221 0.000785 0 -0 0</wrench>
+        </link>
+        <link name='locobot/plate_link'>
+          <pose>-0.064472 -0.027616 0.09904 0.000952 0.007806 -0.033643</pose>
+          <velocity>-0.000602 0.000821 -0.001005 0.015857 -0.008103 -0.001784</velocity>
+          <acceleration>-0.067048 0.11045 -0.120803 -2.38649 0.450413 1.74967</acceleration>
+          <wrench>-0.038351 0.063177 -0.069099 0 -0 0</wrench>
+        </link>
+        <link name='locobot/right_finger_link'>
+          <pose>0.466868 -0.08279 0.446033 0.00253 0.049144 -0.033525</pose>
+          <velocity>0.000155 0.002785 -0.002768 0.013419 -0.001991 0.026721</velocity>
+          <acceleration>0.101715 -0.575345 -0.339019 0.071292 0.962965 -0.295946</acceleration>
+          <wrench>0.001652 -0.009347 -0.005508 0 -0 0</wrench>
+        </link>
+        <link name='locobot/shoulder_link'>
+          <pose>0.033334 -0.030979 0.173953 0.00094 0.007815 -0.033486</pose>
+          <velocity>-0.001122 -0.000688 -0.000206 0.023107 0.002716 0.017794</velocity>
+          <acceleration>0.600314 0.632305 -0.394754 -1.16986 -1.38828 -1.33926</acceleration>
+          <wrench>0.288678 0.304062 -0.189829 0 -0 0</wrench>
+        </link>
+        <link name='locobot/tilt_link'>
+          <pose>-0.025066 -0.050642 0.561953 -0.006415 0.307063 -1.04573</pose>
+          <velocity>0.029104 0.013738 -0.001208 0.026154 -0.012331 1.5859</velocity>
+          <acceleration>-7.86067 -4.59201 -0.121657 -2.28936 -1.20532 -2.87033</acceleration>
+          <wrench>-0.721964 -0.421753 -0.011174 0 -0 0</wrench>
+        </link>
+        <link name='locobot/upper_arm_link'>
+          <pose>0.033634 -0.031026 0.212602 0.000942 0.017249 -0.033478</pose>
+          <velocity>-0.001295 -0.001563 -0.000224 0.021918 0.001635 0.018281</velocity>
+          <acceleration>-0.034719 0.856088 -0.322413 -2.07969 1.52541 1.00864</acceleration>
+          <wrench>-0.014958 0.368812 -0.138899 0 -0 0</wrench>
+        </link>
+        <link name='locobot/upper_forearm_link'>
+          <pose>0.08765 -0.033071 0.461706 0.000931 0.036604 -0.03346</pose>
+          <velocity>-0.000898 -0.006039 -0.000475 0.019876 0.002297 0.018644</velocity>
+          <acceleration>-0.383535 0.065664 0.178779 0.107679 -0.289161 1.01863</acceleration>
+          <wrench>-0.089973 0.015404 0.04194 0 -0 0</wrench>
+        </link>
+        <link name='locobot/wheel_left_link'>
+          <pose>-0.061103 0.087383 0.036106 -1.56983 0.168547 -0.03349</pose>
+          <velocity>-0.000313 -0.000453 0.001517 0.012891 -0.009033 -0.0038</velocity>
+          <acceleration>0.170347 0.098389 -0.015949 -2.79844 -1.52614 -2.47475</acceleration>
+          <wrench>0.001703 0.000984 -0.000159 0 -0 0</wrench>
+        </link>
+        <link name='locobot/wheel_right_link'>
+          <pose>-0.06883 -0.142479 0.035879 -1.56986 -0.011793 -0.033662</pose>
+          <velocity>-0.00037 -0.000551 0.001586 0.015769 -0.010353 -0.003774</velocity>
+          <acceleration>0.18032 0.102165 -0.014486 -2.92661 -1.35004 -2.48366</acceleration>
+          <wrench>0.001803 0.001022 -0.000145 0 -0 0</wrench>
+        </link>
+        <link name='locobot/wrist_link'>
+          <pose>0.337343 -0.041428 0.452557 -0.001829 0.049105 -0.033507</pose>
+          <velocity>-0.000768 -0.000982 -0.001473 0.017445 0.003772 0.018504</velocity>
+          <acceleration>-0.372025 -1.07444 0.399141 1.34156 1.43065 -0.831061</acceleration>
+          <wrench>-0.031606 -0.091282 0.03391 0 -0 0</wrench>
         </link>
       </model>
       <model name='milk'>
@@ -764,7 +709,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>2.99552 -5.6242 3.8381 0 0.559643 1.5402</pose>
+        <pose>4.66415 -10.3827 6.52203 0 0.548214 2.02398</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -856,33 +801,1940 @@
       </link>
       <pose>1.36318 1.91753 0 0 -0 0</pose>
     </model>
-    <model name='Phone'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
+    <model name='locobot'>
+      <link name='locobot/base_footprint'>
+        <inertial>
+          <pose>0.009866 2.6e-05 0.010277 0 -0 0</pose>
+          <mass>2.4213</mass>
+          <inertia>
+            <ixx>0.0224044</ixx>
+            <ixy>-2.89213e-06</ixy>
+            <ixz>4.10737e-06</ixz>
+            <iyy>0.0226237</iyy>
+            <iyz>-1.24762e-06</iyz>
+            <izz>0.0394834</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/base_footprint_fixed_joint_lump__locobot/base_link_collision'>
+          <pose>0 0 0.06969 0 -0 0</pose>
           <geometry>
-            <mesh>
-              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/phone/1/files/meshes/Phone.dae</uri>
-            </mesh>
+            <cylinder>
+              <length>0.10938</length>
+              <radius>0.178</radius>
+            </cylinder>
           </geometry>
-          <max_contacts>10</max_contacts>
           <surface>
             <contact>
               <ode/>
             </contact>
-            <bounce/>
             <friction>
+              <ode>
+                <mu>0.3</mu>
+                <mu2>0.3</mu2>
+              </ode>
               <torsional>
                 <ode/>
               </torsional>
-              <ode/>
             </friction>
+            <bounce/>
           </surface>
+          <max_contacts>10</max_contacts>
         </collision>
-        <visual name='visual'>
+        <collision name='locobot/base_footprint_fixed_joint_lump__locobot/caster_back_link_collision_1'>
+          <pose>-0.135 0 0.0192 -1.5708 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.0176</length>
+              <radius>0.017</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+06</kp>
+                <kd>100</kd>
+                <max_vel>1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0</mu>
+                <mu2>0</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='locobot/base_footprint_fixed_joint_lump__locobot/caster_front_link_collision_2'>
+          <pose>0.115 0 0.0172 -1.5708 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.0176</length>
+              <radius>0.017</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+06</kp>
+                <kd>100</kd>
+                <max_vel>1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>0</mu>
+                <mu2>0</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/base_footprint_fixed_joint_lump__locobot/base_link_visual'>
+          <pose>0.001 0 0.06219 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/phone/1/files/meshes/Phone.dae</uri>
+              <scale>1 1 1</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_main_body.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='bumpers' type='contact'>
+          <always_on>1</always_on>
+          <update_rate>50</update_rate>
+          <visualize>1</visualize>
+          <contact>
+            <collision>base_footprint</collision>
+            <topic>__default_topic__</topic>
+          </contact>
+          <pose>0 0 0.0102 0 -0 0</pose>
+        </sensor>
+        <sensor name='cliff_sensor_front' type='ray'>
+          <always_on>1</always_on>
+          <update_rate>50</update_rate>
+          <visualize>1</visualize>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>50</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.0436</min_angle>
+                <max_angle>0.0436</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.01</min>
+              <max>0.15</max>
+              <resolution>1</resolution>
+            </range>
+          </ray>
+          <pose>0.156 0 0.0316 3.14159 1.57079 3.14159</pose>
+        </sensor>
+        <sensor name='cliff_sensor_left' type='ray'>
+          <always_on>1</always_on>
+          <update_rate>50</update_rate>
+          <visualize>1</visualize>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>50</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.0436</min_angle>
+                <max_angle>0.0436</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.01</min>
+              <max>0.15</max>
+              <resolution>1</resolution>
+            </range>
+          </ray>
+          <pose>0.08734 0.13601 0.0316 3.14159 1.57079 3.14159</pose>
+        </sensor>
+        <sensor name='cliff_sensor_right' type='ray'>
+          <always_on>1</always_on>
+          <update_rate>50</update_rate>
+          <visualize>1</visualize>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>50</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.0436</min_angle>
+                <max_angle>0.0436</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.01</min>
+              <max>0.15</max>
+              <resolution>1</resolution>
+            </range>
+          </ray>
+          <pose>0.085 -0.13601 0.0316 3.14159 1.57079 3.14159</pose>
+        </sensor>
+        <sensor name='imu' type='imu'>
+          <always_on>1</always_on>
+          <update_rate>50</update_rate>
+          <visualize>0</visualize>
+          <imu>
+            <noise>
+              <type>gaussian</type>
+              <rate>
+                <mean>0.0</mean>
+                <stddev>0.00000196</stddev>
+                <bias_mean>0.0</bias_mean>
+                <bias_stddev>0.0</bias_stddev>
+              </rate>
+              <accel>
+                <mean>0.0</mean>
+                <stddev>1.7e-2</stddev>
+                <bias_mean>0.1</bias_mean>
+                <bias_stddev>0.001</bias_stddev>
+              </accel>
+            </noise>
+          </imu>
+          <pose>0.056 0.062 0.0304 0 -0 0</pose>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='camera_tower' type='revolute'>
+        <pose relative_to='locobot/base_footprint'>-0.023997 -4.4e-05 0.09843 0 -0 0</pose>
+        <parent>locobot/base_footprint</parent>
+        <child>locobot/camera_tower_link</child>
+        <axis>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <xyz>0 0 1</xyz>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+          </ode>
+        </physics>
+      </joint>
+      <link name='locobot/camera_tower_link'>
+        <pose relative_to='camera_tower'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0.037221 -0.002611 0.17446 0 -0 0</pose>
+          <mass>2.36622</mass>
+          <inertia>
+            <ixx>0.06285</ixx>
+            <ixy>0.0002152</ixy>
+            <ixz>0.006563</ixz>
+            <iyy>0.0546</iyy>
+            <iyz>-0.0004738</iyz>
+            <izz>0.01793</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/camera_tower_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_camera_tower_large_simple.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/camera_tower_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_camera_tower_large.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='pan' type='revolute'>
+        <pose relative_to='locobot/camera_tower_link'>0.047228 0 0.44425 0 -0 0</pose>
+        <parent>locobot/camera_tower_link</parent>
+        <child>locobot/pan_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.5708</upper>
+            <effort>2</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/pan_link'>
+        <pose relative_to='pan'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.012 0.000496 0.018504 0 -0 1.5708</pose>
+          <mass>0.098997</mass>
+          <inertia>
+            <ixx>2.763e-05</ixx>
+            <ixy>4.18e-08</ixy>
+            <ixz>5.145e-07</ixz>
+            <iyy>2.043e-05</iyy>
+            <iyz>-4.21e-08</iyz>
+            <izz>2.763e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/pan_link_collision'>
+          <pose>0 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_pan.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/pan_link_visual'>
+          <pose>0 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_pan.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='tilt' type='revolute'>
+        <pose relative_to='locobot/pan_link'>0.025034 0 0.019 0 -0 0</pose>
+        <parent>locobot/pan_link</parent>
+        <child>locobot/tilt_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1.5708</lower>
+            <upper>1.309</upper>
+            <effort>2</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/tilt_link'>
+        <pose relative_to='tilt'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.039793 0.001318 1.1e-05 0 -0 1.5708</pose>
+          <mass>0.091845</mass>
+          <inertia>
+            <ixx>1.55765e-05</ixx>
+            <ixy>2.32424e-07</ixy>
+            <ixz>2.47885e-08</ixz>
+            <iyy>5.29475e-05</iyy>
+            <iyz>-2.28468e-08</iyz>
+            <izz>6.00158e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/tilt_link_collision'>
+          <pose>0 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_tilt.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <collision name='locobot/tilt_link_fixed_joint_lump__locobot/ros_logical_camera_collision_1'>
+          <pose>0.05318 0.0175 9e-06 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_camera.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/tilt_link_visual'>
+          <pose>0 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_tilt.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <visual name='locobot/tilt_link_fixed_joint_lump__locobot/ros_logical_camera_visual_1'>
+          <pose>0.05318 0.0175 9e-06 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_camera.stl</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>1</self_collide>
+        <sensor name='logical_camera' type='logical_camera'>
+          <plugin name='logical_camera_plugin' filename='liblogical_camera_plugin.so'>
+            <robotNamespace>/locobot/</robotNamespace>
+          </plugin>
+          <logical_camera>
+            <near>0.3</near>
+            <far>3</far>
+            <horizontal_fov>1.5</horizontal_fov>
+            <aspect_ratio>1.766</aspect_ratio>
+          </logical_camera>
+          <visualize>0</visualize>
+          <always_on>1</always_on>
+          <update_rate>20</update_rate>
+          <pose>0.05318 0.0175 9e-06 0 -0 0</pose>
+        </sensor>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='camera' type='revolute'>
+        <pose relative_to='locobot/tilt_link'>0.05318 0.0175 9e-06 0 -0 0</pose>
+        <parent>locobot/tilt_link</parent>
+        <child>locobot/camera_link</child>
+        <axis>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <xyz>0 0 1</xyz>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+          </ode>
+        </physics>
+      </joint>
+      <link name='locobot/camera_link'>
+        <pose relative_to='camera'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0.008972 -0.015818 3e-06 0 -0 0</pose>
+          <mass>0.072</mass>
+          <inertia>
+            <ixx>4.654e-05</ixx>
+            <ixy>3.028e-07</ixy>
+            <ixz>2.45e-08</ixz>
+            <iyy>6.9128e-06</iyy>
+            <iyz>2.48e-08</iyz>
+            <izz>4.686e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/camera_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_camera.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/camera_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_camera.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>1</self_collide>
+        <sensor name='camera_frame_sensor' type='depth'>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <camera>
+            <horizontal_fov>0.994837</horizontal_fov>
+            <image>
+              <format>R8G8B8</format>
+              <width>640</width>
+              <height>480</height>
+            </image>
+            <clip>
+              <near>0.01</near>
+              <far>10</far>
+            </clip>
+          </camera>
+          <plugin name='camera_frame_controller' filename='libgazebo_ros_openni_kinect.so'>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>0.0</updateRate>
+            <cameraName>camera</cameraName>
+            <imageTopicName>color/image_raw</imageTopicName>
+            <cameraInfoTopicName>color/camera_info</cameraInfoTopicName>
+            <depthImageTopicName>aligned_depth_to_color/image_raw</depthImageTopicName>
+            <depthImageCameraInfoTopicName>aligned_depth_to_color/camera_info</depthImageCameraInfoTopicName>
+            <pointCloudTopicName>depth_registered/points</pointCloudTopicName>
+            <frameName>camera_color_optical_frame</frameName>
+            <pointCloudCutoff>10</pointCloudCutoff>
+            <distortionK1>0.00000001</distortionK1>
+            <distortionK2>0.00000001</distortionK2>
+            <distortionK3>0.00000001</distortionK3>
+            <distortionT1>0.00000001</distortionT1>
+            <distortionT2>0.00000001</distortionT2>
+            <CxPrime>0</CxPrime>
+            <Cx>0</Cx>
+            <Cy>0</Cy>
+            <focalLength>0</focalLength>
+            <hackBaseline>0</hackBaseline>
+            <robotNamespace>/locobot/</robotNamespace>
+          </plugin>
+        </sensor>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='plate' type='revolute'>
+        <pose relative_to='locobot/base_footprint'>0 0 0.09845 0 -0 0</pose>
+        <parent>locobot/base_footprint</parent>
+        <child>locobot/plate_link</child>
+        <axis>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <xyz>0 0 1</xyz>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+          </ode>
+        </physics>
+      </joint>
+      <link name='locobot/plate_link'>
+        <pose relative_to='plate'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.050816 0 0.00475 0 -0 0</pose>
+          <mass>0.571995</mass>
+          <inertia>
+            <ixx>0.003115</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001813</iyy>
+            <iyz>0</iyz>
+            <izz>0.004919</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/plate_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_base_plate.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/plate_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_base_plate.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='arm_base_link_joint' type='revolute'>
+        <pose relative_to='locobot/plate_link'>0.097277 0 0.0095 0 -0 0</pose>
+        <parent>locobot/plate_link</parent>
+        <child>locobot/arm_base_link</child>
+        <axis>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <xyz>0 0 1</xyz>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+          </ode>
+        </physics>
+      </joint>
+      <link name='locobot/arm_base_link'>
+        <pose relative_to='arm_base_link_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0.000135 -2.7e-05 0.033876 1.5708 -0 1.5708</pose>
+          <mass>0.379673</mass>
+          <inertia>
+            <ixx>0.0004351</ixx>
+            <ixy>7.07e-08</ixy>
+            <ixz>2.66e-08</ixz>
+            <iyy>0.0004452</iyy>
+            <iyz>-2.2881e-06</iyz>
+            <izz>0.0005731</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/arm_base_link_collision'>
+          <pose>-0.095773 0 -0.10565 1.5708 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_1_base.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/arm_base_link_visual'>
+          <pose>-0.095773 0 -0.10565 1.5708 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_1_base.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.01</linear>
+          <angular>0.01</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='waist' type='revolute'>
+        <pose relative_to='locobot/arm_base_link'>0 0 0.066175 0 -0 0</pose>
+        <parent>locobot/arm_base_link</parent>
+        <child>locobot/shoulder_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-3.14158</lower>
+            <upper>3.14158</upper>
+            <effort>10</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0.1</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/shoulder_link'>
+        <pose relative_to='waist'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>2.2e-05 4.1e-05 0.006629 0 -0 1.5708</pose>
+          <mass>0.480879</mass>
+          <inertia>
+            <ixx>0.000379</ixx>
+            <ixy>2.2e-09</ixy>
+            <ixz>-3.561e-07</ixz>
+            <iyy>0.0005557</iyy>
+            <iyz>1.2245e-06</iyz>
+            <izz>0.0005889</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/shoulder_link_collision'>
+          <pose>0 0 -0.003 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_2_shoulder.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/shoulder_link_visual'>
+          <pose>0 0 -0.003 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_2_shoulder.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.01</linear>
+          <angular>0.01</angular>
+        </velocity_decay>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='shoulder' type='revolute'>
+        <pose relative_to='locobot/shoulder_link'>0 0 0.03865 0 -0 0</pose>
+        <parent>locobot/shoulder_link</parent>
+        <child>locobot/upper_arm_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1.88496</lower>
+            <upper>1.98968</upper>
+            <effort>20</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0.1</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/upper_arm_link'>
+        <pose relative_to='shoulder'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.017161 0 0.191323 0 -0 1.5708</pose>
+          <mass>0.430811</mass>
+          <inertia>
+            <ixx>0.003463</ixx>
+            <ixy>-1e-10</ixy>
+            <ixz>-2e-10</ixz>
+            <iyy>0.003587</iyy>
+            <iyz>0.0004272</iyz>
+            <izz>0.0004566</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/upper_arm_link_collision'>
+          <pose>0 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_3_upper_arm.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/upper_arm_link_visual'>
+          <pose>0 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_3_upper_arm.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.01</linear>
+          <angular>0.01</angular>
+        </velocity_decay>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='elbow' type='revolute'>
+        <pose relative_to='locobot/upper_arm_link'>0.04975 0 0.25 0 -0 0</pose>
+        <parent>locobot/upper_arm_link</parent>
+        <child>locobot/upper_forearm_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-2.14675</lower>
+            <upper>1.6057</upper>
+            <effort>15</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0.1</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/upper_forearm_link'>
+        <pose relative_to='elbow'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.107963 0.000116 0 0 -0 0</pose>
+          <mass>0.234589</mass>
+          <inertia>
+            <ixx>3.971e-05</ixx>
+            <ixy>2.3528e-06</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0008878</iyy>
+            <iyz>0</iyz>
+            <izz>0.000888</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/upper_forearm_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_4_upper_forearm.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/upper_forearm_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_4_upper_forearm.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.01</linear>
+          <angular>0.01</angular>
+        </velocity_decay>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='forearm_roll' type='revolute'>
+        <pose relative_to='locobot/upper_forearm_link'>0.175 0 0 0 -0 0</pose>
+        <parent>locobot/upper_forearm_link</parent>
+        <child>locobot/lower_forearm_link</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>-3.14158</lower>
+            <upper>3.14158</upper>
+            <effort>2</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0.1</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/lower_forearm_link'>
+        <pose relative_to='forearm_roll'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.03744 0.005223 0 3.14159 -0 0</pose>
+          <mass>0.220991</mass>
+          <inertia>
+            <ixx>6.369e-05</ixx>
+            <ixy>-2.292e-05</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0001677</iyy>
+            <iyz>0</iyz>
+            <izz>0.0001834</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/lower_forearm_link_collision'>
+          <pose>0 0 0 3.14159 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_5_lower_forearm.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/lower_forearm_link_visual'>
+          <pose>0 0 0 3.14159 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_5_lower_forearm.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.01</linear>
+          <angular>0.01</angular>
+        </velocity_decay>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='wrist_angle' type='revolute'>
+        <pose relative_to='locobot/lower_forearm_link'>0.075 0 0 0 -0 0</pose>
+        <parent>locobot/lower_forearm_link</parent>
+        <child>locobot/wrist_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-1.74533</lower>
+            <upper>2.14675</upper>
+            <effort>5</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0.1</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/wrist_link'>
+        <pose relative_to='wrist_angle'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.04236 -1.1e-05 0.010577 0 -0 1.5708</pose>
+          <mass>0.084957</mass>
+          <inertia>
+            <ixx>3.082e-05</ixx>
+            <ixy>1.91e-08</ixy>
+            <ixz>2.3e-09</ixz>
+            <iyy>2.822e-05</iyy>
+            <iyz>2.5481e-06</iyz>
+            <izz>3.152e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/wrist_link_collision'>
+          <pose>0 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_6_wrist.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/wrist_link_visual'>
+          <pose>0 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_6_wrist.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.01</linear>
+          <angular>0.01</angular>
+        </velocity_decay>
+        <self_collide>1</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='wrist_rotate' type='revolute'>
+        <pose relative_to='locobot/wrist_link'>0.065 0 0 0 -0 0</pose>
+        <parent>locobot/wrist_link</parent>
+        <child>locobot/gripper_link</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>-3.14158</lower>
+            <upper>3.14158</upper>
+            <effort>1</effort>
+            <velocity>3.14159</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0.1</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/gripper_link'>
+        <pose relative_to='wrist_rotate'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.021631 0 0.01141 0 -0 1.5708</pose>
+          <mass>0.072885</mass>
+          <inertia>
+            <ixx>2.537e-05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.836e-05</iyy>
+            <iyz>4.34e-07</iyz>
+            <izz>1.674e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/gripper_link_collision'>
+          <pose>-0.02 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_7_gripper.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/gripper_link_visual'>
+          <pose>-0.02 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_7_gripper.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.01</linear>
+          <angular>0.01</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='ee_arm' type='revolute'>
+        <pose relative_to='locobot/gripper_link'>0.043 0 0 0 -0 0</pose>
+        <parent>locobot/gripper_link</parent>
+        <child>locobot/ee_arm_link</child>
+        <axis>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <xyz>0 0 1</xyz>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+          </ode>
+        </physics>
+      </joint>
+      <link name='locobot/ee_arm_link'>
+        <pose relative_to='ee_arm'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.001</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='ar_tag' type='revolute'>
+        <pose relative_to='locobot/ee_arm_link'>-0.017 0 0.04155 0 -0 0</pose>
+        <parent>locobot/ee_arm_link</parent>
+        <child>locobot/ar_tag_link</child>
+        <axis>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <xyz>0 0 1</xyz>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+          </ode>
+        </physics>
+      </joint>
+      <link name='locobot/ar_tag_link'>
+        <pose relative_to='ar_tag'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 -0.00315 0 -0 0</pose>
+          <mass>0.016507</mass>
+          <inertia>
+            <ixx>3.084e-06</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>3.084e-06</iyy>
+            <iyz>0</iyz>
+            <izz>6.059e-06</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/ar_tag_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_11_ar_tag.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/ar_tag_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_11_ar_tag.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='gripper' type='revolute'>
+        <pose relative_to='locobot/ee_arm_link'>0.0055 0 0 0 -0 0</pose>
+        <parent>locobot/ee_arm_link</parent>
+        <child>locobot/gripper_prop_link</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <effort>1</effort>
+            <velocity>3.14159</velocity>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0.1</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/gripper_prop_link'>
+        <pose relative_to='gripper'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.000846 -2e-06 4.2e-05 0 -0 1.5708</pose>
+          <mass>0.00434</mass>
+          <inertia>
+            <ixx>5.923e-07</ixx>
+            <ixy>0</ixy>
+            <ixz>3.195e-07</ixz>
+            <iyy>1.1156e-06</iyy>
+            <iyz>-4e-10</iyz>
+            <izz>5.743e-07</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/gripper_prop_link_collision'>
+          <pose>-0.0685 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_8_gripper_prop.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/gripper_prop_link_visual'>
+          <pose>-0.0685 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_8_gripper_prop.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.01</linear>
+          <angular>0.01</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='gripper_bar' type='revolute'>
+        <pose relative_to='locobot/ee_arm_link'>0 0 0 0 -0 0</pose>
+        <parent>locobot/ee_arm_link</parent>
+        <child>locobot/gripper_bar_link</child>
+        <axis>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <xyz>0 0 1</xyz>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+          </ode>
+        </physics>
+      </joint>
+      <link name='locobot/gripper_bar_link'>
+        <pose relative_to='gripper_bar'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.009687 1e-06 0.004962 0 -0 1.5708</pose>
+          <mass>0.034199</mass>
+          <inertia>
+            <ixx>7.4125e-06</ixx>
+            <ixy>-8e-10</ixy>
+            <ixz>-6e-10</ixz>
+            <iyy>2.843e-05</iyy>
+            <iyz>-1.3889e-06</iyz>
+            <izz>2.86e-05</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/gripper_bar_link_collision'>
+          <pose>-0.063 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_9_gripper_bar.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/gripper_bar_link_visual'>
+          <pose>-0.063 0 0 0 -0 1.5708</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_9_gripper_bar.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='ee_bar' type='revolute'>
+        <pose relative_to='locobot/gripper_bar_link'>0.023 0 0 0 -0 0</pose>
+        <parent>locobot/gripper_bar_link</parent>
+        <child>locobot/fingers_link</child>
+        <axis>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <xyz>0 0 1</xyz>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+          </ode>
+        </physics>
+      </joint>
+      <link name='locobot/fingers_link'>
+        <pose relative_to='ee_bar'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.001</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='ee_gripper' type='revolute'>
+        <pose relative_to='locobot/fingers_link'>0.027575 0 0 0 -0 0</pose>
+        <parent>locobot/fingers_link</parent>
+        <child>locobot/ee_gripper_link</child>
+        <axis>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <xyz>0 0 1</xyz>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+          </ode>
+        </physics>
+      </joint>
+      <link name='locobot/ee_gripper_link'>
+        <pose relative_to='ee_gripper'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.001</izz>
+          </inertia>
+        </inertial>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='left_finger' type='prismatic'>
+        <pose relative_to='locobot/fingers_link'>0 0 0 0 -0 0</pose>
+        <parent>locobot/fingers_link</parent>
+        <child>locobot/left_finger_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>0.015</lower>
+            <upper>0.037</upper>
+            <effort>5</effort>
+            <velocity>1</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0.1</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/left_finger_link'>
+        <pose relative_to='left_finger'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.013816 0 0 0 0 -1.5708</pose>
+          <mass>0.016246</mass>
+          <inertia>
+            <ixx>4.731e-06</ixx>
+            <ixy>-4.56e-07</ixy>
+            <ixz>0</ixz>
+            <iyy>1.5506e-06</iyy>
+            <iyz>0</iyz>
+            <izz>3.7467e-06</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/left_finger_link_collision'>
+          <pose>0 0.005 0 0 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/left_finger_link_visual'>
+          <pose>0 0.005 0 0 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.01</linear>
+          <angular>0.01</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='right_finger' type='prismatic'>
+        <pose relative_to='locobot/fingers_link'>0 0 0 0 -0 0</pose>
+        <parent>locobot/fingers_link</parent>
+        <child>locobot/right_finger_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-0.037</lower>
+            <upper>-0.015</upper>
+            <effort>5</effort>
+            <velocity>1</velocity>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0.1</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/right_finger_link'>
+        <pose relative_to='right_finger'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.013816 0 0 3.14159 -0 -1.5708</pose>
+          <mass>0.016246</mass>
+          <inertia>
+            <ixx>4.731e-06</ixx>
+            <ixy>4.56e-07</ixy>
+            <ixz>0</ixz>
+            <iyy>1.5506e-06</iyy>
+            <iyz>0</iyz>
+            <izz>3.7467e-06</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/right_finger_link_collision'>
+          <pose>0 -0.005 0 3.14159 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/right_finger_link_visual'>
+          <pose>0 -0.005 0 3.14159 -0 3.14159</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/mobile_wx250s_meshes/mobile_wx250s_10_gripper_finger.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Custom/Interbotix</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.01</linear>
+          <angular>0.01</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='battery' type='revolute'>
+        <pose relative_to='locobot/plate_link'>-0.007 0 0.0125 0 -0 0</pose>
+        <parent>locobot/plate_link</parent>
+        <child>locobot/battery_link</child>
+        <axis>
+          <limit>
+            <lower>0</lower>
+            <upper>0</upper>
+          </limit>
+          <dynamics>
+            <damping>0</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <xyz>0 0 1</xyz>
+        </axis>
+        <physics>
+          <ode>
+            <limit>
+              <cfm>0</cfm>
+              <erp>0.2</erp>
+            </limit>
+          </ode>
+        </physics>
+      </joint>
+      <link name='locobot/battery_link'>
+        <pose relative_to='battery'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0.016 0 -0 0</pose>
+          <mass>1.194</mass>
+          <inertia>
+            <ixx>0.004312</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001908</iyy>
+            <iyz>0</iyz>
+            <izz>0.006017</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/battery_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_battery.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/battery_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_battery.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='wheel_left_joint' type='revolute'>
+        <pose relative_to='locobot/base_footprint'>0 0.115 0.0352 -1.5708 0 0</pose>
+        <parent>locobot/base_footprint</parent>
+        <child>locobot/wheel_left_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/wheel_left_link'>
+        <pose relative_to='wheel_left_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.001</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/wheel_left_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.0206</length>
+              <radius>0.0352</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+06</kp>
+                <kd>100</kd>
+                <max_vel>1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/wheel_left_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_wheel.dae</uri>
             </mesh>
           </geometry>
         </visual>
@@ -890,7 +2742,153 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose>1.14508 -0.005903 0 0 -0 0</pose>
+      <joint name='wheel_right_joint' type='revolute'>
+        <pose relative_to='locobot/base_footprint'>0 -0.115 0.0352 -1.5708 0 0</pose>
+        <parent>locobot/base_footprint</parent>
+        <child>locobot/wheel_right_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='locobot/wheel_right_link'>
+        <pose relative_to='wheel_right_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>0.01</mass>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.001</izz>
+          </inertia>
+        </inertial>
+        <collision name='locobot/wheel_right_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.0206</length>
+              <radius>0.035</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+06</kp>
+                <kd>100</kd>
+                <max_vel>1</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='locobot/wheel_right_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/david/catkin_ws/src/locobot_simulation_david/meshes/locobot_meshes/locobot_wheel.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+        <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+        <legacyModeNS>1</legacyModeNS>
+        <robotNamespace>/locobot/</robotNamespace>
+      </plugin>
+      <plugin name='differential_drive_controller' filename='libgazebo_ros_diff_drive.so'>
+        <alwaysOn>1</alwaysOn>
+        <legacyMode>0</legacyMode>
+        <updateRate>40</updateRate>
+        <leftJoint>wheel_left_joint</leftJoint>
+        <rightJoint>wheel_right_joint</rightJoint>
+        <wheelSeparation>0.230</wheelSeparation>
+        <wheelDiameter>0.070</wheelDiameter>
+        <wheelTorque>1.0</wheelTorque>
+        <wheelAcceleration>0</wheelAcceleration>
+        <commandTopic>mobile_base/commands/velocity</commandTopic>
+        <odometryTopic>odom</odometryTopic>
+        <odometryFrame>odom</odometryFrame>
+        <robotBaseFrame>base_footprint</robotBaseFrame>
+        <publishWheelJointState>1</publishWheelJointState>
+        <rosDebugLevel>na</rosDebugLevel>
+        <publishWheelTF>0</publishWheelTF>
+        <publishOdomTF>0</publishOdomTF>
+        <odometrySource>world</odometrySource>
+        <publishTf>1</publishTf>
+        <robotNamespace>/locobot/</robotNamespace>
+      </plugin>
+      <plugin name='p3d_base_controller' filename='libgazebo_ros_p3d.so'>
+        <alwaysOn>1</alwaysOn>
+        <updateRate>100.0</updateRate>
+        <topicName>base/absolute_position</topicName>
+        <gaussianNoise>0</gaussianNoise>
+        <frameName>map</frameName>
+        <xyzOffsets>0 0 0</xyzOffsets>
+        <rpyOffsets>0 0 0</rpyOffsets>
+        <robotNamespace>/locobot/</robotNamespace>
+        <bodyName>locobot/base_footprint</bodyName>
+        <xyzOffset>0 0 0.0102</xyzOffset>
+        <rpyOffset>0 -0 0</rpyOffset>
+        <ignition::corrected_offsets>1</ignition::corrected_offsets>
+      </plugin>
+      <frame name='caster_back_joint' attached_to='locobot/base_link'>
+        <pose>-0.135 0 0.009 -1.5708 0 0</pose>
+      </frame>
+      <frame name='locobot/caster_back_link' attached_to='caster_back_joint'/>
+      <frame name='caster_front_joint' attached_to='locobot/base_link'>
+        <pose>0.115 0 0.007 -1.5708 0 0</pose>
+      </frame>
+      <frame name='locobot/caster_front_link' attached_to='caster_front_joint'/>
+      <frame name='cliff_sensor_front_joint' attached_to='locobot/base_link'>
+        <pose>0.156 0 0.0214 3.14159 1.57079 3.14159</pose>
+      </frame>
+      <frame name='locobot/cliff_sensor_front_link' attached_to='cliff_sensor_front_joint'/>
+      <frame name='cliff_sensor_left_joint' attached_to='locobot/base_link'>
+        <pose>0.08734 0.13601 0.0214 3.14159 1.57079 3.14159</pose>
+      </frame>
+      <frame name='locobot/cliff_sensor_left_link' attached_to='cliff_sensor_left_joint'/>
+      <frame name='cliff_sensor_right_joint' attached_to='locobot/base_link'>
+        <pose>0.085 -0.13601 0.0214 3.14159 1.57079 3.14159</pose>
+      </frame>
+      <frame name='locobot/cliff_sensor_right_link' attached_to='cliff_sensor_right_joint'/>
+      <frame name='gyro_joint' attached_to='locobot/base_link'>
+        <pose>0.056 0.062 0.0202 0 -0 0</pose>
+      </frame>
+      <frame name='locobot/gyro_link' attached_to='gyro_joint'/>
+      <frame name='base_joint' attached_to='locobot/base_footprint'>
+        <pose>0 0 0.0102 0 -0 0</pose>
+      </frame>
+      <frame name='locobot/base_link' attached_to='base_joint'/>
+      <frame name='ros_logical_camera' attached_to='locobot/tilt_link'>
+        <pose>0.05318 0.0175 9e-06 0 -0 0</pose>
+      </frame>
+      <frame name='locobot/ros_logical_camera' attached_to='ros_logical_camera'/>
+      <pose>0 0 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>

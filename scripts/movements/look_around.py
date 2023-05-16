@@ -17,7 +17,7 @@ class PublisherNode:
 
         # Set initial commmands for pan & tilt
         self.pan_cmd = 0
-        self.tilt_cmd = 0.3
+        self.tilt_cmd = 0.2
         self.delta = 0.01
 
     def publish_topics(self):
