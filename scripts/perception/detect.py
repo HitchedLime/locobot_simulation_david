@@ -14,7 +14,6 @@ from rostopic import get_topic_type
 from sensor_msgs.msg import Image, CompressedImage
 from locobot_simulation.msg import BoundingBox, BoundingBoxes
 
-
 # add yolov5 submodule to path
 FILE = Path(__file__).resolve()
 sys.path.insert(0, './yolov5')

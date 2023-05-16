@@ -1,13 +1,7 @@
-#!/usr/bin/env python
+
+
 
 import rospy
-from std_msgs.msg import Float64
-from geometry_msgs.msg import Twist
-
-#!/usr/bin/env python
-
-import rospy
-from std_msgs.msg import Float64
 from geometry_msgs.msg import Twist
 
 class DriveForwardNode(object):
@@ -22,12 +16,15 @@ class DriveForwardNode(object):
         self.twist.angular.x = 0.0
         self.twist.angular.y = 0.5
         self.twist.angular.z = 0.0
+        self.rate = rospy.Rate(100) #publishin rate 
 
     def run(self):
         while not rospy.is_shutdown():
             topic1_msg = self.twist
             rospy.loginfo('Publishing command: {}'.format(topic1_msg))
             self.pub.publish(topic1_msg)
+             # Sleep to maintain the publishing rate
+            self.rate.sleep()
 
 if __name__ == '__main__':
     node = DriveForwardNode()
