@@ -8,6 +8,6 @@ def callback(data):
         print(f"  Probability: {box.probability}")
         print(f"  Coordinates: ({box.xmin}, {box.ymin}) - ({box.xmax}, {box.ymax})")
 
-rospy.init_node('listener', anonymous=True)
+rospy.init_node('listener_bounding_box', anonymous=True)
 rospy.Subscriber('/yolov5/detections', BoundingBoxes, callback)
 rospy.spin()
