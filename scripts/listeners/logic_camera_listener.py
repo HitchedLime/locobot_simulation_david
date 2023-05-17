@@ -6,6 +6,9 @@ import math
 import re 
 rospy.init_node('listener_bounding_box', anonymous=True)
 
+object_position =[]
+
+
 def euclidean_distance(array):
     # calculates distance from robot assuming that robot is  at origin every step
     distance = 0
@@ -37,7 +40,7 @@ def callback(data1,data2):
             print(f"  Coordinate z: ({box.pose.position.z})")
             distance = euclidean_distance([box.pose.position.x,box.pose.position.y,box.pose.position.z])
             print(f" Distance : ({distance})")
-            
+            object_position.append((class_name.lower(),distance))
    
 
 
