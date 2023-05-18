@@ -19,4 +19,4 @@ def  teleport_location(x,y,z,model="locobot"):
     set_model_state(model_state)
 
 if __name__ == "__main__":
-    teleport_location(0,0,0)
+    teleport_location(1,0,0)
