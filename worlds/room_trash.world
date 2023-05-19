@@ -491,35 +491,35 @@
       <pose>0.639024 -0.167973 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>1017 737000000</sim_time>
-      <real_time>19 410906626</real_time>
-      <wall_time>1684254826 287969852</wall_time>
-      <iterations>8064</iterations>
+      <sim_time>1304 525000000</sim_time>
+      <real_time>520 530932161</real_time>
+      <wall_time>1684512927 40611429</wall_time>
+      <iterations>286788</iterations>
       <model name='Chair'>
-        <pose>2.06976 -2.97584 0.000909 0 -1e-06 -5e-05</pose>
+        <pose>2.80259 -2.97588 0.000909 0 1e-06 -5e-05</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose>2.06976 -2.97584 0.000909 -1e-06 -0 1.57075</pose>
+          <pose>2.80259 -2.97588 0.000909 1e-06 -0 1.57075</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -0 -0.627779 0.931225 -1.34577 -0</acceleration>
-          <wrench>-0 -0 -0.627779 0 -0 0</wrench>
+          <acceleration>9e-06 0 16.7822 0.243399 0.733238 3e-06</acceleration>
+          <wrench>9e-06 0 16.7822 0 -0 0</wrench>
         </link>
       </model>
       <model name='Suitcase1'>
-        <pose>3.13361 -1.7216 0.136359 0 -0 0</pose>
+        <pose>3.82364 -1.7216 0.136359 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose>3.13361 -1.7216 0.136359 0 -0 0</pose>
+          <pose>3.82364 -1.7216 0.136359 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='cafe'>
-        <pose>3.71166 -1.30882 -0.188891 0 -0 0</pose>
+        <pose>3.57696 -1.34797 -0.188891 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>3.71166 -1.30882 -0.188891 0 -0 0</pose>
+          <pose>3.57696 -1.34797 -0.188891 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -536,151 +536,151 @@
         </link>
       </model>
       <model name='locobot'>
-        <pose>-0.065238 -0.027496 0.000595 0.000953 0.007815 -0.033644</pose>
+        <pose>1 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='locobot/ar_tag_link'>
-          <pose>0.430217 -0.044646 0.489584 0.002544 0.049104 -0.033526</pose>
-          <velocity>-0.00066 0.002099 -0.002407 0.013794 0.002473 0.015252</velocity>
-          <acceleration>-0.491345 -0.620519 -0.006113 2.31064 -0.009398 -1.69874</acceleration>
-          <wrench>-0.008111 -0.010243 -0.000101 0 -0 0</wrench>
+          <pose>1.49379 0.001262 0.485354 0.002544 0.066388 0.003294</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.63833 0.117079 0.099146 1.83316 -0.4905 -2.98996</acceleration>
+          <wrench>0.010537 0.001933 0.001637 0 -0 0</wrench>
         </link>
         <link name='locobot/arm_base_link'>
-          <pose>0.03282 -0.030899 0.10778 0.000944 0.00781 -0.033644</pose>
-          <velocity>-0.000705 0.000473 -0.000196 0.019993 -0.002466 -0.004168</velocity>
-          <acceleration>0.321961 0.538597 -0.375773 -1.10154 -0.218161 2.4709</acceleration>
-          <wrench>0.12224 0.204491 -0.142671 0 -0 0</wrench>
+          <pose>1.09728 1e-06 0.107948 -5.8e-05 1.2e-05 4e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.18663 -0.010441 0.424878 2.71858 -0.062332 -1.8909</acceleration>
+          <wrench>0.070859 -0.003964 0.161315 0 -0 0</wrench>
         </link>
         <link name='locobot/base_footprint'>
-          <pose>-0.065238 -0.027496 0.000595 0.000953 0.007815 -0.033644</pose>
-          <velocity>0.000364 0.002283 -0.001034 0.014934 -0.009943 -0.003737</velocity>
-          <acceleration>-0.552068 -0.511089 0.026993 -2.76175 -1.11805 -2.45769</acceleration>
-          <wrench>-1.33672 -1.2375 0.065359 0 -0 0</wrench>
+          <pose>1 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.224067 0.145592 0.55361 -0.841 -1.16972 1.73366</acceleration>
+          <wrench>0.542534 0.352522 1.34046 0 -0 0</wrench>
         </link>
         <link name='locobot/battery_link'>
-          <pose>-0.071371 -0.027396 0.111595 0.000954 0.00779 -0.033644</pose>
-          <velocity>-0.00072 0.00065 -0.001176 0.014551 -0.010068 -0.004695</velocity>
-          <acceleration>0.086253 -0.282693 0.157306 -2.65854 -0.394941 2.33477</acceleration>
-          <wrench>0.102986 -0.337536 0.187824 0 -0 0</wrench>
+          <pose>0.993 -0 0.110949 1e-06 -2.5e-05 -4e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.044163 0.216267 0.436428 -0.377671 -0.954422 -3.00526</acceleration>
+          <wrench>0.052731 0.258222 0.521095 0 -0 0</wrench>
         </link>
         <link name='locobot/camera_link'>
-          <pose>0.015472 -0.085706 0.54578 -0.006419 0.307068 -1.04573</pose>
-          <velocity>0.084916 0.07844 -0.001631 0.02639 -0.012483 1.58696</velocity>
-          <acceleration>-8.50702 -5.06828 -0.154239 2.9814 -0.880846 -0.228362</acceleration>
-          <wrench>-0.612506 -0.364916 -0.011105 0 -0 0</wrench>
+          <pose>1.0924 -0.040529 0.561575 -1e-06 0.002173 -0.749661</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-1.0471 1.04114 -0.356186 -3.12282 0.231158 -0.284144</acceleration>
+          <wrench>-0.075391 0.074962 -0.025645 0 -0 0</wrench>
         </link>
         <link name='locobot/camera_tower_link'>
-          <pose>-0.088457 -0.026853 0.09921 0.000953 0.007811 -0.033644</pose>
-          <velocity>-0.000605 0.000898 -0.001241 0.014899 -0.00998 -0.003009</velocity>
-          <acceleration>0.754185 -0.103749 0.396022 -2.73538 -1.38103 -1.02927</acceleration>
-          <wrench>1.78457 -0.245493 0.937075 0 -0 0</wrench>
+          <pose>0.976003 -4.4e-05 0.098431 0 -3e-06 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.189574 0.257027 0.503355 -0.553675 -1.37923 0.404931</acceleration>
+          <wrench>-0.448573 0.608182 1.19105 0 -0 0</wrench>
         </link>
         <link name='locobot/ee_arm_link'>
-          <pose>0.445153 -0.045041 0.447249 0.002544 0.049104 -0.033526</pose>
-          <velocity>-0.000756 0.003018 -0.002467 0.013894 0.00247 0.015185</velocity>
-          <acceleration>-0.629187 -0.518823 -0.064352 1.87446 -0.065001 -1.6645</acceleration>
-          <wrench>-0.000629 -0.000519 -6.4e-05 0 -0 0</wrench>
+          <pose>1.508 0.001415 0.442767 0.002545 0.066387 0.003294</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.970762 0.07376 0.077621 3.0656 -0.46426 3.04227</acceleration>
+          <wrench>0.000971 7.4e-05 7.8e-05 0 -0 0</wrench>
         </link>
         <link name='locobot/ee_gripper_link'>
-          <pose>0.495639 -0.046734 0.444768 0.002537 0.049144 -0.033527</pose>
-          <velocity>-0.000798 0.004085 -0.00236 0.012654 -0.002 0.026776</velocity>
-          <acceleration>-0.686171 0.157813 -0.136258 1.08363 0.883049 -0.051172</acceleration>
-          <wrench>-0.000686 0.000158 -0.000136 0 -0 0</wrench>
+          <pose>1.55846 0.00158 0.439414 0.002518 0.066427 0.003284</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>1.0112 0.063537 0.129424 -1.66452 1.43919 -2.43639</acceleration>
+          <wrench>0.001011 6.4e-05 0.000129 0 -0 0</wrench>
         </link>
         <link name='locobot/fingers_link'>
-          <pose>0.468113 -0.045811 0.446123 0.002537 0.049144 -0.033527</pose>
-          <velocity>-0.000825 0.003342 -0.002405 0.012634 -0.002016 0.026747</velocity>
-          <acceleration>-0.705809 -0.360513 -0.106733 1.09505 0.875724 -0.092546</acceleration>
-          <wrench>-0.000706 -0.000361 -0.000107 0 -0 0</wrench>
+          <pose>1.53095 0.00149 0.441244 0.002518 0.066427 0.003284</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>1.06984 0.046677 0.116138 -1.67906 1.41647 -2.39337</acceleration>
+          <wrench>0.00107 4.7e-05 0.000116 0 -0 0</wrench>
         </link>
         <link name='locobot/gripper_bar_link'>
-          <pose>0.445152 -0.045041 0.447254 0.002535 0.049159 -0.033532</pose>
-          <velocity>-0.000759 0.00209 -0.002237 0.012025 -0.004346 0.021347</velocity>
-          <acceleration>-0.533384 -1.0447 0.027349 1.41166 1.01792 -2.12304</acceleration>
-          <wrench>-0.018241 -0.035728 0.000935 0 -0 0</wrench>
+          <pose>1.508 0.001414 0.442773 0.002528 0.066447 0.003286</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.829497 0.039752 0.208574 -0.140753 0.88294 2.49398</acceleration>
+          <wrench>0.028368 0.001359 0.007133 0 -0 0</wrench>
         </link>
         <link name='locobot/gripper_link'>
-          <pose>0.402228 -0.043602 0.449366 0.002536 0.0491 -0.033538</pose>
-          <velocity>-0.000715 0.000441 -0.001773 0.012301 0.002016 0.013544</velocity>
-          <acceleration>-0.36673 -1.48736 0.260893 -0.660205 0.875342 -1.82869</acceleration>
-          <wrench>-0.026729 -0.108406 0.019015 0 -0 0</wrench>
+          <pose>1.46509 0.001272 0.445628 0.00254 0.066388 0.003287</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-1.56706 0.60013 0.316547 -0.592141 0.955871 0.527606</acceleration>
+          <wrench>-0.114215 0.043741 0.023072 0 -0 0</wrench>
         </link>
         <link name='locobot/gripper_prop_link'>
-          <pose>0.450643 -0.045225 0.446983 0.006246 0.049104 -0.033526</pose>
-          <velocity>-0.000766 0.002639 -0.002403 0.013779 0.002579 0.014978</velocity>
-          <acceleration>-0.598504 -0.90784 -0.055095 1.82976 -0.044952 -1.14965</acceleration>
-          <wrench>-0.002598 -0.00394 -0.000239 0 -0 0</wrench>
+          <pose>1.51348 0.001432 0.442407 0.011293 0.066387 0.003294</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.786565 0.472397 0.124964 -2.53274 -0.560794 -1.25667</acceleration>
+          <wrench>-0.003414 0.00205 0.000542 0 -0 0</wrench>
         </link>
         <link name='locobot/left_finger_link'>
-          <pose>0.469248 -0.012073 0.446209 0.002507 0.049152 -0.033527</pose>
-          <velocity>-0.001727 0.003238 -0.001954 0.011831 -0.001724 0.027225</velocity>
-          <acceleration>-1.31015 -0.184675 0.133789 -1.07444 1.18246 0.674687</acceleration>
-          <wrench>-0.021285 -0.003 0.002174 0 -0 0</wrench>
+          <pose>1.53084 0.034118 0.441326 0.002486 0.066427 0.003283</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-1.15739 0.372582 0.284675 0.574491 -0.231176 0.202564</acceleration>
+          <wrench>-0.018803 0.006053 0.004625 0 -0 0</wrench>
         </link>
         <link name='locobot/lower_forearm_link'>
-          <pose>0.262435 -0.038921 0.455302 -0.001816 0.036604 -0.033464</pose>
-          <velocity>-0.000802 -0.002635 -0.000999 0.018591 0.003617 0.019552</velocity>
-          <acceleration>-0.357762 -0.574769 0.576438 1.36017 -0.620024 2.94203</acceleration>
-          <wrench>-0.079062 -0.127019 0.127388 0 -0 0</wrench>
+          <pose>1.32532 0.000802 0.453573 -0.004707 0.048465 0.003403</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-2.04302 0.733815 0.546832 -1.604 1.03074 -0.201604</acceleration>
+          <wrench>-0.451489 0.162166 0.120845 0 -0 0</wrench>
         </link>
         <link name='locobot/pan_link'>
-          <pose>-0.037804 -0.028981 0.543078 -0.006115 0.004962 -1.04382</pose>
-          <velocity>-0.005059 -0.005882 -0.000757 0.027228 -0.011654 1.58591</velocity>
-          <acceleration>0.273901 0.022328 0.007928 -1.37479 1.10781 -0.929676</acceleration>
-          <wrench>0.027115 0.00221 0.000785 0 -0 0</wrench>
+          <pose>1.02323 -4.3e-05 0.542681 -3e-06 3e-06 -0.749662</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.626109 0.463787 0.47587 -2.55208 0.055735 -1.11177</acceleration>
+          <wrench>-0.061983 0.045914 0.04711 0 -0 0</wrench>
         </link>
         <link name='locobot/plate_link'>
-          <pose>-0.064472 -0.027616 0.09904 0.000952 0.007806 -0.033643</pose>
-          <velocity>-0.000602 0.000821 -0.001005 0.015857 -0.008103 -0.001784</velocity>
-          <acceleration>-0.067048 0.11045 -0.120803 -2.38649 0.450413 1.74967</acceleration>
-          <wrench>-0.038351 0.063177 -0.069099 0 -0 0</wrench>
+          <pose>1 -0 0.098448 -1.2e-05 -3e-06 1e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.451393 0.159657 0.458378 -1.84121 -0.869692 -2.1744</acceleration>
+          <wrench>0.258195 0.091323 0.26219 0 -0 0</wrench>
         </link>
         <link name='locobot/right_finger_link'>
-          <pose>0.466868 -0.08279 0.446033 0.00253 0.049144 -0.033525</pose>
-          <velocity>0.000155 0.002785 -0.002768 0.013419 -0.001991 0.026721</velocity>
-          <acceleration>0.101715 -0.575345 -0.339019 0.071292 0.962965 -0.295946</acceleration>
-          <wrench>0.001652 -0.009347 -0.005508 0 -0 0</wrench>
+          <pose>1.53106 -0.035511 0.441155 0.002518 0.066426 0.003287</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-1.21607 0.783824 -0.034614 -0.574212 -1.04784 -2.72988</acceleration>
+          <wrench>-0.019756 0.012734 -0.000562 0 -0 0</wrench>
         </link>
         <link name='locobot/shoulder_link'>
-          <pose>0.033334 -0.030979 0.173953 0.00094 0.007815 -0.033486</pose>
-          <velocity>-0.001122 -0.000688 -0.000206 0.023107 0.002716 0.017794</velocity>
-          <acceleration>0.600314 0.632305 -0.394754 -1.16986 -1.38828 -1.33926</acceleration>
-          <wrench>0.288678 0.304062 -0.189829 0 -0 0</wrench>
+          <pose>1.09728 3e-06 0.174123 -9e-05 2.6e-05 0.003409</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0.103443 -0.08509 0.408302 -1.01008 0.687333 2.06088</acceleration>
+          <wrench>0.049743 -0.040918 0.196344 0 -0 0</wrench>
         </link>
         <link name='locobot/tilt_link'>
-          <pose>-0.025066 -0.050642 0.561953 -0.006415 0.307063 -1.04573</pose>
-          <velocity>0.029104 0.013738 -0.001208 0.026154 -0.012331 1.5859</velocity>
-          <acceleration>-7.86067 -4.59201 -0.121657 -2.28936 -1.20532 -2.87033</acceleration>
-          <wrench>-0.721964 -0.421753 -0.011174 0 -0 0</wrench>
+          <pose>1.04155 -0.017101 0.561681 -3e-06 0.002168 -0.749662</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.98088 0.997802 -0.270743 -1.84819 -1.3074 -0.063256</acceleration>
+          <wrench>-0.090089 0.091643 -0.024866 0 -0 0</wrench>
         </link>
         <link name='locobot/upper_arm_link'>
-          <pose>0.033634 -0.031026 0.212602 0.000942 0.017249 -0.033478</pose>
-          <velocity>-0.001295 -0.001563 -0.000224 0.021918 0.001635 0.018281</velocity>
-          <acceleration>-0.034719 0.856088 -0.322413 -2.07969 1.52541 1.00864</acceleration>
-          <wrench>-0.014958 0.368812 -0.138899 0 -0 0</wrench>
+          <pose>1.09728 6e-06 0.212773 -7.9e-05 0.014028 0.003411</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.625067 0.233557 0.417182 1.3474 -0.449027 -1.16286</acceleration>
+          <wrench>-0.269286 0.100619 0.179727 0 -0 0</wrench>
         </link>
         <link name='locobot/upper_forearm_link'>
-          <pose>0.08765 -0.033071 0.461706 0.000931 0.036604 -0.03346</pose>
-          <velocity>-0.000898 -0.006039 -0.000475 0.019876 0.002297 0.018644</velocity>
-          <acceleration>-0.383535 0.065664 0.178779 0.107679 -0.289161 1.01863</acceleration>
-          <wrench>-0.089973 0.015404 0.04194 0 -0 0</wrench>
+          <pose>1.15053 0.000207 0.46205 -8.4e-05 0.048458 0.003406</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-1.55913 0.616559 0.442324 1.34882 1.10066 -1.00277</acceleration>
+          <wrench>-0.365754 0.144638 0.103764 0 -0 0</wrench>
         </link>
         <link name='locobot/wheel_left_link'>
-          <pose>-0.061103 0.087383 0.036106 -1.56983 0.168547 -0.03349</pose>
-          <velocity>-0.000313 -0.000453 0.001517 0.012891 -0.009033 -0.0038</velocity>
-          <acceleration>0.170347 0.098389 -0.015949 -2.79844 -1.52614 -2.47475</acceleration>
-          <wrench>0.001703 0.000984 -0.000159 0 -0 0</wrench>
+          <pose>1.00003 0.114995 0.035412 -1.57079 -1.09595 1.3e-05</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.051739 0.029152 0.009448 -0.922137 -1.4595 1.66967</acceleration>
+          <wrench>-0.000517 0.000292 9.4e-05 0 -0 0</wrench>
         </link>
         <link name='locobot/wheel_right_link'>
-          <pose>-0.06883 -0.142479 0.035879 -1.56986 -0.011793 -0.033662</pose>
-          <velocity>-0.00037 -0.000551 0.001586 0.015769 -0.010353 -0.003774</velocity>
-          <acceleration>0.18032 0.102165 -0.014486 -2.92661 -1.35004 -2.48366</acceleration>
-          <wrench>0.001803 0.001022 -0.000145 0 -0 0</wrench>
+          <pose>0.999974 -0.115001 0.035371 -1.57083 1.1486 -2.6e-05</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-0.006747 0.013155 0.025667 -0.447394 -0.188149 1.20608</acceleration>
+          <wrench>-6.7e-05 0.000132 0.000257 0 -0 0</wrench>
         </link>
         <link name='locobot/wrist_link'>
-          <pose>0.337343 -0.041428 0.452557 -0.001829 0.049105 -0.033507</pose>
-          <velocity>-0.000768 -0.000982 -0.001473 0.017445 0.003772 0.018504</velocity>
-          <acceleration>-0.372025 -1.07444 0.399141 1.34156 1.43065 -0.831061</acceleration>
-          <wrench>-0.031606 -0.091282 0.03391 0 -0 0</wrench>
+          <pose>1.40023 0.001057 0.44994 -0.004715 0.066383 0.003305</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>-1.90529 0.71392 0.344268 -1.55115 0.954429 2.25709</acceleration>
+          <wrench>-0.161868 0.060652 0.029248 0 -0 0</wrench>
         </link>
       </model>
       <model name='milk'>
@@ -709,7 +709,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>4.66415 -10.3827 6.52203 0 0.548214 2.02398</pose>
+        <pose>4.95913 -11.2698 7.13168 0 0.548214 2.02398</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
