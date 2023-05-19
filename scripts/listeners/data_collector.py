@@ -9,6 +9,7 @@ rospy.init_node('listener_bounding_box', anonymous=True)
 object_position =[]
 
 
+    
 
 def euclidean_distance(array):
     # calculates distance from robot assuming that robot is  at origin every step
