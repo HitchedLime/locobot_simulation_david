@@ -1,13 +1,6 @@
 <?xml version="1.0"?>
 <robot name="mobile_wx250s" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <joint name="arm_base_link_joint" type="fixed">
-    <axis xyz="0 0 0"/>
-    <origin rpy="0 0 0" xyz="0.097277 0 0.0095"/>
-    <parent link="$(arg robot_name)/plate_link"/>
-    <child link="$(arg robot_name)/arm_base_link"/>
-  </joint>
-
   <link name="$(arg robot_name)/arm_base_link">
     <visual>
       <origin rpy="${pi/2} 0 ${pi/2}" xyz="-0.095773 0 -0.10565023"/>
@@ -448,9 +441,7 @@
         <parent link="$(arg robot_name)/fingers_link"/>
         <child link="$(arg robot_name)/right_finger_link"/>
         <dynamics friction="0.1"/>
-        <xacro:unless value="$(arg load_gazebo_configs)">
-          <mimic joint="left_finger" multiplier="-1" offset="0"/>
-        </xacro:unless>
+        <mimic joint="left_finger" multiplier="-1" offset="0"/>
       </joint>
 
       <transmission name="trans_right_finger">
