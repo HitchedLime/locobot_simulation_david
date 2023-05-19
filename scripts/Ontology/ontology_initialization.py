@@ -17,12 +17,28 @@ def make_onotology():
     # Define the object property
     g.add((ex.next_to, RDF.type, OWL.ObjectProperty))
     g.add((ex.next_to, RDFS.domain, ex.Chair))
-    g.add((ex.next_to, RDFS.range, ex.Suitcase))
+    g.add((ex.next_to, RDFS.range, RDFS.Literal))
+    g.add((ex.next_to, RDFS.domain, ex.Suitcase))
 
-    # Define the data property
+    # Define the data property for coordinates
     g.add((ex.coordinates, RDF.type, OWL.DatatypeProperty))
     g.add((ex.coordinates, RDFS.domain, ex.Chair))
     g.add((ex.coordinates, RDFS.range, XSD.string))
+
+
+    
+    g.add((ex.coordinates, RDFS.domain, ex.Suitcase))
+
+    
+
+
+
+    # Define the data property for identifier
+    g.add((ex.identifier, RDF.type, OWL.DatatypeProperty))
+    g.add((ex.identifier, RDFS.domain, ex.Chair))
+    g.add((ex.identifier, RDFS.range, RDFS.Literal))
+
+    g.add((ex.identifier, RDFS.domain, ex.Suitcase))
     return g 
 
 
