@@ -1,0 +1,26 @@
+@prefix ex: <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+ex:coordinates a owl:DatatypeProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range xsd:string .
+
+ex:identifier a owl:DatatypeProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range rdfs:Literal .
+
+ex:next_to a owl:ObjectProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range rdfs:Literal .
+
+ex:Suitcase a owl:Class .
+
+ex:Chair a owl:Class .
+
