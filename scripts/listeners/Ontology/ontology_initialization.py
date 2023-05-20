@@ -14,6 +14,9 @@ def add_to_graph(data :dict,g:Graph )-> None:
             identifier_name= random.randint(0,100000)
             item = ex[f"{dictionary['name']}{identifier_name}"]
             g.add((item, RDF.type, ex[f"{dictionary['name']}"]))
+            g.add((item, ex.coordinates, Literal(data['coordinates'])))
+            g.add((item, ex.next_to, Literal(data['next_to'])))
+            g.add((item, ex.identifier, Literal(data['identifier'])))
     print(g.serialize(format="turtle"))
 
 
