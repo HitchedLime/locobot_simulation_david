@@ -10,7 +10,7 @@ from pathlib import Path
 import os
 import sys
 from rostopic import get_topic_type
-
+import pandas as pd 
 from sensor_msgs.msg import Image, CompressedImage
 from locobot_simulation.msg import BoundingBox, BoundingBoxes
 
@@ -122,9 +122,12 @@ class Yolov5Detector:
             im = im[None]
 
         pred = self.model(im, augment=False, visualize=False)
+       
         pred = non_max_suppression(
             pred, self.conf_thres, self.iou_thres, self.classes, self.agnostic_nms, max_det=self.max_det
         )
+        
+        
 
         ### To-do move pred to CPU and fill BoundingBox messages
         

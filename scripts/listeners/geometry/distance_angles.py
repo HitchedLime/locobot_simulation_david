@@ -17,3 +17,20 @@ def euclidean_distance(array):
         distance +=pow(value,2)
         
     return math.sqrt(distance)
+
+def third_point(x1:float, y1:float, x2:float, y2:float)-> tuple(float,float):
+    # Calculate the length of each side
+    AB = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+    AC = AB / (2 ** 0.5)
+    BC = AC
+
+    # Calculate the angle between AB and AC
+    angle = math.atan2(y2 - y1, x2 - x1)
+
+    # Calculate the coordinates of C
+    Cx = x2 - BC * math.cos(angle + math.pi / 4)
+    Cy = y2 - BC * math.sin(angle + math.pi / 4)
+
+    return Cx, Cy
+
+

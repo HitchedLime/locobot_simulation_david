@@ -1,0 +1,55 @@
+@prefix ex: <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix geof: <http://www.opengis.net/def/function/geosparql/> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+
+
+
+ex:coordinates a owl:DatatypeProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range xsd:string .
+
+
+
+
+
+
+ex:identifier a owl:DatatypeProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range rdfs:Literal .
+
+ex:next_to a owl:ObjectProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range rdfs:Literal .
+
+
+ex:Chair a owl:Class .
+
+ex:Suitcase a owl:Class .
+
+ex:hasPoint rdf:type owl:DatatypeProperty ;
+  rdfs:domain ex:Chair,ex:Suitcase;
+  rdfs:range ex:Point .
+
+
+ex:Point rdf:type rdfs:Class .
+
+# Define new properties called "x" and "y"
+ex:x rdf:type rdf:Property ;
+  rdfs:domain ex:Point ;
+  rdfs:range xsd:integer .
+
+ex:y rdf:type rdf:Property ;
+  rdfs:domain ex:Point ;
+  rdfs:range xsd:integer .
+
+
+

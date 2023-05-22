@@ -1,0 +1,19 @@
+@prefix ns1: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:chair25 a ns1:Chair ;
+    ns1:distance 53 ;
+    ns1:identifier "25" ;
+    ns1:next_to ns1:suitcase47 .
+
+ns1:suitcase47 a ns1:Suitcase ;
+    ns1:distance 53 ;
+    ns1:identifier "47" ;
+    ns1:next_to ns1:chair25 .
+
+ns1:Chair a ns1:Furniture ;
+    ns1:next_to ns1:Suitcase .
+
+ns1:Suitcase a ns1:Luggage ;
+    ns1:next_to ns1:Chair .
+

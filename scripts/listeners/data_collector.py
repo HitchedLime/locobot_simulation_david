@@ -9,7 +9,7 @@ import random
 
 
 from Ontology.ontology_initialization import add_to_graph
-from geometry.distance_angles import euclidean_distance,angle_between_vectors,law_of_cosines
+from geometry.distance_angles import euclidean_distance,angle_between_vectors,law_of_cosines,third_point
 
 rospy.init_node('listener_bounding_box', anonymous=True)
 
@@ -26,9 +26,9 @@ def callback(data1,data2,data3):
     #print("Received BoundingBoxes message:")
     x= data3.pose.pose.position.x
     y= data3.pose.pose.position.y
-    print(f" robot current location {x,y}")
+    # print(f" robot current location {x,y}")
     g = Graph()
-    g.parse("scripts/listeners/Ontology/ontology.ttl", format="turtle")   
+    g.parse("scripts/listeners/Ontology/ontology1.ttl", format="turtle")   
     real_camera_bbox=[]
     idetified_objects =[]
     for box in data1.bounding_boxes:
@@ -74,17 +74,18 @@ def callback(data1,data2,data3):
 
                 # distance_from_robot = euclidean_distance([box.pose.position.x,box.pose.position.y,box.pose.position.z])
                 # print(f" Distance : ({distance_from_robot})")
-                    instace_add = {"label":class_name,"distance_from_robot":distance_from_robot,"distace_from_object":array_of_object,"idetifier":main_objec_identifier}
+                    instace_add = {"label":class_name,"distace_from_object":array_of_object,"idetifier":main_objec_identifier,"coordinates":third_point(box.pose.position.x,box.pose.position.y,0,0)}
                     add_to_graph(instace_add,g)
-    g.serialize(destination="ontology.ttl", format="turtle")
+    g.serialize(destination="scripts/listeners/Ontology/ontology1.ttl", format="turtle")
 
+            
             
    
 
 odometry_sub =message_filters.Subscriber("/locobot/odom",Odometry)
 image_sub = message_filters.Subscriber('/gazebo/locobot/camera/logical_camera_image', LogicalImage)
 info_sub = message_filters.Subscriber('/yolov5/detections', BoundingBoxes)
-ts = message_filters.TimeSynchronizer([info_sub,image_sub,odometry_sub ], 100)
+ts = message_filters.TimeSynchronizer([info_sub,image_sub,odometry_sub], 10)
 ts.registerCallback(callback)
 
 

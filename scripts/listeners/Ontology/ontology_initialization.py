@@ -14,50 +14,44 @@ def add_to_graph(data :dict,g:Graph )-> None:
             identifier_name= random.randint(0,100000)
             item = ex[f"{dictionary['name']}{identifier_name}"]
             g.add((item, RDF.type, ex[f"{dictionary['name']}"]))
-            g.add((item, ex.coordinates, Literal(data['coordinates'])))
-            g.add((item, ex.next_to, Literal(data['next_to'])))
-            g.add((item, ex.identifier, Literal(data['identifier'])))
+            
+            g.add((item, ex.next_to, Literal(data['distace_from_object'])))
+            g.add((item, ex.identifier, Literal(data['idetifier'])))
     print(g.serialize(format="turtle"))
 
 
-g = Graph()
-
+from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef
 
 ex = Namespace("http://example.org/")
 
+g = Graph()
 
-g.bind("ex", ex)
+chair = ex.Chair
+suitcase = ex.Suitcase
 
+g.add((chair, RDF.type, ex.Furniture))
+g.add((suitcase, RDF.type, ex.Luggage))
+g.add((chair, ex.next_to, suitcase))
+g.add((suitcase, ex.next_to, chair))
 
-g.add((ex.Chair, RDF.type, OWL.Class))
-g.add((ex.Suitcase, RDF.type, OWL.Class))
+identifier_chair = "25"
+identifier_suitcase = "47"
+distance = 53
 
-    # Define the object property
-g.add((ex.next_to, RDF.type, OWL.ObjectProperty))
-g.add((ex.next_to, RDFS.domain, ex.Chair))
-g.add((ex.next_to, RDFS.range, RDFS.Literal))
-g.add((ex.next_to, RDFS.domain, ex.Suitcase))
+instance_chair = URIRef(f"{ex}chair{identifier_chair}")
+instance_suitcase = URIRef(f"{ex}suitcase{identifier_suitcase}")
 
-    # Define the data property for coordinates
-g.add((ex.coordinates, RDF.type, OWL.DatatypeProperty))
-g.add((ex.coordinates, RDFS.domain, ex.Chair))
-g.add((ex.coordinates, RDFS.range, XSD.string))
+g.add((instance_chair, RDF.type, chair))
+g.add((instance_suitcase, RDF.type, suitcase))
+g.add((instance_chair, ex.next_to, instance_suitcase))
+g.add((instance_suitcase, ex.next_to, instance_chair))
+g.add((instance_chair, ex.identifier, Literal(identifier_chair)))
+g.add((instance_suitcase, ex.identifier, Literal(identifier_suitcase)))
+g.add((instance_chair, ex.distance, Literal(distance)))
+g.add((instance_suitcase, ex.distance, Literal(distance)))
 
+print(g.serialize(format="turtle"))
 
-    
-g.add((ex.coordinates, RDFS.domain, ex.Suitcase))
-
-    
-
-
-
-    # Define the data property for identifier
-g.add((ex.identifier, RDF.type, OWL.DatatypeProperty))
-g.add((ex.identifier, RDFS.domain, ex.Chair))
-g.add((ex.identifier, RDFS.range, RDFS.Literal))
-
-g.add((ex.identifier, RDFS.domain, ex.Suitcase))
-  
 
 
 if __name__ == "__main__":
