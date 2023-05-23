@@ -12,48 +12,83 @@ def add_to_graph(data :dict,g:Graph )-> None:
     for  dictionary in  match:
         if(dictionary['name']== data['label']):
             identifier_name= random.randint(0,100000)
+
             item = ex[f"{dictionary['name']}{identifier_name}"]
+            x,y =data['position']
+            point=ex[f"point{identifier_name}_{dictionary['name']}"]
             g.add((item, RDF.type, ex[f"{dictionary['name']}"]))
+            g.add((point, RDF.type, ex.Point))
+            g.add((point, ex.x, Literal(x)))
+            g.add((point, ex.y, Literal(y)))
             
-            g.add((item, ex.next_to, Literal(data['distace_from_object'])))
-            g.add((item, ex.identifier, Literal(data['idetifier'])))
+            g.add((item, ex.hasIdentifier, Literal(data['idetifier'])))
+            g.add((item, ex.hasPoint, point))
     print(g.serialize(format="turtle"))
 
 
 from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef
 
+from rdflib import Graph, Namespace, Literal, URIRef
+from rdflib.namespace import RDF, RDFS, OWL, XSD
+
+# Define namespaces
 ex = Namespace("http://example.org/")
 
+# Create a new graph
+
 g = Graph()
+g.bind("ex", ex)
+g.bind("owl", OWL)
+# Define the "Chair" class
+g.add((ex.Chair, RDF.type, OWL.Class))
+g.add((ex.Suitcase, RDF.type, OWL.Class))
 
-chair = ex.Chair
-suitcase = ex.Suitcase
+# Define the "Point" class
+g.add((ex.Point, RDF.type, RDFS.Class))
 
-g.add((chair, RDF.type, ex.Furniture))
-g.add((suitcase, RDF.type, ex.Luggage))
-g.add((chair, ex.next_to, suitcase))
-g.add((suitcase, ex.next_to, chair))
+# Define the "x" and "y" properties
+g.add((ex.x, RDF.type, RDF.Property))
+g.add((ex.x, RDFS.domain, ex.Point))
+g.add((ex.x, RDFS.range, XSD.integer))
 
-identifier_chair = "25"
-identifier_suitcase = "47"
-distance = 53
+g.add((ex.y, RDF.type, RDF.Property))
+g.add((ex.y, RDFS.domain, ex.Point))
+g.add((ex.y, RDFS.range, XSD.integer))
 
-instance_chair = URIRef(f"{ex}chair{identifier_chair}")
-instance_suitcase = URIRef(f"{ex}suitcase{identifier_suitcase}")
+# Define the "hasPoint" data property
+g.add((ex.hasPoint, RDF.type, OWL.DatatypeProperty))
+g.add((ex.hasPoint, RDFS.domain, ex.Chair))
+g.add((ex.hasPoint, RDFS.domain, ex.Suitcase))
+g.add((ex.hasPoint, RDFS.range, ex.Point))
 
-g.add((instance_chair, RDF.type, chair))
-g.add((instance_suitcase, RDF.type, suitcase))
-g.add((instance_chair, ex.next_to, instance_suitcase))
-g.add((instance_suitcase, ex.next_to, instance_chair))
-g.add((instance_chair, ex.identifier, Literal(identifier_chair)))
-g.add((instance_suitcase, ex.identifier, Literal(identifier_suitcase)))
-g.add((instance_chair, ex.distance, Literal(distance)))
-g.add((instance_suitcase, ex.distance, Literal(distance)))
+# Define the "hasIdentifier" data property
+g.add((ex.hasIdentifier, RDF.type, OWL.DatatypeProperty))
+g.add((ex.hasIdentifier, RDFS.domain, ex.Chair))
+g.add((ex.hasIdentifier, RDFS.domain, ex.Suitcase))
+g.add((ex.hasIdentifier, RDFS.range, XSD.string))
 
-print(g.serialize(format="turtle"))
+# Define the "hasDistance" data property
+g.add((ex.hasDistance, RDF.type, OWL.DatatypeProperty))
+g.add((ex.hasDistance, RDFS.domain, ex.Chair))
+g.add((ex.hasDistance, RDFS.domain, ex.Suitcase))
+g.add((ex.hasDistance, RDFS.range, XSD.integer))
 
 
 
+
+"""
+my_chair = URIRef("http://example.org/myChair")
+g.add((my_chair, RDF.type, ex.Chair))
+g.add((my_chair, ex.hasDistance, Literal(5)))
+g.add((my_chair, ex.hasIdentifier, Literal("chair1")))
+my_point = URIRef("http://example.org/myPoint")
+g.add((my_point, RDF.type, ex.Point))
+g.add((my_point, ex.x, Literal(10)))
+g.add((my_point, ex.y, Literal(20)))
+
+# Associate the Chair instance with the Point instance
+g.add((my_chair, ex.hasPoint, my_point))
+"""
 if __name__ == "__main__":
     
     namespaces = list(g.namespaces())

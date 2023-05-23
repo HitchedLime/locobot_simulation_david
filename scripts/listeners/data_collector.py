@@ -15,17 +15,29 @@ rospy.init_node('listener_bounding_box', anonymous=True)
 
 
 
+data1=0
+data2=0
+data3=0
+def callback3(data):
+    global data3
+    data3=data
 
-print("ontology loaded")
 
 
 
 
+def callback2(data):
+    global data2
+    data2=data
+
+def callback1(data):
+    global data1
+    data1 =data
+    
 
 def callback(data1,data2,data3):
     #print("Received BoundingBoxes message:")
-    x= data3.pose.pose.position.x
-    y= data3.pose.pose.position.y
+    
     # print(f" robot current location {x,y}")
     g = Graph()
     g.parse("scripts/listeners/Ontology/ontology1.ttl", format="turtle")   
@@ -74,7 +86,7 @@ def callback(data1,data2,data3):
 
                 # distance_from_robot = euclidean_distance([box.pose.position.x,box.pose.position.y,box.pose.position.z])
                 # print(f" Distance : ({distance_from_robot})")
-                    instace_add = {"label":class_name,"distace_from_object":array_of_object,"idetifier":main_objec_identifier,"coordinates":third_point(box.pose.position.x,box.pose.position.y,0,0)}
+                    instace_add = {"label":class_name,"distace_from_object":array_of_object,"idetifier":main_objec_identifier,"position":third_point(x,y,0,0,euclidean_distance([box_model2.pose.position.x,box_model2.pose.position.y]))}
                     add_to_graph(instace_add,g)
     g.serialize(destination="scripts/listeners/Ontology/ontology1.ttl", format="turtle")
 
@@ -87,7 +99,7 @@ image_sub = message_filters.Subscriber('/gazebo/locobot/camera/logical_camera_im
 info_sub = message_filters.Subscriber('/yolov5/detections', BoundingBoxes)
 ts = message_filters.TimeSynchronizer([info_sub,image_sub,odometry_sub], 10)
 ts.registerCallback(callback)
-
+sub = rospy.Subscriber("/locobot/odom",Odometry,callback)
 
 #rospy.Subscriber('/yolov5/detections', BoundingBoxes, callback)
 rospy.spin()

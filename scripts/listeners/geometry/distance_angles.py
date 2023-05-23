@@ -1,5 +1,7 @@
 import numpy as np
 import math
+import sympy
+
 def law_of_cosines(a, b, C):
     c = math.sqrt(a**2 + b**2 - 2 * a * b * math.cos(C))
     return c
@@ -18,19 +20,26 @@ def euclidean_distance(array):
         
     return math.sqrt(distance)
 
-def third_point(x1:float, y1:float, x2:float, y2:float)-> tuple(float,float):
+def third_point(x1:float, y1:float, x2:float, y2:float,AC):
     # Calculate the length of each side
-    AB = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
-    AC = AB / (2 ** 0.5)
-    BC = AC
+    
+    AB = math.sqrt((x2-x1)**2+(y2-y1)**2)
+    BC= math.sqrt(AB**2+AC**2)
 
-    # Calculate the angle between AB and AC
-    angle = math.atan2(y2 - y1, x2 - x1)
+    x, y = sympy.symbols("x y", real=True)
 
-    # Calculate the coordinates of C
-    Cx = x2 - BC * math.cos(angle + math.pi / 4)
-    Cy = y2 - BC * math.sin(angle + math.pi / 4)
+    eq1 = sympy.Eq((x - x1)**2 +(y-y1)**2, AC**2)
+    eq2 = sympy.Eq((x - x2)**2 +(y-y2)**2, BC**2)
+    
 
-    return Cx, Cy
+    # eq1 = sympy.Eq((x1 - x)**2 + (y1 - y)**2, 3)
+    # eq2 = sympy.Eq((x2 - x)**2 + (y2 - y)**2, 100)
 
 
+    result = sympy.solve([eq1, eq2])
+    Cx,Cy= result[0][x],result[0][y]
+    
+    return Cx,Cy
+
+
+#third_point(1.0,1.0,2.0,2.0,1.0)

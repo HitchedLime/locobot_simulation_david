@@ -1,19 +1,35 @@
-@prefix ns1: <http://example.org/> .
+@prefix ex: <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns1:chair25 a ns1:Chair ;
-    ns1:distance 53 ;
-    ns1:identifier "25" ;
-    ns1:next_to ns1:suitcase47 .
+ex:Point a rdfs:Class .
 
-ns1:suitcase47 a ns1:Suitcase ;
-    ns1:distance 53 ;
-    ns1:identifier "47" ;
-    ns1:next_to ns1:chair25 .
+ex:hasDistance a owl:DatatypeProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range xsd:integer .
 
-ns1:Chair a ns1:Furniture ;
-    ns1:next_to ns1:Suitcase .
+ex:hasIdentifier a owl:DatatypeProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range xsd:string .
 
-ns1:Suitcase a ns1:Luggage ;
-    ns1:next_to ns1:Chair .
+ex:hasPoint a owl:DatatypeProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range ex:Point .
+
+ex:x a rdf:Property ;
+    rdfs:domain ex:Point ;
+    rdfs:range xsd:integer .
+
+ex:y a rdf:Property ;
+    rdfs:domain ex:Point ;
+    rdfs:range xsd:integer .
+
+ex:Chair a owl:Class .
+
+ex:Suitcase a owl:Class .
 

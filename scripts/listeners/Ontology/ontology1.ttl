@@ -1,55 +1,59 @@
 @prefix ex: <http://example.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix geof: <http://www.opengis.net/def/function/geosparql/> .
-@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+ex:Point a rdfs:Class .
 
+ex:chair51792 a ex:chair ;
+    ex:hasIdentifier 3185 ;
+    ex:hasPoint ex:point51792_chair .
 
+ex:hasDistance a owl:DatatypeProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range xsd:integer .
 
-
-ex:coordinates a owl:DatatypeProperty ;
+ex:hasIdentifier a owl:DatatypeProperty ;
     rdfs:domain ex:Chair,
         ex:Suitcase ;
     rdfs:range xsd:string .
 
-
-
-
-
-
-ex:identifier a owl:DatatypeProperty ;
+ex:hasPoint a owl:DatatypeProperty ;
     rdfs:domain ex:Chair,
         ex:Suitcase ;
-    rdfs:range rdfs:Literal .
+    rdfs:range ex:Point .
 
-ex:next_to a owl:ObjectProperty ;
-    rdfs:domain ex:Chair,
-        ex:Suitcase ;
-    rdfs:range rdfs:Literal .
+ex:suitcase20890 a ex:suitcase ;
+    ex:hasIdentifier 5238 ;
+    ex:hasPoint ex:point20890_suitcase .
 
+ex:suitcase87425 a ex:suitcase ;
+    ex:hasIdentifier 9973 ;
+    ex:hasPoint ex:point87425_suitcase .
+
+ex:x a rdf:Property ;
+    rdfs:domain ex:Point ;
+    rdfs:range xsd:integer .
+
+ex:y a rdf:Property ;
+    rdfs:domain ex:Point ;
+    rdfs:range xsd:integer .
+
+ex:point20890_suitcase a ex:Point ;
+    ex:x "1.65497985392295" ;
+    ex:y "-3.11572553170517" .
+
+ex:point51792_chair a ex:Point ;
+    ex:x "1.08854333856481" ;
+    ex:y "-3.12741173925585" .
+
+ex:point87425_suitcase a ex:Point ;
+    ex:x "1.08810333467015" ;
+    ex:y "-3.35047467354550" .
 
 ex:Chair a owl:Class .
 
 ex:Suitcase a owl:Class .
-
-ex:hasPoint rdf:type owl:DatatypeProperty ;
-  rdfs:domain ex:Chair,ex:Suitcase;
-  rdfs:range ex:Point .
-
-
-ex:Point rdf:type rdfs:Class .
-
-# Define new properties called "x" and "y"
-ex:x rdf:type rdf:Property ;
-  rdfs:domain ex:Point ;
-  rdfs:range xsd:integer .
-
-ex:y rdf:type rdf:Property ;
-  rdfs:domain ex:Point ;
-  rdfs:range xsd:integer .
-
-
 
