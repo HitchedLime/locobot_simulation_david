@@ -6,9 +6,13 @@
 
 ex:Point a rdfs:Class .
 
-ex:chair51792 a ex:chair ;
-    ex:hasIdentifier 3185 ;
-    ex:hasPoint ex:point51792_chair .
+ex:chair56203 a ex:chair ;
+    ex:hasIdentifier 4487 ;
+    ex:hasPoint ex:point56203_chair .
+
+ex:chair60538 a ex:chair ;
+    ex:hasIdentifier 5442 ;
+    ex:hasPoint ex:point60538_chair .
 
 ex:hasDistance a owl:DatatypeProperty ;
     rdfs:domain ex:Chair,
@@ -25,13 +29,13 @@ ex:hasPoint a owl:DatatypeProperty ;
         ex:Suitcase ;
     rdfs:range ex:Point .
 
-ex:suitcase20890 a ex:suitcase ;
-    ex:hasIdentifier 5238 ;
-    ex:hasPoint ex:point20890_suitcase .
+ex:suitcase57467 a ex:suitcase ;
+    ex:hasIdentifier 6413 ;
+    ex:hasPoint ex:point57467_suitcase .
 
-ex:suitcase87425 a ex:suitcase ;
-    ex:hasIdentifier 9973 ;
-    ex:hasPoint ex:point87425_suitcase .
+ex:suitcase74431 a ex:suitcase ;
+    ex:hasIdentifier 2403 ;
+    ex:hasPoint ex:point74431_suitcase .
 
 ex:x a rdf:Property ;
     rdfs:domain ex:Point ;
@@ -41,17 +45,21 @@ ex:y a rdf:Property ;
     rdfs:domain ex:Point ;
     rdfs:range xsd:integer .
 
-ex:point20890_suitcase a ex:Point ;
-    ex:x "1.65497985392295" ;
-    ex:y "-3.11572553170517" .
+ex:point56203_chair a ex:Point ;
+    ex:x "0" ;
+    ex:y "-3" .
 
-ex:point51792_chair a ex:Point ;
-    ex:x "1.08854333856481" ;
-    ex:y "-3.12741173925585" .
+ex:point57467_suitcase a ex:Point ;
+    ex:x "0" ;
+    ex:y "-3" .
 
-ex:point87425_suitcase a ex:Point ;
-    ex:x "1.08810333467015" ;
-    ex:y "-3.35047467354550" .
+ex:point60538_chair a ex:Point ;
+    ex:x "0" ;
+    ex:y "-3" .
+
+ex:point74431_suitcase a ex:Point ;
+    ex:x "0" ;
+    ex:y "-3" .
 
 ex:Chair a owl:Class .
 

@@ -15,29 +15,16 @@ rospy.init_node('listener_bounding_box', anonymous=True)
 
 
 
-data1=0
-data2=0
-data3=0
-def callback3(data):
-    global data3
-    data3=data
 
 
 
 
 
-def callback2(data):
-    global data2
-    data2=data
-
-def callback1(data):
-    global data1
-    data1 =data
-    
 
 def callback(data1,data2,data3):
     #print("Received BoundingBoxes message:")
-    
+    x= data3.pose.pose.position.x
+    y= data3.pose.pose.position.y
     # print(f" robot current location {x,y}")
     g = Graph()
     g.parse("scripts/listeners/Ontology/ontology1.ttl", format="turtle")   
@@ -73,12 +60,12 @@ def callback(data1,data2,data3):
                     box_model2_distance = euclidean_distance([box_model2.pose.position.x,box_model2.pose.position.y,box_model2.pose.position.z])
                     angle  = angle_between_vectors(u,v)
                     
-                    print(f" distance between the objects :{box.type} and {box_model2.type} {law_of_cosines(distance_from_robot,box_model2_distance,angle)}")
+                    
                     for idetifier  in idetified_objects:
                         if(idetifier['label']==re.sub(r'[0-9]+', '',box_model2.type).lower()):
                             array_of_object.append({"distance":law_of_cosines(distance_from_robot,box_model2_distance,angle),"object_identifier":idetifier["identifier"]})
                         
-                    print("Fake Cam")
+                   
                 #print(f"  Class: {box.type}")
                 # print(f"  Coordinate x: ({box.pose.position.x})")
                 # print(f"  Coordinate y: ({box.pose.position.y})")
@@ -86,7 +73,7 @@ def callback(data1,data2,data3):
 
                 # distance_from_robot = euclidean_distance([box.pose.position.x,box.pose.position.y,box.pose.position.z])
                 # print(f" Distance : ({distance_from_robot})")
-                    instace_add = {"label":class_name,"distace_from_object":array_of_object,"idetifier":main_objec_identifier,"position":third_point(x,y,0,0,euclidean_distance([box_model2.pose.position.x,box_model2.pose.position.y]))}
+                    instace_add = {"label":class_name,"distace_from_object":array_of_object,"idetifier":main_objec_identifier,"position":third_point(0,0,x,y,euclidean_distance([box.pose.position.x,box.pose.position.y]))}
                     add_to_graph(instace_add,g)
     g.serialize(destination="scripts/listeners/Ontology/ontology1.ttl", format="turtle")
 
@@ -97,10 +84,9 @@ def callback(data1,data2,data3):
 odometry_sub =message_filters.Subscriber("/locobot/odom",Odometry)
 image_sub = message_filters.Subscriber('/gazebo/locobot/camera/logical_camera_image', LogicalImage)
 info_sub = message_filters.Subscriber('/yolov5/detections', BoundingBoxes)
-ts = message_filters.TimeSynchronizer([info_sub,image_sub,odometry_sub], 10)
+ts = message_filters.TimeSynchronizer([info_sub,image_sub,odometry_sub], 1000)
 ts.registerCallback(callback)
-sub = rospy.Subscriber("/locobot/odom",Odometry,callback)
+
 
 #rospy.Subscriber('/yolov5/detections', BoundingBoxes, callback)
 rospy.spin()
-
