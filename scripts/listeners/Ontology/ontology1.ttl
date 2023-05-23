@@ -6,6 +6,22 @@
 
 ex:Point a rdfs:Class .
 
+ex:chair40062 a ex:chair ;
+    ex:hasIdentifier 6675 ;
+    ex:hasPoint ex:point40062_chair .
+
+ex:chair42779 a ex:chair ;
+    ex:hasIdentifier 9543 ;
+    ex:hasPoint ex:point42779_chair .
+
+ex:chair53098 a ex:chair ;
+    ex:hasIdentifier 1939 ;
+    ex:hasPoint ex:point53098_chair .
+
+ex:chair5368 a ex:chair ;
+    ex:hasIdentifier 3006 ;
+    ex:hasPoint ex:point5368_chair .
+
 ex:chair56203 a ex:chair ;
     ex:hasIdentifier 4487 ;
     ex:hasPoint ex:point56203_chair .
@@ -13,6 +29,34 @@ ex:chair56203 a ex:chair ;
 ex:chair60538 a ex:chair ;
     ex:hasIdentifier 5442 ;
     ex:hasPoint ex:point60538_chair .
+
+ex:chair60573 a ex:chair ;
+    ex:hasIdentifier 345 ;
+    ex:hasPoint ex:point60573_chair .
+
+ex:chair78231 a ex:chair ;
+    ex:hasIdentifier 2294 ;
+    ex:hasPoint ex:point78231_chair .
+
+ex:chair80804 a ex:chair ;
+    ex:hasIdentifier 45 ;
+    ex:hasPoint ex:point80804_chair .
+
+ex:chair82671 a ex:chair ;
+    ex:hasIdentifier 961 ;
+    ex:hasPoint ex:point82671_chair .
+
+ex:chair83177 a ex:chair ;
+    ex:hasIdentifier 6311 ;
+    ex:hasPoint ex:point83177_chair .
+
+ex:chair86037 a ex:chair ;
+    ex:hasIdentifier 7910 ;
+    ex:hasPoint ex:point86037_chair .
+
+ex:chair90564 a ex:chair ;
+    ex:hasIdentifier 8973 ;
+    ex:hasPoint ex:point90564_chair .
 
 ex:hasDistance a owl:DatatypeProperty ;
     rdfs:domain ex:Chair,
@@ -29,13 +73,57 @@ ex:hasPoint a owl:DatatypeProperty ;
         ex:Suitcase ;
     rdfs:range ex:Point .
 
+ex:suitcase18121 a ex:suitcase ;
+    ex:hasIdentifier 783 ;
+    ex:hasPoint ex:point18121_suitcase .
+
+ex:suitcase21578 a ex:suitcase ;
+    ex:hasIdentifier 2088 ;
+    ex:hasPoint ex:point21578_suitcase .
+
+ex:suitcase2340 a ex:suitcase ;
+    ex:hasIdentifier 1293 ;
+    ex:hasPoint ex:point2340_suitcase .
+
+ex:suitcase29513 a ex:suitcase ;
+    ex:hasIdentifier 9468 ;
+    ex:hasPoint ex:point29513_suitcase .
+
+ex:suitcase5216 a ex:suitcase ;
+    ex:hasIdentifier 8580 ;
+    ex:hasPoint ex:point5216_suitcase .
+
+ex:suitcase56276 a ex:suitcase ;
+    ex:hasIdentifier 4196 ;
+    ex:hasPoint ex:point56276_suitcase .
+
 ex:suitcase57467 a ex:suitcase ;
     ex:hasIdentifier 6413 ;
     ex:hasPoint ex:point57467_suitcase .
 
+ex:suitcase69719 a ex:suitcase ;
+    ex:hasIdentifier 7128 ;
+    ex:hasPoint ex:point69719_suitcase .
+
+ex:suitcase71441 a ex:suitcase ;
+    ex:hasIdentifier 7096 ;
+    ex:hasPoint ex:point71441_suitcase .
+
 ex:suitcase74431 a ex:suitcase ;
     ex:hasIdentifier 2403 ;
     ex:hasPoint ex:point74431_suitcase .
+
+ex:suitcase74949 a ex:suitcase ;
+    ex:hasIdentifier 6113 ;
+    ex:hasPoint ex:point74949_suitcase .
+
+ex:suitcase9545 a ex:suitcase ;
+    ex:hasIdentifier 4408 ;
+    ex:hasPoint ex:point9545_suitcase .
+
+ex:suitcase98680 a ex:suitcase ;
+    ex:hasIdentifier 7792 ;
+    ex:hasPoint ex:point98680_suitcase .
 
 ex:x a rdf:Property ;
     rdfs:domain ex:Point ;
@@ -45,8 +133,48 @@ ex:y a rdf:Property ;
     rdfs:domain ex:Point ;
     rdfs:range xsd:integer .
 
+ex:point18121_suitcase a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point21578_suitcase a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point2340_suitcase a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point29513_suitcase a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point40062_chair a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point42779_chair a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point5216_suitcase a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point53098_chair a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point5368_chair a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
 ex:point56203_chair a ex:Point ;
     ex:x "0" ;
+    ex:y "-3" .
+
+ex:point56276_suitcase a ex:Point ;
+    ex:x "1" ;
     ex:y "-3" .
 
 ex:point57467_suitcase a ex:Point ;
@@ -57,8 +185,56 @@ ex:point60538_chair a ex:Point ;
     ex:x "0" ;
     ex:y "-3" .
 
+ex:point60573_chair a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point69719_suitcase a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point71441_suitcase a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
 ex:point74431_suitcase a ex:Point ;
     ex:x "0" ;
+    ex:y "-3" .
+
+ex:point74949_suitcase a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point78231_chair a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point80804_chair a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point82671_chair a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point83177_chair a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point86037_chair a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point90564_chair a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point9545_suitcase a ex:Point ;
+    ex:x "1" ;
+    ex:y "-3" .
+
+ex:point98680_suitcase a ex:Point ;
+    ex:x "1" ;
     ex:y "-3" .
 
 ex:Chair a owl:Class .
