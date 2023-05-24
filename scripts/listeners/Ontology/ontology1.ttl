@@ -6,229 +6,170 @@
 
 ex:Point a rdfs:Class .
 
-ex:chair10566 a ex:chair ;
-    ex:hasIdentifier 8845 ;
-    ex:hasPoint ex:point10566_chair .
+ex:chair12881 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3067" ;
+    ex:hasPoint ex:point12881 .
 
-ex:chair13396 a ex:chair ;
-    ex:hasIdentifier 1302 ;
-    ex:hasPoint ex:point13396_chair .
+ex:chair14310 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "861" ;
+    ex:hasPoint ex:point14310 .
 
-ex:chair13723 a ex:chair ;
-    ex:hasIdentifier 7160 ;
-    ex:hasPoint ex:point13723_chair .
+ex:chair14818 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "941" ;
+    ex:hasPoint ex:point14818 .
 
-ex:chair13824 a ex:chair ;
-    ex:hasIdentifier 7928 ;
-    ex:hasPoint ex:point13824_chair .
+ex:chair15846 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5967" ;
+    ex:hasPoint ex:point15846 .
 
-ex:chair18271 a ex:chair ;
-    ex:hasIdentifier 9527 ;
-    ex:hasPoint ex:point18271_chair .
+ex:chair22662 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5988" ;
+    ex:hasPoint ex:point22662 .
 
-ex:chair18469 a ex:chair ;
-    ex:hasIdentifier 8346 ;
-    ex:hasPoint ex:point18469_chair .
+ex:chair30074 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9851" ;
+    ex:hasPoint ex:point30074 .
 
-ex:chair20983 a ex:chair ;
-    ex:hasIdentifier 7134 ;
-    ex:hasPoint ex:point20983_chair .
+ex:chair31672 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5495" ;
+    ex:hasPoint ex:point31672 .
 
-ex:chair21487 a ex:chair ;
-    ex:hasIdentifier 9882 ;
-    ex:hasPoint ex:point21487_chair .
+ex:chair37069 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "714" ;
+    ex:hasPoint ex:point37069 .
 
-ex:chair23760 a ex:chair ;
-    ex:hasIdentifier 7099 ;
-    ex:hasPoint ex:point23760_chair .
+ex:chair38734 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4137" ;
+    ex:hasPoint ex:point38734 .
 
-ex:chair24625 a ex:chair ;
-    ex:hasIdentifier 705 ;
-    ex:hasPoint ex:point24625_chair .
+ex:chair39604 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9454" ;
+    ex:hasPoint ex:point39604 .
 
-ex:chair25523 a ex:chair ;
-    ex:hasIdentifier 5777 ;
-    ex:hasPoint ex:point25523_chair .
+ex:chair41455 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1587" ;
+    ex:hasPoint ex:point41455 .
 
-ex:chair28110 a ex:chair ;
-    ex:hasIdentifier 305 ;
-    ex:hasPoint ex:point28110_chair .
+ex:chair42904 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1678" ;
+    ex:hasPoint ex:point42904 .
 
-ex:chair28598 a ex:chair ;
-    ex:hasIdentifier 4911 ;
-    ex:hasPoint ex:point28598_chair .
+ex:chair43112 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5615" ;
+    ex:hasPoint ex:point43112 .
 
-ex:chair29758 a ex:chair ;
-    ex:hasIdentifier 8814 ;
-    ex:hasPoint ex:point29758_chair .
+ex:chair50443 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "926" ;
+    ex:hasPoint ex:point50443 .
 
-ex:chair3344 a ex:chair ;
-    ex:hasIdentifier 118 ;
-    ex:hasPoint ex:point3344_chair .
+ex:chair50813 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3087" ;
+    ex:hasPoint ex:point50813 .
 
-ex:chair35865 a ex:chair ;
-    ex:hasIdentifier 9935 ;
-    ex:hasPoint ex:point35865_chair .
+ex:chair5463 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4511" ;
+    ex:hasPoint ex:point5463 .
 
-ex:chair36411 a ex:chair ;
-    ex:hasIdentifier 6127 ;
-    ex:hasPoint ex:point36411_chair .
+ex:chair57695 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4495" ;
+    ex:hasPoint ex:point57695 .
 
-ex:chair3650 a ex:chair ;
-    ex:hasIdentifier 3837 ;
-    ex:hasPoint ex:point3650_chair .
+ex:chair58395 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3707" ;
+    ex:hasPoint ex:point58395 .
 
-ex:chair37042 a ex:chair ;
-    ex:hasIdentifier 2515 ;
-    ex:hasPoint ex:point37042_chair .
+ex:chair60932 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9098" ;
+    ex:hasPoint ex:point60932 .
 
-ex:chair37546 a ex:chair ;
-    ex:hasIdentifier 7618 ;
-    ex:hasPoint ex:point37546_chair .
+ex:chair64345 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4282" ;
+    ex:hasPoint ex:point64345 .
 
-ex:chair38401 a ex:chair ;
-    ex:hasIdentifier 7078 ;
-    ex:hasPoint ex:point38401_chair .
+ex:chair65459 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5091" ;
+    ex:hasPoint ex:point65459 .
 
-ex:chair39232 a ex:chair ;
-    ex:hasIdentifier 8656 ;
-    ex:hasPoint ex:point39232_chair .
+ex:chair66313 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1162" ;
+    ex:hasPoint ex:point66313 .
 
-ex:chair39727 a ex:chair ;
-    ex:hasIdentifier 4169 ;
-    ex:hasPoint ex:point39727_chair .
+ex:chair68079 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "6875" ;
+    ex:hasPoint ex:point68079 .
 
-ex:chair41107 a ex:chair ;
-    ex:hasIdentifier 6031 ;
-    ex:hasPoint ex:point41107_chair .
+ex:chair69058 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5656" ;
+    ex:hasPoint ex:point69058 .
 
-ex:chair43009 a ex:chair ;
-    ex:hasIdentifier 9508 ;
-    ex:hasPoint ex:point43009_chair .
+ex:chair71019 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9139" ;
+    ex:hasPoint ex:point71019 .
 
-ex:chair46088 a ex:chair ;
-    ex:hasIdentifier 681 ;
-    ex:hasPoint ex:point46088_chair .
+ex:chair71657 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1561" ;
+    ex:hasPoint ex:point71657 .
 
-ex:chair46709 a ex:chair ;
-    ex:hasIdentifier 3756 ;
-    ex:hasPoint ex:point46709_chair .
+ex:chair74723 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3" ;
+    ex:hasPoint ex:point74723 .
 
-ex:chair47676 a ex:chair ;
-    ex:hasIdentifier 7194 ;
-    ex:hasPoint ex:point47676_chair .
+ex:chair78720 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8604" ;
+    ex:hasPoint ex:point78720 .
 
-ex:chair50383 a ex:chair ;
-    ex:hasIdentifier 6823 ;
-    ex:hasPoint ex:point50383_chair .
+ex:chair79829 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4233" ;
+    ex:hasPoint ex:point79829 .
 
-ex:chair55284 a ex:chair ;
-    ex:hasIdentifier 6810 ;
-    ex:hasPoint ex:point55284_chair .
+ex:chair84357 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8191" ;
+    ex:hasPoint ex:point84357 .
 
-ex:chair55653 a ex:chair ;
-    ex:hasIdentifier 8227 ;
-    ex:hasPoint ex:point55653_chair .
+ex:chair84536 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1718" ;
+    ex:hasPoint ex:point84536 .
 
-ex:chair56314 a ex:chair ;
-    ex:hasIdentifier 3836 ;
-    ex:hasPoint ex:point56314_chair .
+ex:chair85757 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3212" ;
+    ex:hasPoint ex:point85757 .
 
-ex:chair58196 a ex:chair ;
-    ex:hasIdentifier 6655 ;
-    ex:hasPoint ex:point58196_chair .
-
-ex:chair59498 a ex:chair ;
-    ex:hasIdentifier 2423 ;
-    ex:hasPoint ex:point59498_chair .
-
-ex:chair60850 a ex:chair ;
-    ex:hasIdentifier 2082 ;
-    ex:hasPoint ex:point60850_chair .
-
-ex:chair61462 a ex:chair ;
-    ex:hasIdentifier 3352 ;
-    ex:hasPoint ex:point61462_chair .
-
-ex:chair6189 a ex:chair ;
-    ex:hasIdentifier 4885 ;
-    ex:hasPoint ex:point6189_chair .
-
-ex:chair63129 a ex:chair ;
-    ex:hasIdentifier 5799 ;
-    ex:hasPoint ex:point63129_chair .
-
-ex:chair63540 a ex:chair ;
-    ex:hasIdentifier 3291 ;
-    ex:hasPoint ex:point63540_chair .
-
-ex:chair67535 a ex:chair ;
-    ex:hasIdentifier 7066 ;
-    ex:hasPoint ex:point67535_chair .
-
-ex:chair6906 a ex:chair ;
-    ex:hasIdentifier 5848 ;
-    ex:hasPoint ex:point6906_chair .
-
-ex:chair70133 a ex:chair ;
-    ex:hasIdentifier 2773 ;
-    ex:hasPoint ex:point70133_chair .
-
-ex:chair72019 a ex:chair ;
-    ex:hasIdentifier 4169 ;
-    ex:hasPoint ex:point72019_chair .
-
-ex:chair72547 a ex:chair ;
-    ex:hasIdentifier 6793 ;
-    ex:hasPoint ex:point72547_chair .
-
-ex:chair73924 a ex:chair ;
-    ex:hasIdentifier 826 ;
-    ex:hasPoint ex:point73924_chair .
-
-ex:chair74068 a ex:chair ;
-    ex:hasIdentifier 3018 ;
-    ex:hasPoint ex:point74068_chair .
-
-ex:chair77551 a ex:chair ;
-    ex:hasIdentifier 2695 ;
-    ex:hasPoint ex:point77551_chair .
-
-ex:chair78009 a ex:chair ;
-    ex:hasIdentifier 8817 ;
-    ex:hasPoint ex:point78009_chair .
-
-ex:chair81688 a ex:chair ;
-    ex:hasIdentifier 9594 ;
-    ex:hasPoint ex:point81688_chair .
-
-ex:chair82255 a ex:chair ;
-    ex:hasIdentifier 5973 ;
-    ex:hasPoint ex:point82255_chair .
-
-ex:chair8490 a ex:chair ;
-    ex:hasIdentifier 4289 ;
-    ex:hasPoint ex:point8490_chair .
-
-ex:chair85570 a ex:chair ;
-    ex:hasIdentifier 9413 ;
-    ex:hasPoint ex:point85570_chair .
-
-ex:chair86147 a ex:chair ;
-    ex:hasIdentifier 1314 ;
-    ex:hasPoint ex:point86147_chair .
-
-ex:chair86619 a ex:chair ;
-    ex:hasIdentifier 9966 ;
-    ex:hasPoint ex:point86619_chair .
-
-ex:chair89038 a ex:chair ;
-    ex:hasIdentifier 6497 ;
-    ex:hasPoint ex:point89038_chair .
-
-ex:chair96917 a ex:chair ;
-    ex:hasIdentifier 5006 ;
-    ex:hasPoint ex:point96917_chair .
+ex:chair92603 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "25" ;
+    ex:hasPoint ex:point92603 .
 
 ex:hasDistance a owl:DatatypeProperty ;
     rdfs:domain ex:Chair,
@@ -245,229 +186,180 @@ ex:hasPoint a owl:DatatypeProperty ;
         ex:Suitcase ;
     rdfs:range ex:Point .
 
-ex:suitcase12116 a ex:suitcase ;
-    ex:hasIdentifier 3032 ;
-    ex:hasPoint ex:point12116_suitcase .
+ex:myChair_420 a ex:Chair ;
+    ex:hasDistance 5 ;
+    ex:hasIdentifier "chair1" ;
+    ex:hasPoint ex:myPoint_420 .
 
-ex:suitcase12558 a ex:suitcase ;
-    ex:hasIdentifier 8137 ;
-    ex:hasPoint ex:point12558_suitcase .
+ex:myChair_6969 a ex:Chair ;
+    ex:hasDistance 5 ;
+    ex:hasIdentifier "chair1" ;
+    ex:hasPoint ex:myPoint_6969 .
 
-ex:suitcase12749 a ex:suitcase ;
-    ex:hasIdentifier 3787 ;
-    ex:hasPoint ex:point12749_suitcase .
+ex:suitcase13053 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9425" ;
+    ex:hasPoint ex:point13053 .
 
-ex:suitcase12887 a ex:suitcase ;
-    ex:hasIdentifier 2191 ;
-    ex:hasPoint ex:point12887_suitcase .
+ex:suitcase19674 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5166" ;
+    ex:hasPoint ex:point19674 .
 
-ex:suitcase15468 a ex:suitcase ;
-    ex:hasIdentifier 7722 ;
-    ex:hasPoint ex:point15468_suitcase .
+ex:suitcase20621 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4406" ;
+    ex:hasPoint ex:point20621 .
 
-ex:suitcase17099 a ex:suitcase ;
-    ex:hasIdentifier 6438 ;
-    ex:hasPoint ex:point17099_suitcase .
+ex:suitcase21488 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5265" ;
+    ex:hasPoint ex:point21488 .
 
-ex:suitcase17498 a ex:suitcase ;
-    ex:hasIdentifier 3348 ;
-    ex:hasPoint ex:point17498_suitcase .
+ex:suitcase21525 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "2046" ;
+    ex:hasPoint ex:point21525 .
 
-ex:suitcase18327 a ex:suitcase ;
-    ex:hasIdentifier 9576 ;
-    ex:hasPoint ex:point18327_suitcase .
+ex:suitcase27311 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "6194" ;
+    ex:hasPoint ex:point27311 .
 
-ex:suitcase19333 a ex:suitcase ;
-    ex:hasIdentifier 2483 ;
-    ex:hasPoint ex:point19333_suitcase .
+ex:suitcase28058 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "7563" ;
+    ex:hasPoint ex:point28058 .
 
-ex:suitcase19645 a ex:suitcase ;
-    ex:hasIdentifier 4569 ;
-    ex:hasPoint ex:point19645_suitcase .
+ex:suitcase29327 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4379" ;
+    ex:hasPoint ex:point29327 .
 
-ex:suitcase19909 a ex:suitcase ;
-    ex:hasIdentifier 4950 ;
-    ex:hasPoint ex:point19909_suitcase .
+ex:suitcase30405 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8100" ;
+    ex:hasPoint ex:point30405 .
 
-ex:suitcase21397 a ex:suitcase ;
-    ex:hasIdentifier 9288 ;
-    ex:hasPoint ex:point21397_suitcase .
+ex:suitcase30713 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "6409" ;
+    ex:hasPoint ex:point30713 .
 
-ex:suitcase23554 a ex:suitcase ;
-    ex:hasIdentifier 5097 ;
-    ex:hasPoint ex:point23554_suitcase .
+ex:suitcase32140 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "402" ;
+    ex:hasPoint ex:point32140 .
 
-ex:suitcase29616 a ex:suitcase ;
-    ex:hasIdentifier 602 ;
-    ex:hasPoint ex:point29616_suitcase .
+ex:suitcase33094 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5762" ;
+    ex:hasPoint ex:point33094 .
 
-ex:suitcase30319 a ex:suitcase ;
-    ex:hasIdentifier 226 ;
-    ex:hasPoint ex:point30319_suitcase .
+ex:suitcase34188 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5754" ;
+    ex:hasPoint ex:point34188 .
 
-ex:suitcase33336 a ex:suitcase ;
-    ex:hasIdentifier 756 ;
-    ex:hasPoint ex:point33336_suitcase .
+ex:suitcase42066 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4150" ;
+    ex:hasPoint ex:point42066 .
 
-ex:suitcase33948 a ex:suitcase ;
-    ex:hasIdentifier 7871 ;
-    ex:hasPoint ex:point33948_suitcase .
+ex:suitcase46742 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "2455" ;
+    ex:hasPoint ex:point46742 .
 
-ex:suitcase36051 a ex:suitcase ;
-    ex:hasIdentifier 5282 ;
-    ex:hasPoint ex:point36051_suitcase .
+ex:suitcase51081 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3839" ;
+    ex:hasPoint ex:point51081 .
 
-ex:suitcase37900 a ex:suitcase ;
-    ex:hasIdentifier 326 ;
-    ex:hasPoint ex:point37900_suitcase .
+ex:suitcase57161 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3772" ;
+    ex:hasPoint ex:point57161 .
 
-ex:suitcase48231 a ex:suitcase ;
-    ex:hasIdentifier 7882 ;
-    ex:hasPoint ex:point48231_suitcase .
+ex:suitcase59601 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8626" ;
+    ex:hasPoint ex:point59601 .
 
-ex:suitcase4997 a ex:suitcase ;
-    ex:hasIdentifier 5180 ;
-    ex:hasPoint ex:point4997_suitcase .
+ex:suitcase63016 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "6277" ;
+    ex:hasPoint ex:point63016 .
 
-ex:suitcase52653 a ex:suitcase ;
-    ex:hasIdentifier 8945 ;
-    ex:hasPoint ex:point52653_suitcase .
+ex:suitcase69122 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8357" ;
+    ex:hasPoint ex:point69122 .
 
-ex:suitcase53087 a ex:suitcase ;
-    ex:hasIdentifier 7854 ;
-    ex:hasPoint ex:point53087_suitcase .
+ex:suitcase70681 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "7412" ;
+    ex:hasPoint ex:point70681 .
 
-ex:suitcase53552 a ex:suitcase ;
-    ex:hasIdentifier 5455 ;
-    ex:hasPoint ex:point53552_suitcase .
+ex:suitcase73180 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5937" ;
+    ex:hasPoint ex:point73180 .
 
-ex:suitcase53894 a ex:suitcase ;
-    ex:hasIdentifier 5862 ;
-    ex:hasPoint ex:point53894_suitcase .
+ex:suitcase74100 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8339" ;
+    ex:hasPoint ex:point74100 .
 
-ex:suitcase53931 a ex:suitcase ;
-    ex:hasIdentifier 4665 ;
-    ex:hasPoint ex:point53931_suitcase .
+ex:suitcase74748 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "7416" ;
+    ex:hasPoint ex:point74748 .
 
-ex:suitcase54009 a ex:suitcase ;
-    ex:hasIdentifier 6860 ;
-    ex:hasPoint ex:point54009_suitcase .
+ex:suitcase78385 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "2920" ;
+    ex:hasPoint ex:point78385 .
 
-ex:suitcase54163 a ex:suitcase ;
-    ex:hasIdentifier 5569 ;
-    ex:hasPoint ex:point54163_suitcase .
+ex:suitcase79074 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4842" ;
+    ex:hasPoint ex:point79074 .
 
-ex:suitcase54939 a ex:suitcase ;
-    ex:hasIdentifier 4246 ;
-    ex:hasPoint ex:point54939_suitcase .
+ex:suitcase84415 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1277" ;
+    ex:hasPoint ex:point84415 .
 
-ex:suitcase57090 a ex:suitcase ;
-    ex:hasIdentifier 1775 ;
-    ex:hasPoint ex:point57090_suitcase .
+ex:suitcase84784 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9598" ;
+    ex:hasPoint ex:point84784 .
 
-ex:suitcase62096 a ex:suitcase ;
-    ex:hasIdentifier 3269 ;
-    ex:hasPoint ex:point62096_suitcase .
+ex:suitcase86323 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5951" ;
+    ex:hasPoint ex:point86323 .
 
-ex:suitcase62642 a ex:suitcase ;
-    ex:hasIdentifier 8171 ;
-    ex:hasPoint ex:point62642_suitcase .
+ex:suitcase89438 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "7819" ;
+    ex:hasPoint ex:point89438 .
 
-ex:suitcase62976 a ex:suitcase ;
-    ex:hasIdentifier 7096 ;
-    ex:hasPoint ex:point62976_suitcase .
+ex:suitcase92261 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "2884" ;
+    ex:hasPoint ex:point92261 .
 
-ex:suitcase63071 a ex:suitcase ;
-    ex:hasIdentifier 9122 ;
-    ex:hasPoint ex:point63071_suitcase .
+ex:suitcase9227 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9605" ;
+    ex:hasPoint ex:point9227 .
 
-ex:suitcase64173 a ex:suitcase ;
-    ex:hasIdentifier 764 ;
-    ex:hasPoint ex:point64173_suitcase .
-
-ex:suitcase64464 a ex:suitcase ;
-    ex:hasIdentifier 4563 ;
-    ex:hasPoint ex:point64464_suitcase .
-
-ex:suitcase65278 a ex:suitcase ;
-    ex:hasIdentifier 240 ;
-    ex:hasPoint ex:point65278_suitcase .
-
-ex:suitcase676 a ex:suitcase ;
-    ex:hasIdentifier 5429 ;
-    ex:hasPoint ex:point676_suitcase .
-
-ex:suitcase68438 a ex:suitcase ;
-    ex:hasIdentifier 2973 ;
-    ex:hasPoint ex:point68438_suitcase .
-
-ex:suitcase68900 a ex:suitcase ;
-    ex:hasIdentifier 3981 ;
-    ex:hasPoint ex:point68900_suitcase .
-
-ex:suitcase72306 a ex:suitcase ;
-    ex:hasIdentifier 9971 ;
-    ex:hasPoint ex:point72306_suitcase .
-
-ex:suitcase78408 a ex:suitcase ;
-    ex:hasIdentifier 7593 ;
-    ex:hasPoint ex:point78408_suitcase .
-
-ex:suitcase78670 a ex:suitcase ;
-    ex:hasIdentifier 7271 ;
-    ex:hasPoint ex:point78670_suitcase .
-
-ex:suitcase80496 a ex:suitcase ;
-    ex:hasIdentifier 9019 ;
-    ex:hasPoint ex:point80496_suitcase .
-
-ex:suitcase82269 a ex:suitcase ;
-    ex:hasIdentifier 283 ;
-    ex:hasPoint ex:point82269_suitcase .
-
-ex:suitcase83299 a ex:suitcase ;
-    ex:hasIdentifier 5506 ;
-    ex:hasPoint ex:point83299_suitcase .
-
-ex:suitcase84215 a ex:suitcase ;
-    ex:hasIdentifier 900 ;
-    ex:hasPoint ex:point84215_suitcase .
-
-ex:suitcase8538 a ex:suitcase ;
-    ex:hasIdentifier 4888 ;
-    ex:hasPoint ex:point8538_suitcase .
-
-ex:suitcase87152 a ex:suitcase ;
-    ex:hasIdentifier 5651 ;
-    ex:hasPoint ex:point87152_suitcase .
-
-ex:suitcase87896 a ex:suitcase ;
-    ex:hasIdentifier 9261 ;
-    ex:hasPoint ex:point87896_suitcase .
-
-ex:suitcase88140 a ex:suitcase ;
-    ex:hasIdentifier 6233 ;
-    ex:hasPoint ex:point88140_suitcase .
-
-ex:suitcase89512 a ex:suitcase ;
-    ex:hasIdentifier 3476 ;
-    ex:hasPoint ex:point89512_suitcase .
-
-ex:suitcase96318 a ex:suitcase ;
-    ex:hasIdentifier 2161 ;
-    ex:hasPoint ex:point96318_suitcase .
-
-ex:suitcase96812 a ex:suitcase ;
-    ex:hasIdentifier 2007 ;
-    ex:hasPoint ex:point96812_suitcase .
-
-ex:suitcase9721 a ex:suitcase ;
-    ex:hasIdentifier 3275 ;
-    ex:hasPoint ex:point9721_suitcase .
-
-ex:suitcase97531 a ex:suitcase ;
-    ex:hasIdentifier 6401 ;
-    ex:hasPoint ex:point97531_suitcase .
+ex:suitcase92381 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4067" ;
+    ex:hasPoint ex:point92381 .
 
 ex:x a rdf:Property ;
     rdfs:domain ex:Point ;
@@ -477,455 +369,279 @@ ex:y a rdf:Property ;
     rdfs:domain ex:Point ;
     rdfs:range xsd:integer .
 
-ex:point10566_chair a ex:Point ;
+ex:myPoint_420 a ex:Point ;
+    ex:x 10 ;
+    ex:y 20 .
+
+ex:myPoint_6969 a ex:Point ;
+    ex:x 10.255 ;
+    ex:y 20.2525 .
+
+ex:point12881 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point12116_suitcase a ex:Point ;
+ex:point13053 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point12558_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point12749_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point12887_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point13396_chair a ex:Point ;
+ex:point14310 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point13723_chair a ex:Point ;
+ex:point14818 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point13824_chair a ex:Point ;
+ex:point15846 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point15468_suitcase a ex:Point ;
+ex:point19674 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point17099_suitcase a ex:Point ;
+ex:point20621 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point17498_suitcase a ex:Point ;
+ex:point21488 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point18271_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point18327_suitcase a ex:Point ;
+ex:point21525 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point18469_chair a ex:Point ;
+ex:point22662 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point19333_suitcase a ex:Point ;
+ex:point27311 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point19645_suitcase a ex:Point ;
+ex:point28058 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point19909_suitcase a ex:Point ;
+ex:point29327 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point20983_chair a ex:Point ;
+ex:point30074 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point21397_suitcase a ex:Point ;
+ex:point30405 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point21487_chair a ex:Point ;
-    ex:x "1.00000000000000" ;
-    ex:y "-2.23" .
-
-ex:point23554_suitcase a ex:Point ;
+ex:point30713 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point23760_chair a ex:Point ;
+ex:point31672 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point24625_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point25523_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point28110_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point28598_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point29616_suitcase a ex:Point ;
-    ex:x "1.00000000000000" ;
-    ex:y "-2.45" .
-
-ex:point29758_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point30319_suitcase a ex:Point ;
+ex:point32140 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point33336_suitcase a ex:Point ;
+ex:point33094 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point3344_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point33948_suitcase a ex:Point ;
+ex:point34188 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point35865_chair a ex:Point ;
+ex:point37069 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point36051_suitcase a ex:Point ;
+ex:point38734 a ex:Point ;
+    ex:x 2.80259e+00 ;
+    ex:y -2.97588e+00 .
+
+ex:point39604 a ex:Point ;
+    ex:x 2.80259e+00 ;
+    ex:y -2.97588e+00 .
+
+ex:point41455 a ex:Point ;
+    ex:x 2.80259e+00 ;
+    ex:y -2.97588e+00 .
+
+ex:point42066 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point36411_chair a ex:Point ;
+ex:point42904 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point3650_chair a ex:Point ;
+ex:point43112 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point37042_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point37546_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point37900_suitcase a ex:Point ;
+ex:point46742 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point38401_chair a ex:Point ;
+ex:point50443 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point39232_chair a ex:Point ;
+ex:point50813 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point39727_chair a ex:Point ;
-    ex:x "1.24" ;
-    ex:y "-1.79" .
+ex:point51081 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
 
-ex:point41107_chair a ex:Point ;
+ex:point5463 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point43009_chair a ex:Point ;
+ex:point57161 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point57695 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point46088_chair a ex:Point ;
+ex:point58395 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point46709_chair a ex:Point ;
+ex:point59601 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point60932 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point47676_chair a ex:Point ;
+ex:point63016 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point64345 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point48231_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point4997_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point50383_chair a ex:Point ;
+ex:point65459 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point52653_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point53087_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point53552_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point53894_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point53931_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point54009_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point54163_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point54939_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point55284_chair a ex:Point ;
+ex:point66313 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point55653_chair a ex:Point ;
+ex:point68079 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point56314_chair a ex:Point ;
+ex:point69058 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point57090_suitcase a ex:Point ;
+ex:point69122 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point58196_chair a ex:Point ;
+ex:point70681 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point71019 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point59498_chair a ex:Point ;
+ex:point71657 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point60850_chair a ex:Point ;
+ex:point73180 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point74100 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point74723 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point61462_chair a ex:Point ;
+ex:point74748 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point78385 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point78720 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point6189_chair a ex:Point ;
+ex:point79074 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point79829 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point62096_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point62642_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point62976_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point63071_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point63129_chair a ex:Point ;
+ex:point84357 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point63540_chair a ex:Point ;
+ex:point84415 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point84536 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point64173_suitcase a ex:Point ;
+ex:point84784 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point64464_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point65278_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point67535_chair a ex:Point ;
+ex:point85757 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
 
-ex:point676_suitcase a ex:Point ;
+ex:point86323 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point68438_suitcase a ex:Point ;
+ex:point89438 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point68900_suitcase a ex:Point ;
+ex:point92261 a ex:Point ;
     ex:x 3.82364e+00 ;
     ex:y -1.7216e+00 .
 
-ex:point6906_chair a ex:Point ;
+ex:point9227 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point92381 a ex:Point ;
+    ex:x 3.82364e+00 ;
+    ex:y -1.7216e+00 .
+
+ex:point92603 a ex:Point ;
     ex:x 2.80259e+00 ;
     ex:y -2.97588e+00 .
-
-ex:point70133_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point72019_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point72306_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point72547_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point73924_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point74068_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point77551_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point78009_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point78408_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point78670_suitcase a ex:Point ;
-    ex:x "1.24" ;
-    ex:y "-2.15" .
-
-ex:point80496_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point81688_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point82255_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point82269_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point83299_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point84215_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point8490_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point8538_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point85570_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point86147_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point86619_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point87152_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point87896_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point88140_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point89038_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point89512_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point96318_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point96812_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point96917_chair a ex:Point ;
-    ex:x 2.80259e+00 ;
-    ex:y -2.97588e+00 .
-
-ex:point9721_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:point97531_suitcase a ex:Point ;
-    ex:x 3.82364e+00 ;
-    ex:y -1.7216e+00 .
-
-ex:Chair a owl:Class .
 
 ex:Suitcase a owl:Class .
+
+ex:Chair a owl:Class .
 

@@ -15,14 +15,15 @@ def add_to_graph(data :dict,g:Graph )-> None:
 
             item = ex[f"{dictionary['name']}{identifier_name}"]
             x,y =data['position']
-            point=ex[f"point{identifier_name}_{dictionary['name']}"]
-            g.add((item, RDF.type, ex[f"{dictionary['name']}"]))
+            point=ex[f"point{identifier_name}"]
+            g.add((item, RDF.type, ex[f"{dictionary['name'].capitalize()}"]))
             g.add((point, RDF.type, ex.Point))
             g.add((point, ex.x, Literal(x)))
             g.add((point, ex.y, Literal(y)))
-            
-            g.add((item, ex.hasIdentifier, Literal(data['idetifier'])))
+            g.add((item, ex.hasDistance, Literal(0)))
+            g.add((item, ex.hasIdentifier, Literal(str(data['idetifier']))))
             g.add((item, ex.hasPoint, point))
+    #g.serialize("output.owl", format="xml")
     print(g.serialize(format="turtle"))
 
 
@@ -40,8 +41,8 @@ g = Graph()
 g.bind("ex", ex)
 g.bind("owl", OWL)
 # Define the "Chair" class
-g.add((ex.Chair, RDF.type, OWL.Class))
-g.add((ex.Suitcase, RDF.type, OWL.Class))
+g.add((ex.chair, RDF.type, OWL.Class))
+g.add((ex.suitcase, RDF.type, OWL.Class))
 
 # Define the "Point" class
 g.add((ex.Point, RDF.type, RDFS.Class))
@@ -57,26 +58,26 @@ g.add((ex.y, RDFS.range, XSD.integer))
 
 # Define the "hasPoint" data property
 g.add((ex.hasPoint, RDF.type, OWL.DatatypeProperty))
-g.add((ex.hasPoint, RDFS.domain, ex.Chair))
-g.add((ex.hasPoint, RDFS.domain, ex.Suitcase))
+g.add((ex.hasPoint, RDFS.domain, ex.chair))
+g.add((ex.hasPoint, RDFS.domain, ex.suitcase))
 g.add((ex.hasPoint, RDFS.range, ex.Point))
 
 # Define the "hasIdentifier" data property
 g.add((ex.hasIdentifier, RDF.type, OWL.DatatypeProperty))
-g.add((ex.hasIdentifier, RDFS.domain, ex.Chair))
-g.add((ex.hasIdentifier, RDFS.domain, ex.Suitcase))
+g.add((ex.hasIdentifier, RDFS.domain, ex.chair))
+g.add((ex.hasIdentifier, RDFS.domain, ex.suitcase))
 g.add((ex.hasIdentifier, RDFS.range, XSD.string))
 
 # Define the "hasDistance" data property
 g.add((ex.hasDistance, RDF.type, OWL.DatatypeProperty))
-g.add((ex.hasDistance, RDFS.domain, ex.Chair))
-g.add((ex.hasDistance, RDFS.domain, ex.Suitcase))
+g.add((ex.hasDistance, RDFS.domain, ex.chair))
+g.add((ex.hasDistance, RDFS.domain, ex.suitcase))
 g.add((ex.hasDistance, RDFS.range, XSD.integer))
 
 
 
 
-"""
+
 my_chair = URIRef("http://example.org/myChair")
 g.add((my_chair, RDF.type, ex.Chair))
 g.add((my_chair, ex.hasDistance, Literal(5)))
@@ -88,7 +89,7 @@ g.add((my_point, ex.y, Literal(20)))
 
 # Associate the Chair instance with the Point instance
 g.add((my_chair, ex.hasPoint, my_point))
-"""
+
 if __name__ == "__main__":
     
     namespaces = list(g.namespaces())
