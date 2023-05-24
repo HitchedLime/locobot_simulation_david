@@ -50,3 +50,13 @@ ex:Suitcase a owl:Class .
 
 ex:Chair a owl:Class .
 
+IF {
+  ?individual1 rdf:type ?class .
+  ?individual1 ex:hasPoint ?point .
+  ?individual2 rdf:type ?class .
+  ?individual2 ex:hasPoint ?point .
+  FILTER(?individual1 != ?individual2)
+}
+THEN {
+  ?individual1 owl:sameAs ?individual2
+}

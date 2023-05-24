@@ -22,7 +22,8 @@ onto = get_ontology("scripts/listeners/Ontology/output.owl")
 onto.load()
 
 # Perform reasoning using the HermiT reasoner
-sync_reasoner(infer_property_values = True, infer_data_property_values = True)
+sync_reasoner(infer_property_values = True)
+onto.save(file = "cahnged", format = "rdfxml")
 
 # Access the inferred facts and relationships
 
