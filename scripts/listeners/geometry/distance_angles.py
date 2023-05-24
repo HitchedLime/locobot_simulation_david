@@ -12,11 +12,11 @@ def angle_between_vectors(u, v):
     
     return theta
 
-def euclidean_distance(array):
+def euclidean_distance(array,array2):
     # calculates distance from robot assuming that robot is  at origin every step
     distance = 0
-    for value in array:
-        distance +=pow(value,2)
+    for i in range(len(array)):
+        distance +=pow(array[i]-array2[i],2)
         
     return math.sqrt(distance)
 
@@ -40,7 +40,7 @@ def third_point(x1:float, y1:float, x2:float, y2:float,AC):
     print(result)
     Cx,Cy= result[0][x],result[0][y]
     
-    return round(Cx),round(Cy)
+    return round(Cx,2),round(Cy,2)
 
 
 #third_point(1.0,1.0,2.0,2.0,1.0)

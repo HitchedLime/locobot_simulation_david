@@ -12,7 +12,7 @@ from Ontology.ontology_initialization import add_to_graph
 from geometry.distance_angles import euclidean_distance,angle_between_vectors,law_of_cosines,third_point
 
 rospy.init_node('listener_bounding_box', anonymous=True)
-
+real_model_location= []
 
 
 data1=[]
@@ -49,6 +49,7 @@ def callback(data_yolo,data_logic,data_odo):
         data3=data_odo[-1]
         x= data3.pose.pose.position.x
         y= data3.pose.pose.position.y
+        z= data3.pose.pose.position.z
         # print(f" robot current location {x,y}")
         g = Graph()
         g.parse("scripts/listeners/Ontology/ontology1.ttl", format="turtle")   
@@ -76,12 +77,12 @@ def callback(data_yolo,data_logic,data_odo):
             
             if(class_name  in real_camera_bbox):
                 #for the first model
-                distance_from_robot = euclidean_distance([box.pose.position.x,box.pose.position.y,box.pose.position.z])
+                distance_from_robot = euclidean_distance([box.pose.position.x,box.pose.position.y,box.pose.position.z],[x,y,z])
                 u =  [box.pose.position.x,box.pose.position.y,box.pose.position.z]
                 for box_model2 in data2.models:
                     if(box.type !=box_model2.type and box_model2.type !="cafe" and box.type != "cafe"):
                         v=[box_model2.pose.position.x,box_model2.pose.position.y,box_model2.pose.position.z]
-                        box_model2_distance = euclidean_distance([box_model2.pose.position.x,box_model2.pose.position.y,box_model2.pose.position.z])
+                        box_model2_distance = euclidean_distance([box_model2.pose.position.x,box_model2.pose.position.y,box_model2.pose.position.z],[x,y,z])
                         angle  = angle_between_vectors(u,v)
                         
                        # print(f" distance between the objects :{box.type} and {box_model2.type} {law_of_cosines(distance_from_robot,box_model2_distance,angle)}")
@@ -97,7 +98,11 @@ def callback(data_yolo,data_logic,data_odo):
 
                     # distance_from_robot = euclidean_distance([box.pose.position.x,box.pose.position.y,box.pose.position.z])
                     # print(f" Distance : ({distance_from_robot})")
-                        instace_add = {"label":class_name,"distace_from_object":array_of_object,"idetifier":main_objec_identifier,"position":third_point(x,y,0,0,euclidean_distance([box_model2.pose.position.x,box_model2.pose.position.y]))}
+                        for  real_loc in real_model_location:
+                            if (real_loc['label'] == class_name):
+                                x_object,y_object = real_loc['position'].position.x,real_loc['position'].position.y
+
+                        instace_add = {"label":class_name,"distace_from_object":array_of_object,"idetifier":main_objec_identifier,"position":(x_object,y_object)}
                         add_to_graph(instace_add,g)
         g.serialize(destination="scripts/listeners/Ontology/ontology1.ttl", format="turtle")
 
@@ -112,6 +117,7 @@ def callback(data_yolo,data_logic,data_odo):
 # ts.registerCallback(callback)
 
 def cb_once(data):
+    global real_model_location
     for i in range(len(data.name)):
         model_name = data.name[i]
         model_pose = data.pose[i]
@@ -121,6 +127,11 @@ def cb_once(data):
         x = model_pose.position.x
         y = model_pose.position.y
         z = model_pose.position.z
+        model_name= re.sub(r'[0-9]+', '', model_name)
+        model_name= model_name.lower()
+        dic = {"position":model_pose,"label":model_name}
+        real_model_location.append(dic)
+    print(real_model_location)
     sub_once .unregister()
 
 global sub_once 

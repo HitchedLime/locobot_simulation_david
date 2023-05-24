@@ -50,7 +50,7 @@ while not rospy.is_shutdown():
             pan_publisher.publish(-0.75)
         else:
           #  print("Goal found !")
-            speed.linear.x = 0.0001
+            speed.linear.x = 0.00009
             speed.angular.z = 0.0
             tilt_publisher.publish(0.0)
             pan_publisher.publish(-0.75)
