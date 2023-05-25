@@ -30,8 +30,9 @@ with onto:
 
 # Define your SWRL rule using the owlready2 Imp class
     rule = Imp(namespace=ex)
-    rule.set_as_rule("hasPoint(?individual1, ?point), hasPoint(?individual2, ?point), differentFrom(?individual1, ?individual2) -> sameAs(?individual1, ?individual2)")
-
+    rule2=Imp(namespace=ex)
+    rule.set_as_rule("Chair(?chair1), Chair(?chair2), hasX(?chair1, ?x), hasY(?chair1, ?y), hasX(?chair2, ?x), hasY(?chair2, ?y), differentFrom(?chair1, ?chair2) -> sameAs(?chair1, ?chair2)")
+    rule2.set_as_rule("Suitcase(?suitcase1), Suitcase(?suitcase2), hasX(?suitcase1, ?x), hasY(?suitcase1, ?y), hasX(?suitcase2, ?x), hasY(?suitcase2, ?y), differentFrom(?suitcase1, ?suitcase2) -> sameAs(?suitcase1, ?suitcase2)")
 
 
 
@@ -43,19 +44,20 @@ with onto:
     
     query = """
 PREFIX ex: <http://example.org/>
-SELECT ?chair ?point ?x ?y
+SELECT ?chair1 ?chair2
 WHERE {
-  ?chair rdf:type ex:Chair .
-  ?chair ex:hasX ?point_x .
-  ?chair ex:hasY ?point_y.
-  
+    ?chair1 a ex:Chair .
+    ?chair2 a ex:Chair .
+    ?chair1 ex:hasPoint ?point .
+    ?chair2 ex:hasPoint ?point .
+    FILTER (?chair1 = ?chair2)
 }
-
 """
     results = g.query(query)
-    for row in results:
-        print(row)
-        x =list(default_world.sparql(query))
+    #for row in results:
+     #   print(row)
+    x =list(default_world.sparql(query))
+    print(x)
 
 onto.save(file="changed.owl", format="rdfxml")
 
