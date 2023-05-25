@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-  xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:ex="http://example.org/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:ex="http://example.org/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
   <owl:DatatypeProperty rdf:about="http://example.org/hasIdentifier">
@@ -10,6 +10,470 @@
     <rdfs:domain rdf:resource="http://example.org/Suitcase"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
+  <ex:Chair rdf:about="http://example.org/chair68334">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>2801</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point68334">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair50975">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>5432</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point50975">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair5794">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>4014</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point5794">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair64383">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>2288</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point64383">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair97835">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>2336</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point97835">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase2476">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>5343</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point2476">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase91594">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>9673</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point91594">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase49230">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>9239</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point49230">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <rdf:Property rdf:about="http://example.org/y">
+    <rdfs:domain rdf:resource="http://example.org/Point"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Property>
+  <ex:Suitcase rdf:about="http://example.org/suitcase27142">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>325</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point27142">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase41518">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>1936</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point41518">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Chair rdf:about="http://example.org/chair82318">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>5909</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point82318">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase5317">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>5538</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point5317">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase95646">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>3049</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point95646">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase4124">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>7569</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point4124">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <owl:DatatypeProperty rdf:about="http://example.org/hasPoint">
+    <rdfs:domain rdf:resource="http://example.org/Chair"/>
+    <rdfs:domain rdf:resource="http://example.org/Suitcase"/>
+    <rdfs:range rdf:resource="http://example.org/Point"/>
+  </owl:DatatypeProperty>
+  <ex:Chair rdf:about="http://example.org/chair80281">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>2649</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point80281">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair50160">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>4251</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point50160">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair80623">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>5479</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point80623">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase44860">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>5707</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point44860">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Chair rdf:about="http://example.org/chair55688">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>1761</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point55688">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase89476">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>737</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point89476">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Chair rdf:about="http://example.org/chair28874">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>7496</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point28874">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair24151">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>7876</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point24151">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair76762">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>7763</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point76762">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase11425">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>6257</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point11425">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase12303">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>2448</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point12303">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase20599">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>7013</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point20599">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase71540">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>1784</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point71540">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Chair rdf:about="http://example.org/chair64991">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>2920</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point64991">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase70029">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>1723</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point70029">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase37446">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>1593</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point37446">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <owl:DatatypeProperty rdf:about="http://example.org/hasDistance">
+    <rdfs:domain rdf:resource="http://example.org/Chair"/>
+    <rdfs:domain rdf:resource="http://example.org/Suitcase"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <ex:Chair rdf:about="http://example.org/chair78938">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>1116</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point78938">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair95251">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>8037</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point95251">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase62706">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>8259</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point62706">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase51754">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>4884</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point51754">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase99701">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>8971</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point99701">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Chair rdf:about="http://example.org/chair57647">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>9054</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point57647">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase86869">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>8549</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point86869">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase70774">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>4433</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point70774">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Chair rdf:about="http://example.org/chair40885">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>4098</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point40885">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair11298">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>5011</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point11298">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase6602">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>6401</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point6602">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Chair rdf:about="http://example.org/chair29630">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>5001</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point29630">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase75990">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>3317</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point75990">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase17145">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>8524</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point17145">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Chair rdf:about="http://example.org/chair86468">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>6422</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point86468">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
   <ex:Chair rdf:about="http://example.org/myChair_6969">
     <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ex:hasDistance>
     <ex:hasIdentifier>chair1</ex:hasIdentifier>
@@ -20,10 +484,110 @@
       </ex:Point>
     </ex:hasPoint>
   </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase10226">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>2315</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point10226">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Chair rdf:about="http://example.org/chair7701">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>4847</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point7701">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair65659">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>7014</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point65659">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase26892">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>7906</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point26892">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase28733">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>1780</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point28733">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Suitcase rdf:about="http://example.org/suitcase98707">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>37</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point98707">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
   <rdf:Property rdf:about="http://example.org/x">
     <rdfs:domain rdf:resource="http://example.org/Point"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </rdf:Property>
+  <ex:Chair rdf:about="http://example.org/chair18970">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>9425</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point18970">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair51833">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>1828</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point51833">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair13706">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>6516</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point13706">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair53280">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>9384</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point53280">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
   <ex:Chair rdf:about="http://example.org/myChair_420">
     <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ex:hasDistance>
     <ex:hasIdentifier>chair1</ex:hasIdentifier>
@@ -34,21 +598,57 @@
       </ex:Point>
     </ex:hasPoint>
   </ex:Chair>
-  <rdf:Property rdf:about="http://example.org/y">
-    <rdfs:domain rdf:resource="http://example.org/Point"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-  </rdf:Property>
-  <owl:DatatypeProperty rdf:about="http://example.org/hasPoint">
-    <rdfs:domain rdf:resource="http://example.org/Chair"/>
-    <rdfs:domain rdf:resource="http://example.org/Suitcase"/>
-    <rdfs:range rdf:resource="http://example.org/Point"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://example.org/hasDistance">
-    <rdfs:domain rdf:resource="http://example.org/Chair"/>
-    <rdfs:domain rdf:resource="http://example.org/Suitcase"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-  </owl:DatatypeProperty>
+  <ex:Chair rdf:about="http://example.org/chair66317">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>7072</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point66317">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase23693">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>5850</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point23693">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
+  <ex:Chair rdf:about="http://example.org/chair51690">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>5825</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point51690">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Chair rdf:about="http://example.org/chair5308">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>3728</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point5308">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.80259</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.97588</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Chair>
+  <ex:Suitcase rdf:about="http://example.org/suitcase62242">
+    <ex:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ex:hasDistance>
+    <ex:hasIdentifier>4051</ex:hasIdentifier>
+    <ex:hasPoint>
+      <ex:Point rdf:about="http://example.org/point62242">
+        <ex:x rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.82364</ex:x>
+        <ex:y rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.7216</ex:y>
+      </ex:Point>
+    </ex:hasPoint>
+  </ex:Suitcase>
   <owl:Class rdf:about="http://example.org/Chair"/>
-  <owl:Class rdf:about="http://example.org/Suitcase"/>
   <rdfs:Class rdf:about="http://example.org/Point"/>
+  <owl:Class rdf:about="http://example.org/Suitcase"/>
 </rdf:RDF>
