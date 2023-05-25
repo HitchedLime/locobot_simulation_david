@@ -42,17 +42,25 @@ with onto:
 
     
     query = """
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-SELECT ?individual
+PREFIX ex: <http://example.org/>
+SELECT ?chair ?point ?x ?y
 WHERE {
-    ?individual rdf:type/rdfs:subClassOf* <http://example.org/Chair> .
+  ?chair rdf:type ex:Chair .
+  ?chair ex:hasX ?point_x .
+  ?chair ex:hasY ?point_y.
+  
 }
-"""
-    x =list(default_world.sparql(query))
-    print(x)
 
-onto.save(file="changed", format="rdfxml")
+"""
+    results = g.query(query)
+    for row in results:
+        print(row)
+        x =list(default_world.sparql(query))
+
+onto.save(file="changed.owl", format="rdfxml")
+
+
+
+
+
+

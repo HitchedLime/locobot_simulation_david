@@ -21,15 +21,22 @@ ex:hasPoint a owl:DatatypeProperty ;
         ex:Suitcase ;
     rdfs:range ex:Point .
 
-ex:myChair_6969 a ex:Chair ;
-    ex:hasDistance 5 ;
-    ex:hasIdentifier "chair1" ;
-    ex:hasPoint ex:myPoint_6969.
+ex:hasX a owl:DatatypeProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range xsd:double .
 
-ex:myChair_420 a ex:Chair ;
+ex:hasY a owl:DatatypeProperty ;
+    rdfs:domain ex:Chair,
+        ex:Suitcase ;
+    rdfs:range xsd:double .
+
+ex:myChair a ex:Chair ;
     ex:hasDistance 5 ;
     ex:hasIdentifier "chair1" ;
-    ex:hasPoint ex:myPoint_420 .
+    ex:hasPoint ex:myPoint ;
+    ex:hasX 69 ;
+    ex:hasY 420 .
 
 ex:x a rdf:Property ;
     rdfs:domain ex:Point ;
@@ -39,10 +46,7 @@ ex:y a rdf:Property ;
     rdfs:domain ex:Point ;
     rdfs:range xsd:integer .
 
-ex:myPoint_6969 a ex:Point ;
-    ex:x 10 ;
-    ex:y 20 .
-ex:myPoint_420 a ex:Point ;
+ex:myPoint a ex:Point ;
     ex:x 10 ;
     ex:y 20 .
 
