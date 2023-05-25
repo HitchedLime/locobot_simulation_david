@@ -1,34 +1,121 @@
 @prefix ex: <http://example.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:Point a rdfs:Class .
-
-ex:chair39924 a ex:Chair ;
+ex:chair12003 a ex:Chair ;
     ex:hasDistance 0 ;
-    ex:hasIdentifier "1356" ;
-    ex:hasPoint ex:point39924 ;
+    ex:hasIdentifier "5944" ;
     ex:hasX 2.80259e+00 ;
-    ex:hasY -2.97588e+00 ;
-    ex:x 2.80259e+00 .
+    ex:hasY -2.97588e+00 .
 
-ex:chair49382 a ex:Chair ;
+ex:chair1910 a ex:Chair ;
     ex:hasDistance 0 ;
-    ex:hasIdentifier "2625" ;
-    ex:hasPoint ex:point49382 ;
+    ex:hasIdentifier "7176" ;
     ex:hasX 2.80259e+00 ;
-    ex:hasY -2.97588e+00 ;
-    ex:x 2.80259e+00 .
+    ex:hasY -2.97588e+00 .
 
-ex:chair5790 a ex:Chair ;
+ex:chair24775 a ex:Chair ;
     ex:hasDistance 0 ;
-    ex:hasIdentifier "2781" ;
-    ex:hasPoint ex:point5790 ;
+    ex:hasIdentifier "2780" ;
     ex:hasX 2.80259e+00 ;
-    ex:hasY -2.97588e+00 ;
-    ex:x 2.80259e+00 .
+    ex:hasY -2.97588e+00 .
+
+ex:chair29700 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4368" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair33076 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "7503" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair34259 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1540" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair41644 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "123" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair46302 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "793" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair47037 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4655" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair53076 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4766" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair54518 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9290" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair60552 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "6420" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair61446 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "879" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair62063 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3717" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair67890 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1747" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair76997 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "615" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair8215 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1974" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair84209 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1506" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair97447 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "606" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
 
 ex:hasDistance a owl:DatatypeProperty ;
     rdfs:domain ex:Chair,
@@ -39,11 +126,6 @@ ex:hasIdentifier a owl:DatatypeProperty ;
     rdfs:domain ex:Chair,
         ex:Suitcase ;
     rdfs:range xsd:string .
-
-ex:hasPoint a owl:DatatypeProperty ;
-    rdfs:domain ex:Chair,
-        ex:Suitcase ;
-    rdfs:range ex:Point .
 
 ex:hasX a owl:DatatypeProperty ;
     rdfs:domain ex:Chair,
@@ -57,62 +139,131 @@ ex:hasY a owl:DatatypeProperty ;
 
 ex:myChair a ex:Chair ;
     ex:hasDistance 5 ;
+    ex:hasIdentifier "chair" ;
+    ex:hasPoint ex:myPoint ;
+    ex:hasX 69.0 ;
+    ex:hasY 420.0 .
+
+ex:myChair1 a ex:Chair ;
+    ex:hasDistance 5 ;
     ex:hasIdentifier "chair1" ;
-    ex:hasPoint ex:myPoint .
+    ex:hasPoint ex:myPoint ;
+    ex:hasX 69.0 ;
+    ex:hasY 420.0 .
 
-ex:suitcase69425 a ex:Suitcase ;
+ex:suitcase10142 a ex:Suitcase ;
     ex:hasDistance 0 ;
-    ex:hasIdentifier "6517" ;
-    ex:hasPoint ex:point69425 ;
+    ex:hasIdentifier "4678" ;
     ex:hasX 3.82364e+00 ;
-    ex:hasY -1.7216e+00 ;
-    ex:x 3.82364e+00 .
+    ex:hasY -1.7216e+00 .
 
-ex:suitcase80602 a ex:Suitcase ;
+ex:suitcase12052 a ex:Suitcase ;
     ex:hasDistance 0 ;
-    ex:hasIdentifier "4496" ;
-    ex:hasPoint ex:point80602 ;
+    ex:hasIdentifier "5692" ;
     ex:hasX 3.82364e+00 ;
-    ex:hasY -1.7216e+00 ;
-    ex:x 3.82364e+00 .
+    ex:hasY -1.7216e+00 .
 
-ex:suitcase89777 a ex:Suitcase ;
+ex:suitcase24374 a ex:Suitcase ;
     ex:hasDistance 0 ;
-    ex:hasIdentifier "4480" ;
-    ex:hasPoint ex:point89777 ;
+    ex:hasIdentifier "6190" ;
     ex:hasX 3.82364e+00 ;
-    ex:hasY -1.7216e+00 ;
-    ex:x 3.82364e+00 .
+    ex:hasY -1.7216e+00 .
 
-ex:x a rdf:Property ;
-    rdfs:domain ex:Point ;
-    rdfs:range xsd:integer .
+ex:suitcase26759 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8374" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
 
-ex:y a rdf:Property ;
-    rdfs:domain ex:Point ;
-    rdfs:range xsd:integer .
+ex:suitcase29095 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5433" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
 
-ex:myPoint a ex:Point ;
-    ex:x 10 ;
-    ex:y 20 .
+ex:suitcase33773 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8773" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
 
-ex:point39924 a ex:Point ;
-    ex:y -2.97588e+00 .
+ex:suitcase44819 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5814" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
 
-ex:point49382 a ex:Point ;
-    ex:y -2.97588e+00 .
+ex:suitcase49324 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "2548" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
 
-ex:point5790 a ex:Point ;
-    ex:y -2.97588e+00 .
+ex:suitcase5146 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8702" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
 
-ex:point69425 a ex:Point ;
-    ex:y -1.7216e+00 .
+ex:suitcase5531 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4143" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
 
-ex:point80602 a ex:Point ;
-    ex:y -1.7216e+00 .
+ex:suitcase62773 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "7955" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
 
-ex:point89777 a ex:Point ;
-    ex:y -1.7216e+00 .
+ex:suitcase68513 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4264" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase70336 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "245" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase75896 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8815" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase78496 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1799" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase80729 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9360" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase88619 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5215" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase93639 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1884" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase98269 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9435" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
 
 ex:Suitcase a owl:Class .
 

@@ -44,13 +44,11 @@ with onto:
     
     query = """
 PREFIX ex: <http://example.org/>
-SELECT ?chair1 ?chair2
+SELECT ?chair1 ?x ?y
 WHERE {
     ?chair1 a ex:Chair .
-    ?chair2 a ex:Chair .
-    ?chair1 ex:hasPoint ?point .
-    ?chair2 ex:hasPoint ?point .
-    FILTER (?chair1 = ?chair2)
+    ?chair1 ex:hasX ?x .
+    ?chair1 ex:hasY ?y
 }
 """
     results = g.query(query)
@@ -59,7 +57,7 @@ WHERE {
     x =list(default_world.sparql(query))
     print(x)
 
-onto.save(file="changed.owl", format="rdfxml")
+    onto.save(file="changed.owl", format="rdfxml")
 
 
 

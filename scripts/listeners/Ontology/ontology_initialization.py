@@ -17,14 +17,14 @@ def add_to_graph(data :dict,g:Graph )-> None:
             x,y =data['position']
             point=ex[f"point{identifier_name}"]
             g.add((item, RDF.type, ex[f"{dictionary['name'].capitalize()}"]))
-            g.add((point, RDF.type, ex.Point))
+           
             
-            g.add((point, ex.y, Literal(y)))
-            g.add((item, ex.hasX, Literal(x)))
-            g.add((item, ex.hasY, Literal(y)))
+            
+            g.add((item, ex.hasX, Literal(float(x))))
+            g.add((item, ex.hasY, Literal(float(y))))
             g.add((item, ex.hasDistance, Literal(0)))
             g.add((item, ex.hasIdentifier, Literal(str(data['idetifier']))))
-            g.add((item, ex.hasPoint, point))
+            
     #g.serialize("output.owl", format="xml")
     print(g.serialize(format="turtle"))
 
@@ -47,22 +47,19 @@ g.add((ex.Chair, RDF.type, OWL.Class))
 g.add((ex.Suitcase, RDF.type, OWL.Class))
 
 # Define the "Point" class
-g.add((ex.Point, RDF.type, RDFS.Class))
+# g.add((ex.Point, RDF.type, RDFS.Class))
 
-# Define the "x" and "y" properties
-g.add((ex.x, RDF.type, RDF.Property))
-g.add((ex.x, RDFS.domain, ex.Point))
-g.add((ex.x, RDFS.range, XSD.integer))
+# # Define the "x" and "y" properties
+# g.add((ex.x, RDF.type, RDF.Property))
+# g.add((ex.x, RDFS.domain, ex.Point))
+# g.add((ex.x, RDFS.range, XSD.double))
 
-g.add((ex.y, RDF.type, RDF.Property))
-g.add((ex.y, RDFS.domain, ex.Point))
-g.add((ex.y, RDFS.range, XSD.integer))
+# g.add((ex.y, RDF.type, RDF.Property))
+# g.add((ex.y, RDFS.domain, ex.Point))
+# g.add((ex.y, RDFS.range, XSD.double))
 
 # Define the "hasPoint" data property
-g.add((ex.hasPoint, RDF.type, OWL.DatatypeProperty))
-g.add((ex.hasPoint, RDFS.domain, ex.Chair))
-g.add((ex.hasPoint, RDFS.domain, ex.Suitcase))
-g.add((ex.hasPoint, RDFS.range, ex.Point))
+
 
 g.add((ex.hasY, RDF.type, OWL.DatatypeProperty))
 g.add((ex.hasY, RDFS.domain, ex.Chair))
@@ -94,11 +91,9 @@ g.add((ex.hasDistance, RDFS.range, XSD.integer))
 my_chair = URIRef("http://example.org/myChair")
 g.add((my_chair, RDF.type, ex.Chair))
 g.add((my_chair, ex.hasDistance, Literal(5)))
-g.add((my_chair, ex.hasIdentifier, Literal("chair1")))
+g.add((my_chair, ex.hasIdentifier, Literal("chair")))
 my_point = URIRef("http://example.org/myPoint")
-g.add((my_point, RDF.type, ex.Point))
-g.add((my_point, ex.x, Literal(10)))
-g.add((my_point, ex.y, Literal(20)))
+
 g.add((my_chair,ex.hasX,Literal(69)))
 g.add((my_chair,ex.hasY,Literal(420)))
 # Associate the Chair instance with the Point instance
