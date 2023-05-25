@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="scripts/listeners/Ontology/output.owl"
+         xmlns="scripts/listeners/Ontology/output.owl#"
+         xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+         xmlns:exam="http://example.org/">
+
+<owl:Ontology rdf:about="scripts/listeners/Ontology/output.owl"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/hasIdentifier">
+  <rdfs:domain rdf:resource="http://example.org/Chair"/>
+  <rdfs:domain rdf:resource="http://example.org/Suitcase"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://example.org/hasPoint">
+  <rdfs:domain rdf:resource="http://example.org/Chair"/>
+  <rdfs:domain rdf:resource="http://example.org/Suitcase"/>
+  <rdfs:range rdf:resource="http://example.org/Point"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://example.org/hasDistance">
+  <rdfs:domain rdf:resource="http://example.org/Chair"/>
+  <rdfs:domain rdf:resource="http://example.org/Suitcase"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="http://example.org/Chair"/>
+
+<owl:Class rdf:about="http://example.org/Suitcase"/>
+
+<exam:Chair rdf:about="http://example.org/myChair_6969">
+  <exam:hasPoint rdf:resource="http://example.org/myPoint_6969"/>
+  <exam:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</exam:hasDistance>
+  <exam:hasIdentifier>chair1</exam:hasIdentifier>
+</exam:Chair>
+
+<exam:Point rdf:about="http://example.org/myPoint_6969">
+  <exam:x rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.255</exam:x>
+  <exam:y rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.2525</exam:y>
+</exam:Point>
+
+<rdfs:Class rdf:about="http://example.org/Point"/>
+
+<rdf:Property rdf:about="http://example.org/x">
+  <rdfs:domain rdf:resource="http://example.org/Point"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</rdf:Property>
+
+<exam:Chair rdf:about="http://example.org/myChair_420">
+  <exam:hasPoint rdf:resource="http://example.org/myPoint_420"/>
+  <exam:hasDistance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</exam:hasDistance>
+  <exam:hasIdentifier>chair1</exam:hasIdentifier>
+</exam:Chair>
+
+<exam:Point rdf:about="http://example.org/myPoint_420">
+  <exam:x rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</exam:x>
+  <exam:y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</exam:y>
+</exam:Point>
+
+<rdf:Property rdf:about="http://example.org/y">
+  <rdfs:domain rdf:resource="http://example.org/Point"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</rdf:Property>
+
+<swrl:Variable rdf:about="urn:swrl#individual1"/>
+
+<swrl:Variable rdf:about="urn:swrl#point"/>
+
+<swrl:Variable rdf:about="urn:swrl#individual2"/>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:DatavaluedPropertyAtom>
+          <swrl:propertyPredicate rdf:resource="http://example.org/hasPoint"/>
+          <swrl:argument1 rdf:resource="urn:swrl#individual1"/>
+          <swrl:argument2 rdf:resource="urn:swrl#point"/>
+        </swrl:DatavaluedPropertyAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://example.org/hasPoint"/>
+              <swrl:argument1 rdf:resource="urn:swrl#individual2"/>
+              <swrl:argument2 rdf:resource="urn:swrl#point"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:DifferentIndividualsAtom>
+                  <swrl:argument1 rdf:resource="urn:swrl#individual1"/>
+                  <swrl:argument2 rdf:resource="urn:swrl#individual2"/>
+                </swrl:DifferentIndividualsAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:SameIndividualAtom>
+          <swrl:argument1 rdf:resource="urn:swrl#individual1"/>
+          <swrl:argument2 rdf:resource="urn:swrl#individual2"/>
+        </swrl:SameIndividualAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+
+</rdf:RDF>

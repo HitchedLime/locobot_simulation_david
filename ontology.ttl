@@ -40,8 +40,8 @@ ex:y a rdf:Property ;
     rdfs:range xsd:integer .
 
 ex:myPoint_6969 a ex:Point ;
-    ex:x 10.255 ;
-    ex:y 20.2525 .
+    ex:x 10 ;
+    ex:y 20 .
 ex:myPoint_420 a ex:Point ;
     ex:x 10 ;
     ex:y 20 .
@@ -50,13 +50,3 @@ ex:Suitcase a owl:Class .
 
 ex:Chair a owl:Class .
 
-IF {
-  ?individual1 rdf:type ?class .
-  ?individual1 ex:hasPoint ?point .
-  ?individual2 rdf:type ?class .
-  ?individual2 ex:hasPoint ?point .
-  FILTER(?individual1 != ?individual2)
-}
-THEN {
-  ?individual1 owl:sameAs ?individual2
-}
