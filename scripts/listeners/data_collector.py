@@ -1,11 +1,12 @@
 import rospy
 from locobot_simulation.msg import BoundingBoxes,LogicalImage 
-import message_filters
+
 from  nav_msgs.msg import Odometry
 from rdflib import Graph
 from gazebo_msgs.msg import ModelStates
 import re 
 import random
+from Ontology.reasoning import reasoner
 
 
 from Ontology.ontology_initialization import add_to_graph
@@ -105,6 +106,7 @@ def callback(data_yolo,data_logic,data_odo):
                         instace_add = {"label":class_name,"distace_from_object":array_of_object,"idetifier":main_objec_identifier,"position":(x_object,y_object)}
                         add_to_graph(instace_add,g)
         g.serialize(destination="scripts/listeners/Ontology/ontology1.ttl", format="turtle")
+        reasoner()
 
             
             

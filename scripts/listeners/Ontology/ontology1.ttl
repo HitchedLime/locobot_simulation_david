@@ -137,19 +137,7 @@ ex:hasY a owl:DatatypeProperty ;
         ex:Suitcase ;
     rdfs:range xsd:double .
 
-ex:myChair a ex:Chair ;
-    ex:hasDistance 5 ;
-    ex:hasIdentifier "chair" ;
-    ex:hasPoint ex:myPoint ;
-    ex:hasX 69.0 ;
-    ex:hasY 420.0 .
 
-ex:myChair1 a ex:Chair ;
-    ex:hasDistance 5 ;
-    ex:hasIdentifier "chair1" ;
-    ex:hasPoint ex:myPoint ;
-    ex:hasX 69.0 ;
-    ex:hasY 420.0 .
 
 ex:suitcase10142 a ex:Suitcase ;
     ex:hasDistance 0 ;

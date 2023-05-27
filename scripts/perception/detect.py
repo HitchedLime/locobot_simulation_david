@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+import os
+import sys
+import math
+from pathlib import Path
 
 import rospy
 import cv2
@@ -6,13 +10,18 @@ import torch
 import torch.backends.cudnn as cudnn
 import numpy as np
 from cv_bridge import CvBridge
-from pathlib import Path
-import os
-import sys
+
+
 from rostopic import get_topic_type
-import pandas as pd 
+
+
 from sensor_msgs.msg import Image, CompressedImage
 from locobot_simulation.msg import BoundingBox, BoundingBoxes
+from  nav_msgs.msg import Odometry
+
+
+from owlready2 import *
+
 
 # add yolov5 submodule to path
 FILE = Path(__file__).resolve()
@@ -21,7 +30,7 @@ ROOT = FILE.parents[0] / "yolov5"
 if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))  # add ROOT to PATH
 ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative path
-
+data3 = []
 # import from yolov5 submodules
 from models.common import DetectMultiBackend
 from utils.general import (
@@ -33,7 +42,42 @@ from utils.general import (
 from utils.plots import Annotator, colors
 from utils.torch_utils import select_device
 from utils.augmentations import letterbox
+def filter_nearest(x:float,y:float,id:str,array:list)->list::
+    """Finds the nearest item different from current class .That is near our current estimated postion"""
+    nearest_items=[]
+    for item in array:
+       # word = re.sub(r'\d', '',str(item[0]).split('.')[-1]).capitalize()
+        distance_from_robot = math.sqrt((x-item[1])**2+(y-item[2])**2)
+        if(distance_from_robot<4):
+            nearest_items.append((item,distance_from_robot))
+    return nearest_items
+def filter_items_close(arra:list)->list:
+    pass
+            
 
+        
+
+
+
+
+    
+
+def query(query_class:str,default_onto_path ="/home/david/catkin_ws/src/locobot_simulation_david/changed.owl")->list:
+    query_base =  f"""
+    PREFIX ex: <http://example.org/>
+    SELECT ?chair1 ?x ?y
+    WHERE {{
+        ?chair1 a ex:{query_class}.
+        ?chair1 ex:hasX ?x .
+        ?chair1 ex:hasY ?y .
+    }}
+"""
+    print(query_base)
+    onto = get_ontology(default_onto_path)
+    onto.load()
+    x =list(default_world.sparql(query_base))
+    
+    return x 
 
 @torch.no_grad()
 class Yolov5Detector:
@@ -122,10 +166,13 @@ class Yolov5Detector:
             im = im[None]
 
         pred = self.model(im, augment=False, visualize=False)
-       
+        
+        conf_thres=0.10
+        iou_thres=0.20
         pred = non_max_suppression(
-            pred, self.conf_thres, self.iou_thres, self.classes, self.agnostic_nms, max_det=self.max_det
+            pred, conf_thres, iou_thres, self.classes, self.agnostic_nms, max_det=10
         )
+        
         
         
 
@@ -133,7 +180,26 @@ class Yolov5Detector:
         
         # Process predictions 
         det = pred[0].cpu().numpy()
+        
+        
+        for prediction in  det: 
+            if(prediction[-1]==56 or prediction[-1]==26):
+                if(prediction[-1]==56):
+                    query_string="Suitcase"
+                elif(prediction[-1]==26): 
+                    query_string ="Chair"
 
+                if(data3):
+                    x= data3[-1].pose.pose.position.x
+                    y= data3[-1].pose.pose.position.y
+                    z= data3[-1].pose.pose.position.z
+                    ontology_data =query(query_string)
+                    items_near = filter_nearest(x,y,query_string,ontology_data)
+                    print(items_near)
+               # while(True):
+                 #   continue
+                
+       
         bounding_boxes = BoundingBoxes()
         bounding_boxes.header = data.header
         bounding_boxes.image_header = data.header
@@ -192,6 +258,12 @@ class Yolov5Detector:
 
         return img, img0 
 
+def callback3(data_odo):
+    global data3
+    data3.append(data_odo)
+    #print(f'{data3}')
+
+  
 
 if __name__ == "__main__":
 
@@ -199,5 +271,5 @@ if __name__ == "__main__":
     
     rospy.init_node("yolov5", anonymous=True)
     detector = Yolov5Detector()
-    
+    odometry_sub =rospy.Subscriber("/locobot/odom",Odometry,callback3)
     rospy.spin()

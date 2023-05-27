@@ -94,8 +94,8 @@ g.add((my_chair, ex.hasDistance, Literal(5)))
 g.add((my_chair, ex.hasIdentifier, Literal("chair")))
 my_point = URIRef("http://example.org/myPoint")
 
-g.add((my_chair,ex.hasX,Literal(69)))
-g.add((my_chair,ex.hasY,Literal(420)))
+g.add((my_chair,ex.hasX,Literal(float(69))))
+g.add((my_chair,ex.hasY,Literal(float(420))))
 # Associate the Chair instance with the Point instance
 g.add((my_chair, ex.hasPoint, my_point))
 
