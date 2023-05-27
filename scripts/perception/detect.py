@@ -42,17 +42,30 @@ from utils.general import (
 from utils.plots import Annotator, colors
 from utils.torch_utils import select_device
 from utils.augmentations import letterbox
-def filter_nearest(x:float,y:float,id:str,array:list)->list::
+def filter_nearest(x:float,y:float,id:str,array:list)->list:
     """Finds the nearest item different from current class .That is near our current estimated postion"""
     nearest_items=[]
     for item in array:
        # word = re.sub(r'\d', '',str(item[0]).split('.')[-1]).capitalize()
         distance_from_robot = math.sqrt((x-item[1])**2+(y-item[2])**2)
         if(distance_from_robot<4):
-            nearest_items.append((item,distance_from_robot))
+            nearest_items.append(item)
     return nearest_items
-def filter_items_close(arra:list)->list:
-    pass
+
+def filter_items_close(array:list)->dict:
+    distances ={}
+    for item in array:
+        word = str(item[0]).split('.')[-1]
+        for item2 in array:
+            word2 = str(item2[0]).split('.')[-1]
+            
+            distances_between_items=  round(math.sqrt((item2[1]-item[1])**2+(item2[2]-item[2])**2),2)
+            if(distances_between_items<3):
+                distances[distances_between_items]=(word,word2)
+    
+    del distances[0]
+    return distances
+                
             
 
         
@@ -72,7 +85,7 @@ def query(query_class:str,default_onto_path ="/home/david/catkin_ws/src/locobot_
         ?chair1 ex:hasY ?y .
     }}
 """
-    print(query_base)
+    
     onto = get_ontology(default_onto_path)
     onto.load()
     x =list(default_world.sparql(query_base))
@@ -192,12 +205,21 @@ class Yolov5Detector:
                 if(data3):
                     x= data3[-1].pose.pose.position.x
                     y= data3[-1].pose.pose.position.y
-                    z= data3[-1].pose.pose.position.z
+                   
                     ontology_data =query(query_string)
                     items_near = filter_nearest(x,y,query_string,ontology_data)
-                    print(items_near)
-               # while(True):
-                 #   continue
+                    items_close_to = filter_items_close(items_near)
+                    for key in items_close_to:
+                        for  x  in items_close_to[key]:
+                                if(query_string==re.sub(r'\d', '', x).capitalize()):
+                                        
+                                        if(prediction[-2] <0.40):
+                                            print(f"pre {prediction}")
+                                            prediction[-2]= prediction[-2]+ 0.4
+                                            print(f"po {prediction}")
+
+
+
                 
        
         bounding_boxes = BoundingBoxes()
