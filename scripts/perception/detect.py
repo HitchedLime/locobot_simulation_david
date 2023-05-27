@@ -22,7 +22,7 @@ from  nav_msgs.msg import Odometry
 
 from owlready2 import *
 
-
+TEST =True
 # add yolov5 submodule to path
 FILE = Path(__file__).resolve()
 sys.path.insert(0, './yolov5')
@@ -194,29 +194,29 @@ class Yolov5Detector:
         # Process predictions 
         det = pred[0].cpu().numpy()
         
-        
-        for prediction in  det: 
-            if(prediction[-1]==56 or prediction[-1]==26):
-                if(prediction[-1]==56):
-                    query_string="Suitcase"
-                elif(prediction[-1]==26): 
-                    query_string ="Chair"
+        if (TEST==True):
+            for prediction in  det: 
+                if(prediction[-1]==56 or prediction[-1]==26):
+                    if(prediction[-1]==56):
+                        query_string="Suitcase"
+                    elif(prediction[-1]==26): 
+                        query_string ="Chair"
 
-                if(data3):
-                    x= data3[-1].pose.pose.position.x
-                    y= data3[-1].pose.pose.position.y
-                   
-                    ontology_data =query(query_string)
-                    items_near = filter_nearest(x,y,query_string,ontology_data)
-                    items_close_to = filter_items_close(items_near)
-                    for key in items_close_to:
-                        for  x  in items_close_to[key]:
-                                if(query_string==re.sub(r'\d', '', x).capitalize()):
-                                        
-                                        if(prediction[-2] <0.40):
-                                            print(f"pre {prediction}")
-                                            prediction[-2]= prediction[-2]+ 0.4
-                                            print(f"po {prediction}")
+                    if(data3):
+                        x= data3[-1].pose.pose.position.x
+                        y= data3[-1].pose.pose.position.y
+                    
+                        ontology_data =query(query_string)
+                        items_near = filter_nearest(x,y,query_string,ontology_data)
+                        items_close_to = filter_items_close(items_near)
+                        for key in items_close_to:
+                            for  x  in items_close_to[key]:
+                                    if(query_string==re.sub(r'\d', '', x).capitalize()):
+                                            
+                                            if(prediction[-2] <0.40):
+                                                print(f"pre {prediction}")
+                                                prediction[-2]= prediction[-2]+ 0.4
+                                                print(f"po {prediction}")
 
 
 
