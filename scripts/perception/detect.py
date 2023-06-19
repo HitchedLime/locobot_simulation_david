@@ -64,10 +64,12 @@ def filter_items_close(array:list)->dict:
                 distances[distances_between_items]=(word,word2)
     
     del distances[0]
+
     return distances
                 
             
-
+def confidence_distance_base_boost(x):
+    return 1/(x)
         
 
 
@@ -180,21 +182,18 @@ class Yolov5Detector:
 
         pred = self.model(im, augment=False, visualize=False)
         
-        conf_thres=0.10
-        iou_thres=0.20
-        pred = non_max_suppression(
-            pred, conf_thres, iou_thres, self.classes, self.agnostic_nms, max_det=10
-        )
+       
         
-        
-        
-
-        ### To-do move pred to CPU and fill BoundingBox messages
-        
-        # Process predictions 
-        det = pred[0].cpu().numpy()
         
         if (TEST==True):
+            conf_thres=0.30
+            iou_thres=0.20
+            pred = non_max_suppression(
+            pred, conf_thres, iou_thres, self.classes, self.agnostic_nms, max_det=10
+            )
+
+            det = pred[0].cpu().numpy()
+
             for prediction in  det: 
                 if(prediction[-1]==56 or prediction[-1]==26):
                     if(prediction[-1]==56):
@@ -209,16 +208,31 @@ class Yolov5Detector:
                         ontology_data =query(query_string)
                         items_near = filter_nearest(x,y,query_string,ontology_data)
                         items_close_to = filter_items_close(items_near)
+                        
                         for key in items_close_to:
                             for  x  in items_close_to[key]:
+                                    
                                     if(query_string==re.sub(r'\d', '', x).capitalize()):
                                             
                                             if(prediction[-2] <0.40):
                                                 print(f"pre {prediction}")
-                                                prediction[-2]= prediction[-2]+ 0.4
+                                                if((prediction[-2] + confidence_distance_base_boost(key)) >=1):
+                                                    prediction[-2] = 1
+                                                else: 
+                                                    prediction[-2] = prediction[-2] + confidence_distance_base_boost(key)
                                                 print(f"po {prediction}")
+        else:
+            pred = non_max_suppression(
+            pred, self.conf_thres, self.iou_thres, self.classes, self.agnostic_nms, max_det=self.max_det
+        )
+        
+        
+        
 
-
+        ### To-do move pred to CPU and fill BoundingBox messages
+        
+        # Process predictions 
+        det = pred[0].cpu().numpy()
 
                 
        

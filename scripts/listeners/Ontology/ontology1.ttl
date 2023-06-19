@@ -9,9 +9,21 @@ ex:chair12003 a ex:Chair ;
     ex:hasX 2.80259e+00 ;
     ex:hasY -2.97588e+00 .
 
+ex:chair15667 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5819" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
 ex:chair1910 a ex:Chair ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "7176" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair24195 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4116" ;
     ex:hasX 2.80259e+00 ;
     ex:hasY -2.97588e+00 .
 
@@ -39,9 +51,27 @@ ex:chair34259 a ex:Chair ;
     ex:hasX 2.80259e+00 ;
     ex:hasY -2.97588e+00 .
 
+ex:chair39746 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1783" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
 ex:chair41644 a ex:Chair ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "123" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair45065 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3577" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair45349 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "2531" ;
     ex:hasX 2.80259e+00 ;
     ex:hasY -2.97588e+00 .
 
@@ -57,6 +87,18 @@ ex:chair47037 a ex:Chair ;
     ex:hasX 2.80259e+00 ;
     ex:hasY -2.97588e+00 .
 
+ex:chair49574 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "199" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair51872 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5529" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
 ex:chair53076 a ex:Chair ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "4766" ;
@@ -66,6 +108,12 @@ ex:chair53076 a ex:Chair ;
 ex:chair54518 a ex:Chair ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "9290" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair55959 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3876" ;
     ex:hasX 2.80259e+00 ;
     ex:hasY -2.97588e+00 .
 
@@ -87,15 +135,45 @@ ex:chair62063 a ex:Chair ;
     ex:hasX 2.80259e+00 ;
     ex:hasY -2.97588e+00 .
 
+ex:chair63144 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "357" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
 ex:chair67890 a ex:Chair ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "1747" ;
     ex:hasX 2.80259e+00 ;
     ex:hasY -2.97588e+00 .
 
+ex:chair75205 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4014" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
 ex:chair76997 a ex:Chair ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "615" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair77804 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1494" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair7797 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "2440" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair81466 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8013" ;
     ex:hasX 2.80259e+00 ;
     ex:hasY -2.97588e+00 .
 
@@ -108,6 +186,30 @@ ex:chair8215 a ex:Chair ;
 ex:chair84209 a ex:Chair ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "1506" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair84242 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "2534" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair84769 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "2853" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair88255 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "6724" ;
+    ex:hasX 2.80259e+00 ;
+    ex:hasY -2.97588e+00 .
+
+ex:chair92737 a ex:Chair ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9311" ;
     ex:hasX 2.80259e+00 ;
     ex:hasY -2.97588e+00 .
 
@@ -137,8 +239,6 @@ ex:hasY a owl:DatatypeProperty ;
         ex:Suitcase ;
     rdfs:range xsd:double .
 
-
-
 ex:suitcase10142 a ex:Suitcase ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "4678" ;
@@ -151,9 +251,27 @@ ex:suitcase12052 a ex:Suitcase ;
     ex:hasX 3.82364e+00 ;
     ex:hasY -1.7216e+00 .
 
+ex:suitcase14447 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3905" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase16222 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "5965" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
 ex:suitcase24374 a ex:Suitcase ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "6190" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase2526 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3353" ;
     ex:hasX 3.82364e+00 ;
     ex:hasY -1.7216e+00 .
 
@@ -163,9 +281,21 @@ ex:suitcase26759 a ex:Suitcase ;
     ex:hasX 3.82364e+00 ;
     ex:hasY -1.7216e+00 .
 
+ex:suitcase27884 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "9249" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
 ex:suitcase29095 a ex:Suitcase ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "5433" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase29688 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1952" ;
     ex:hasX 3.82364e+00 ;
     ex:hasY -1.7216e+00 .
 
@@ -175,15 +305,51 @@ ex:suitcase33773 a ex:Suitcase ;
     ex:hasX 3.82364e+00 ;
     ex:hasY -1.7216e+00 .
 
+ex:suitcase33972 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8163" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase3506 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1449" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase36368 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "4438" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase40198 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "1761" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
 ex:suitcase44819 a ex:Suitcase ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "5814" ;
     ex:hasX 3.82364e+00 ;
     ex:hasY -1.7216e+00 .
 
+ex:suitcase48686 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3499" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
 ex:suitcase49324 a ex:Suitcase ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "2548" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase50080 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "3029" ;
     ex:hasX 3.82364e+00 ;
     ex:hasY -1.7216e+00 .
 
@@ -196,6 +362,12 @@ ex:suitcase5146 a ex:Suitcase ;
 ex:suitcase5531 a ex:Suitcase ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "4143" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase57559 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "12" ;
     ex:hasX 3.82364e+00 ;
     ex:hasY -1.7216e+00 .
 
@@ -235,6 +407,24 @@ ex:suitcase80729 a ex:Suitcase ;
     ex:hasX 3.82364e+00 ;
     ex:hasY -1.7216e+00 .
 
+ex:suitcase83955 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "2547" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase87359 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "18" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase88472 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "6535" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
 ex:suitcase88619 a ex:Suitcase ;
     ex:hasDistance 0 ;
     ex:hasIdentifier "5215" ;
@@ -253,7 +443,19 @@ ex:suitcase98269 a ex:Suitcase ;
     ex:hasX 3.82364e+00 ;
     ex:hasY -1.7216e+00 .
 
-ex:Suitcase a owl:Class .
+ex:suitcase98959 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "8913" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
+
+ex:suitcase99820 a ex:Suitcase ;
+    ex:hasDistance 0 ;
+    ex:hasIdentifier "156" ;
+    ex:hasX 3.82364e+00 ;
+    ex:hasY -1.7216e+00 .
 
 ex:Chair a owl:Class .
+
+ex:Suitcase a owl:Class .
 

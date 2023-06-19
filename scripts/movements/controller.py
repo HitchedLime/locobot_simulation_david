@@ -46,13 +46,13 @@ while not rospy.is_shutdown():
           #  print("Looking for goal ...")
             speed.linear.x = 0.0
             speed.angular.z = 0.3
-            tilt_publisher.publish(0.0)
+            tilt_publisher.publish(0.1)
             pan_publisher.publish(-0.75)
         else:
           #  print("Goal found !")
             speed.linear.x = 0.4
             speed.angular.z = 0.0
-            tilt_publisher.publish(0.0)
+            tilt_publisher.publish(0.1)
             pan_publisher.publish(-0.75)
     else:
         
